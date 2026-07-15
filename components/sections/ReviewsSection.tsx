@@ -81,8 +81,8 @@ export default function ReviewsSection({
                     </div>
                   )}
                 </div>
-                <div>
-                  <h3 className="font-bold text-slate-900" itemProp="author">
+                <div itemProp="author" itemScope itemType="https://schema.org/Person">
+                  <h3 className="font-bold text-slate-900" itemProp="name">
                     {review.name}
                   </h3>
                   <p className="text-sm text-slate-600">{review.location}</p>
