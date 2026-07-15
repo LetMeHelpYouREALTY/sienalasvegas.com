@@ -3,12 +3,14 @@ import { siteConfig } from "@/lib/site-config";
 
 // Default social-share image for pages that don't provide their own.
 // Used for Open Graph / Twitter Card previews (Google Search, Discover,
-// and social platforms all read these tags).
+// and social platforms all read these tags). Purpose-built branded card
+// (not a bare listing photo) so shared links carry the Siena Las Vegas
+// name, tagline, agent NAP, and phone CTA directly in the preview.
 export const DEFAULT_OG_IMAGE = {
-  url: `${siteConfig.url}/Image/summerlin-las-vegas-luxury-desert-home-sunset.jpg`,
+  url: `${siteConfig.url}/Image/siena-las-vegas-55-plus-golf-community-social-share.jpg`,
   width: 1536,
   height: 1024,
-  alt: "Luxury desert home for sale in Summerlin, Las Vegas NV — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties",
+  alt: "Siena Las Vegas 55+ golf course community — luxury desert home at sunset with mountain views. Dr. Jan Duffy, REALTOR, Berkshire Hathaway HomeServices Nevada Properties. Call (702) 500-1942.",
 };
 
 export interface PageMetadataInput {

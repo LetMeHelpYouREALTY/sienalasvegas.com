@@ -52,6 +52,7 @@ const organizationSchema = {
     postalCode: "89135",
   },
   image: [
+    `${siteConfig.url}/Image/siena-las-vegas-55-plus-golf-community-social-share.jpg`,
     `${siteConfig.url}/Image/summerlin-las-vegas-luxury-desert-home-sunset.jpg`,
     `${siteConfig.url}/Image/henderson-nevada-southwestern-family-home.jpg`,
     `${siteConfig.url}/Image/green-valley-henderson-luxury-estate-pool-twilight.jpg`,
@@ -59,11 +60,24 @@ const organizationSchema = {
 };
 
 // ImageGallery Schema for the homepage hero carousel (GEO/AEO: gives answer
-// engines a structured, captioned description of each hero image)
+// engines a structured, captioned description of each hero image). The
+// branded social-share card leads the gallery and is marked as the page's
+// representative image, matching the og:image/twitter:image used for link
+// previews — so crawlers and answer engines associate the same canonical
+// image with this page across Search, social, and structured data.
 const heroImageGallerySchema = generateImageGallerySchema({
-  name: "Las Vegas & Henderson Real Estate — Featured Home Photography",
+  name: "Siena Las Vegas — 55+ Golf Course Community Photography",
   url: "/",
   images: [
+    {
+      url: "/Image/siena-las-vegas-55-plus-golf-community-social-share.jpg",
+      caption: "Siena Las Vegas 55+ golf course community — Dr. Jan Duffy, REALTOR®, Berkshire Hathaway HomeServices",
+      description:
+        "Branded social-share card for Siena Las Vegas, a guard-gated 55+ golf course community, featuring a luxury desert home at sunset with mountain views, Dr. Jan Duffy's name, and (702) 500-1942 contact information.",
+      width: 1536,
+      height: 1024,
+      representativeOfPage: true,
+    },
     {
       url: "/Image/summerlin-las-vegas-luxury-desert-home-sunset.jpg",
       caption: "Luxury desert home for sale in Summerlin, Las Vegas, NV",
@@ -71,7 +85,6 @@ const heroImageGallerySchema = generateImageGallerySchema({
         "Modern luxury desert-style home with palm trees, xeriscape landscaping, and mountain views at sunset in Summerlin, Las Vegas, Nevada.",
       width: 1536,
       height: 1024,
-      representativeOfPage: true,
     },
     {
       url: "/Image/henderson-nevada-southwestern-family-home.jpg",
