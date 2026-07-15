@@ -347,7 +347,7 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Ready to Work with Berkshire Hathaway HomeServices?
             </h2>
-            <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+            <p className="text-xl text-white/95 mb-8 max-w-2xl mx-auto">
               Whether you're buying, selling, or investing in Las Vegas real estate, Dr. Jan Duffy
               is here to help.
             </p>
@@ -366,7 +366,7 @@ export default function Home() {
                 Send a Message
               </Link>
             </div>
-            <p className="mt-6 text-blue-200 text-sm">
+            <p className="mt-6 text-white/90 text-sm">
               Dr. Jan Duffy | License S.0197614.LLC | Berkshire Hathaway HomeServices Nevada
               Properties
             </p>
@@ -374,7 +374,7 @@ export default function Home() {
         </section>
 
         {/* Last Updated */}
-        <div className="bg-slate-100 py-4 text-center text-sm text-slate-500">
+        <div className="bg-slate-100 py-4 text-center text-sm text-slate-700">
           Last Updated: January 2026 | HeyBerkshire.com - Berkshire Hathaway HomeServices Nevada
           Properties
         </div>

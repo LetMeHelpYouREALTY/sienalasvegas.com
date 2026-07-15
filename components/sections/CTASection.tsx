@@ -10,9 +10,9 @@ export default function CTASection() {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
             Ready to Find Your Home at Siena?
           </h2>
-          <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-            Your trusted Siena real estate expert. Golf course living, guard-gated community, and personalized service from search to closing.
-          </p>
+            <p className="text-xl text-white/95 mb-8 max-w-2xl mx-auto">
+              Your trusted Siena real estate expert. Golf course living, guard-gated community, and personalized service from search to closing.
+            </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
             <Button asChild size="lg" className="bg-white text-blue-600 hover:bg-blue-50">
@@ -25,7 +25,7 @@ export default function CTASection() {
               asChild
               size="lg"
               variant="outline"
-              className="border-white text-white hover:bg-white/10"
+              className="border-white bg-transparent text-white hover:bg-white/10 hover:text-white"
             >
               <Link href="/contact" className="flex items-center gap-2">
                 <Mail className="h-5 w-5" />
@@ -36,7 +36,7 @@ export default function CTASection() {
               asChild
               size="lg"
               variant="outline"
-              className="border-white text-white hover:bg-white/10"
+              className="border-white bg-transparent text-white hover:bg-white/10 hover:text-white"
             >
               <Link href="tel:+17025001942" className="flex items-center gap-2">
                 <Phone className="h-5 w-5" />
@@ -45,7 +45,7 @@ export default function CTASection() {
             </Button>
           </div>
 
-          <div className="flex flex-wrap justify-center gap-6 text-blue-100 text-sm">
+          <div className="flex flex-wrap justify-center gap-6 text-white/90 text-sm">
             <div className="flex items-center gap-2">
               <span className="font-semibold text-white">Free Consultation</span>
             </div>

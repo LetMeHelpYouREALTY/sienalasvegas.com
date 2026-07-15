@@ -296,11 +296,11 @@ export default function Footer() {
               </Link>
             </div>
           </div>
-          <p className="text-slate-500 text-xs mt-4 text-center">
+          <p className="text-slate-300 text-xs mt-4 text-center">
             Dr. Jan Duffy, REALTOR® | License S.0197614.LLC | Berkshire Hathaway HomeServices Nevada
             Properties
           </p>
-          <p className="text-slate-600 text-xs mt-2 text-center max-w-3xl mx-auto">
+          <p className="text-slate-400 text-xs mt-2 text-center max-w-3xl mx-auto">
             When you work with a Berkshire Hathaway HomeServices agent, you're backed by a name
             synonymous with trust, ethical standards, and financial strength.
           </p>

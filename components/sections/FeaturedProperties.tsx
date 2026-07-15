@@ -108,7 +108,7 @@ export default function FeaturedProperties() {
               Discover homes at Siena and Las Vegas 55+ communities
             </p>
           </div>
-          <Button asChild variant="outline" className="mt-4 md:mt-0">
+          <Button asChild variant="outline" className="mt-4 md:mt-0 border-slate-300 text-slate-900">
             <a href="http://drjanduffy.realscout.com/" target="_blank" rel="noopener noreferrer">View All Properties</a>
           </Button>
         </div>
