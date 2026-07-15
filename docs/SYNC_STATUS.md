@@ -46,8 +46,9 @@ To match GitHub exactly and discard local commits: `git fetch origin && git rese
 
 ## 5. Git connection (connected)
 
-**Connected repository:** **DrJanDuffy/sienalasvegas.com** — pushes to the connected repo trigger deployments.
+**Connected repository:** **LetMeHelpYouREALTY/sienalasvegas.com** — pushes to the connected repo trigger deployments.
 
+- The repo was transferred from `DrJanDuffy/sienalasvegas.com` to the `LetMeHelpYouREALTY` org. That transfer briefly broke the Vercel↔GitHub webhook (no deployments fired for pushes between 2026-03-17 and 2026-07-15); the Git connection was reconnected on 2026-07-15 to restore auto-deploy.
 - **Vercel Dashboard** → **sienalasvegas.com** → **Settings** → **Git** to change repo or branch.
 - **Options:** Pull Request Comments, Commit Comments, Require Verified Commits, `deployment_status` and `repository_dispatch` events (toggles in the same Git settings).
 - Pushes to a fork do not deploy this project; only the connected repo is watched.
