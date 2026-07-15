@@ -33,6 +33,10 @@ export const metadata: Metadata = buildPageMetadata({
 // Shares "@id" with the site-wide RealEstateAgent schema in app/layout.tsx
 // (and the ReviewSchema below) so Google's structured-data parser merges
 // all three into one entity instead of three ambiguous duplicate agents.
+// aggregateRating is intentionally omitted here — it's declared once on the
+// site-wide schema (lib/schema.ts) and once on ReviewSchema below, both now
+// sourced from the same agentStats value, so this block only adds fields
+// (the hero image gallery) that aren't already covered elsewhere.
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "RealEstateAgent",
@@ -52,11 +56,6 @@ const organizationSchema = {
     `${siteConfig.url}/Image/henderson-nevada-southwestern-family-home.jpg`,
     `${siteConfig.url}/Image/green-valley-henderson-luxury-estate-pool-twilight.jpg`,
   ],
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.9",
-    reviewCount: "200",
-  },
 };
 
 // ImageGallery Schema for the homepage hero carousel (GEO/AEO: gives answer

@@ -6,6 +6,8 @@
  * client/server module boundary.
  */
 
+import { agentStats } from "@/lib/site-config";
+
 export interface Review {
   id: number;
   name: string;
@@ -50,10 +52,13 @@ export const defaultReviews: Review[] = [
   },
 ];
 
-// Aggregate rating stats
+// Aggregate rating stats — sourced from agentStats so the schema markup
+// here always matches the reviewCount/rating on the site-wide RealEstateAgent
+// entity (lib/schema.ts generateRealEstateAgentSchema), avoiding conflicting
+// aggregateRating values for the same "#organization" @id across pages.
 export const aggregateRating = {
-  ratingValue: 4.9,
-  reviewCount: 500,
+  ratingValue: agentStats.averageRating,
+  reviewCount: agentStats.reviewCount,
   bestRating: 5,
   worstRating: 1,
 };
