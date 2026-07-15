@@ -162,6 +162,38 @@ export default function Footer() {
               </li>
               <li>
                 <Link
+                  href="/sellers/move-up"
+                  className="text-slate-300 hover:text-white transition-colors text-sm"
+                >
+                  Move-Up Sellers
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/sellers/downsizing"
+                  className="text-slate-300 hover:text-white transition-colors text-sm"
+                >
+                  Downsizing
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/sellers/relocation"
+                  className="text-slate-300 hover:text-white transition-colors text-sm"
+                >
+                  Relocation Sellers
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/sellers/divorce-probate"
+                  className="text-slate-300 hover:text-white transition-colors text-sm"
+                >
+                  Divorce &amp; Probate Sales
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/home-valuation"
                   className="text-slate-300 hover:text-white transition-colors text-sm"
                 >

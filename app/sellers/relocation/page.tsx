@@ -15,6 +15,13 @@ import {
 } from "lucide-react";
 import type { Metadata } from "next";
 import { buildPageMetadata } from "@/lib/metadata";
+import SchemaScript from "@/components/SchemaScript";
+import {
+  generateBreadcrumbSchema,
+  generateFAQSchema,
+  generateWebPageSchema,
+  combineSchemas,
+} from "@/lib/schema";
 
 export const metadata: Metadata = buildPageMetadata({
   title: "Relocation Home Sales Las Vegas | Berkshire Hathaway HomeServices",
@@ -30,9 +37,51 @@ export const metadata: Metadata = buildPageMetadata({
   ],
 });
 
+const breadcrumbs = [
+  { name: "Home", url: "/" },
+  { name: "Sellers", url: "/sellers" },
+  { name: "Relocation", url: "/sellers/relocation" },
+];
+
+const faqs = [
+  {
+    q: "My job starts in 3 weeks. Is that enough time to sell?",
+    a: "Yes—urgently, but it's possible. We can list immediately, price aggressively for quick sale, and leverage our investor/cash buyer network. You may leave before closing, but we manage everything remotely. Dr. Jan has helped many clients sell within 2-4 weeks when necessary.",
+  },
+  {
+    q: "Should I sell before or after I move?",
+    a: "It depends on your finances and timeline. Selling first means you know exactly how much equity you have for your new purchase. Selling after gives you time to settle in but requires carrying costs or a bridge loan. Dr. Jan advises based on your specific situation.",
+  },
+  {
+    q: "What if I have a corporate buyout offer?",
+    a: "Corporate buyouts typically offer 90-95% of appraised value. Sometimes you can do better selling on the open market. Dr. Jan provides a market analysis so you can compare the buyout to likely market sale proceeds (minus costs).",
+  },
+  {
+    q: "How do I handle showings if I've already left?",
+    a: "Dr. Jan manages everything: lockbox access, feedback collection, and offer presentation via video call. Many relocating sellers are long gone before their home sells—it's routine and we have systems for it.",
+  },
+  {
+    q: "What about my stuff? Should I move it before listing?",
+    a: "Partially furnished homes often show better than empty ones. Dr. Jan advises on what to take, what to leave, and whether professional staging makes sense. For urgent sales, we can list with minimal preparation.",
+  },
+];
+
+const pageSchemas = combineSchemas(
+  generateBreadcrumbSchema(breadcrumbs),
+  generateWebPageSchema({
+    name: "Relocation Home Sales Las Vegas | Berkshire Hathaway HomeServices",
+    description:
+      "Leaving Las Vegas for a new opportunity? Dr. Jan Duffy helps relocating homeowners sell fast and coordinates with BHHS offices nationwide.",
+    url: "/sellers/relocation",
+    dateModified: "2026-01-25",
+  }),
+  generateFAQSchema(faqs.map((faq) => ({ question: faq.q, answer: faq.a })))
+);
+
 export default function RelocationPage() {
   return (
     <>
+      <SchemaScript schema={pageSchemas} id="relocation-page-schema" />
       <Navbar />
       <main className="pt-24 pb-16">
         <div className="container mx-auto px-4">
@@ -403,28 +452,7 @@ export default function RelocationPage() {
               Relocation FAQs
             </h2>
             <div className="space-y-4">
-              {[
-                {
-                  q: "My job starts in 3 weeks. Is that enough time to sell?",
-                  a: "Yes—urgently, but it's possible. We can list immediately, price aggressively for quick sale, and leverage our investor/cash buyer network. You may leave before closing, but we manage everything remotely. Dr. Jan has helped many clients sell within 2-4 weeks when necessary.",
-                },
-                {
-                  q: "Should I sell before or after I move?",
-                  a: "It depends on your finances and timeline. Selling first means you know exactly how much equity you have for your new purchase. Selling after gives you time to settle in but requires carrying costs or a bridge loan. Dr. Jan advises based on your specific situation.",
-                },
-                {
-                  q: "What if I have a corporate buyout offer?",
-                  a: "Corporate buyouts typically offer 90-95% of appraised value. Sometimes you can do better selling on the open market. Dr. Jan provides a market analysis so you can compare the buyout to likely market sale proceeds (minus costs).",
-                },
-                {
-                  q: "How do I handle showings if I've already left?",
-                  a: "Dr. Jan manages everything: lockbox access, feedback collection, and offer presentation via video call. Many relocating sellers are long gone before their home sells—it's routine and we have systems for it.",
-                },
-                {
-                  q: "What about my stuff? Should I move it before listing?",
-                  a: "Partially furnished homes often show better than empty ones. Dr. Jan advises on what to take, what to leave, and whether professional staging makes sense. For urgent sales, we can list with minimal preparation.",
-                },
-              ].map((faq, index) => (
+              {faqs.map((faq, index) => (
                 <div key={index} className="bg-white border border-slate-200 rounded-lg p-6">
                   <h3 className="font-bold text-slate-900 mb-2">{faq.q}</h3>
                   <p className="text-slate-600">{faq.a}</p>
