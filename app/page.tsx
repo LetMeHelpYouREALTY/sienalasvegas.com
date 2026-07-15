@@ -30,9 +30,13 @@ export const metadata: Metadata = buildPageMetadata({
 });
 
 // Organization Schema (Siena NAP per GBP)
+// Shares "@id" with the site-wide RealEstateAgent schema in app/layout.tsx
+// (and the ReviewSchema below) so Google's structured-data parser merges
+// all three into one entity instead of three ambiguous duplicate agents.
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "RealEstateAgent",
+  "@id": `${siteConfig.url}#organization`,
   name: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
   url: siteConfig.url,
   telephone: "+17025001942",
