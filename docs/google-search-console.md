@@ -59,13 +59,9 @@ If you use Cloudflare (or another DNS host), add the TXT record GSC provides. No
 ## 4. robots.txt
 
 - **URL:** `https://www.sienalasvegas.com/robots.txt`
-- **Served file:** Next.js serves **`public/robots.txt`** if present (it takes precedence over `app/robots.ts`). The repo has a static `public/robots.txt` with:
-  - `User-agent: *` → `Allow: /`, `Disallow: /api/`, `/admin/`, `/_next/`, `/monitoring/`
-  - `Sitemap: https://www.sienalasvegas.com/sitemap.xml`
-  - Optional rules for AI crawlers and crawl-delay for some bots.
-- **Programmatic fallback:** `app/robots.ts` generates allow `/`, disallow `/api/`, and the same sitemap URL; use it if you remove `public/robots.txt`.
-
-Ensure the sitemap URL in `public/robots.txt` matches `siteConfig.url` (e.g. `https://www.sienalasvegas.com`).
+- **Served file:** Generated dynamically by **`app/robots.ts`** (Next.js `MetadataRoute.Robots`). A dynamic `app/robots.ts` and a static `public/robots.txt` cannot coexist — the app route always wins — so `app/robots.ts` is the single source of truth. (An earlier, more detailed `public/robots.txt` existed but was silently ignored; it has been removed and its rules merged into `app/robots.ts`.)
+- **Current rules:** `Allow: /`, `Disallow: /api/`, `/admin/`, `/_next/`, `/monitoring/`; crawl-delay for AhrefsBot/SemrushBot/Bingbot; blocks GPTBot/CCBot/anthropic-ai/Claude-Web; explicitly allows Google-Extended (AI Overviews), Googlebot-Image, and social preview bots (Facebook/Twitter/LinkedIn/Pinterest).
+- Sitemap URL is derived from `siteConfig.url`, so it always matches the live domain.
 
 ---
 
@@ -82,8 +78,28 @@ Ensure the sitemap URL in `public/robots.txt` matches `siteConfig.url` (e.g. `ht
 ## 6. Checklist
 
 - [ ] Property added (URL prefix `https://www.sienalasvegas.com`)
-- [ ] Ownership verified (meta tag, HTML file, or DNS)
-- [ ] Sitemap submitted (`sitemap.xml`)
-- [ ] `robots.txt` allows `/` and points to sitemap
-- [ ] `GOOGLE_SITE_VERIFICATION` set in production env (if using meta tag)
-- [ ] NAP and LocalBusiness schema match Google Business Profile
+- [ ] Ownership verified (meta tag, HTML file, or DNS) — **blocked on you:** get the verification code/file from GSC first (see §2); I can't generate this myself
+- [ ] Sitemap submitted (`sitemap.xml`) — ready: 51 URLs, valid XML, live at `/sitemap.xml`
+- [x] `robots.txt` allows `/` and points to sitemap — fixed 2026-07-15 (dynamic `app/robots.ts` was being silently served over the old static file; consolidated into one file)
+- [ ] `GOOGLE_SITE_VERIFICATION` set in production env (if using meta tag) — **blocked on you:** requires the code from §2, then set in Vercel → Settings → Environment Variables
+- [x] NAP and LocalBusiness schema match Google Business Profile
+- [x] Canonical URL on every page (via `buildPageMetadata()`)
+- [x] Default Open Graph / Twitter Card image on every page (was missing entirely; added 2026-07-15)
+- [x] Custom branded 404 page (was falling back to Next.js's generic default; added 2026-07-15)
+- [x] `robots` meta tag set to `index, follow` site-wide (`app/layout.tsx`)
+- [x] Mobile viewport meta tag present (Next.js default)
+- [x] Internal links added to previously-orphaned pages causing "Crawled – currently not indexed" (see §7)
+- [ ] Apex domain (`sienalasvegas.com`) redirect fixed to permanent (301/308), single-hop — **blocked on you:** Vercel Domains dashboard change required (see §7)
+
+## 7. Diagnosed from live Search Console reports (2026-07-15)
+
+### "Page with redirect" (3 URLs: `http://www.` / `http://` / `https://` non-canonical variants)
+This status itself is *expected and correct* — these URLs should redirect and should NOT be independently indexed. However, I found two real quality issues in how the redirect happens:
+- `https://sienalasvegas.com/` → `https://www.sienalasvegas.com/` returns **307 (Temporary)** instead of **301/308 (Permanent)**. This is Vercel's apex-domain redirect (Project → Settings → Domains → `sienalasvegas.com`), which defaults to `redirectStatusCode: 307` unless changed. It's not our Next.js `redirects()` config (that already correctly uses `permanent: true` → 308) — Vercel's domain-level redirect intercepts the request before it ever reaches the app.
+- `http://sienalasvegas.com/` is a **2-hop chain** (HTTP→HTTPS same host, then apex→www) instead of one direct hop.
+- **Fix (requires Vercel dashboard/API access I don't have):** In Vercel Dashboard → sienalasvegas.com project → Settings → Domains → edit the `sienalasvegas.com` entry's redirect to use status **308** instead of 307. Equivalent API call: `PATCH https://api.vercel.com/v9/projects/{project}/domains/sienalasvegas.com` with body `{"redirect": "www.sienalasvegas.com", "redirectStatusCode": 308}`.
+
+### "Crawled – currently not indexed" (13 URLs)
+Root cause: several pages had **zero internal links** pointing to them from anywhere in the site (only discoverable via the XML sitemap) — `/investment-properties`, `/relocation`, `/listings`, `/market-update`, `/google-business` had 0 internal links. Others (`/sellers/downsizing`, `/sellers/relocation`, `/sellers/divorce-probate`, `/55-plus-communities/sun-city-anthem`, `/55-plus-communities/heritage-stonebridge`, `/55-plus-communities/siena`, `/55-plus-communities/siena/clubs-groups`) were reachable but 2–3 clicks deep with no direct nav/footer link. Weak internal linking is a well-documented cause of this exact GSC status — Google crawls sitemap URLs but deprioritizes indexing pages the site's own architecture doesn't treat as important.
+- **Fix (done):** Added `/investment-properties`, `/relocation`, `/listings`, `/home-valuation`, and `/55-plus-communities/siena` to the main Navbar; added `/market-update`, `/google-business`, `/security-policy`, and the rest to the Footer. Every previously-orphaned page now has at least one site-wide (1-hop) internal link.
+- After redeploying, use GSC's **URL Inspection** tool to **Request Indexing** on these 13 URLs rather than waiting for the next natural crawl.
