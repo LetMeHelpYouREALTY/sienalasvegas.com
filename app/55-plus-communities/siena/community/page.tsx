@@ -22,15 +22,15 @@ export default function SienaCommunityPage() {
           <div className="max-w-4xl mx-auto">
             {/* Breadcrumb */}
             <nav className="text-sm text-slate-500 mb-8">
-              <Link href="/" className="hover:text-blue-600">
+              <Link href="/" className="hover:text-siena-teal">
                 Home
               </Link>
               {" / "}
-              <Link href="/55-plus-communities" className="hover:text-blue-600">
+              <Link href="/55-plus-communities" className="hover:text-siena-teal">
                 55+ Communities
               </Link>
               {" / "}
-              <Link href="/55-plus-communities/siena" className="hover:text-blue-600">
+              <Link href="/55-plus-communities/siena" className="hover:text-siena-teal">
                 Siena
               </Link>
               {" / "}
@@ -38,13 +38,13 @@ export default function SienaCommunityPage() {
             </nav>
 
             <div className="flex items-center gap-3 mb-8">
-              <MapPin className="h-10 w-10 text-emerald-600" />
-              <h1 className="text-3xl md:text-4xl font-bold text-slate-900">
+              <MapPin className="h-10 w-10 text-siena-teal" />
+              <h1 className="font-siena-heading uppercase tracking-wide text-3xl md:text-4xl font-bold text-siena-teal">
                 {sienaCommunityPage.title}
               </h1>
             </div>
 
-            <div className="prose prose-lg max-w-none text-slate-700 space-y-6">
+            <div className="max-w-none text-slate-700 space-y-6">
               <p>{sienaCommunityPage.intro}</p>
               <p>{sienaCommunityPage.location}</p>
             </div>
@@ -54,7 +54,7 @@ export default function SienaCommunityPage() {
                 href={sienaCommunityPage.link55places}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
+                className="text-siena-teal hover:underline"
               >
                 See what 55places.com has to say about Siena →
               </a>
@@ -62,8 +62,8 @@ export default function SienaCommunityPage() {
 
             <p className="mt-8 text-slate-600">
               For real estate in Siena, contact{" "}
-              <strong>Dr. Jan Duffy</strong>:{" "}
-              <a href="tel:+17025001942" className="text-blue-600 hover:underline">
+              <strong className="text-siena-brown">Dr. Jan Duffy</strong>:{" "}
+              <a href="tel:+17025001942" className="text-siena-teal hover:underline">
                 (702) 500-1942
               </a>{" "}
               | sienalasvegas.com

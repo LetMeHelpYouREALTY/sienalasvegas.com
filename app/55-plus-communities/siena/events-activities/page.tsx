@@ -22,15 +22,15 @@ export default function SienaEventsActivitiesPage() {
           <div className="max-w-4xl mx-auto">
             {/* Breadcrumb */}
             <nav className="text-sm text-slate-500 mb-8">
-              <Link href="/" className="hover:text-blue-600">
+              <Link href="/" className="hover:text-siena-teal">
                 Home
               </Link>
               {" / "}
-              <Link href="/55-plus-communities" className="hover:text-blue-600">
+              <Link href="/55-plus-communities" className="hover:text-siena-teal">
                 55+ Communities
               </Link>
               {" / "}
-              <Link href="/55-plus-communities/siena" className="hover:text-blue-600">
+              <Link href="/55-plus-communities/siena" className="hover:text-siena-teal">
                 Siena
               </Link>
               {" / "}
@@ -38,8 +38,8 @@ export default function SienaEventsActivitiesPage() {
             </nav>
 
             <div className="flex items-center gap-3 mb-8">
-              <Calendar className="h-10 w-10 text-emerald-600" />
-              <h1 className="text-3xl md:text-4xl font-bold text-slate-900">
+              <Calendar className="h-10 w-10 text-siena-teal" />
+              <h1 className="font-siena-heading uppercase tracking-wide text-3xl md:text-4xl font-bold text-siena-teal">
                 {sienaEventsPage.title}
               </h1>
             </div>
@@ -50,12 +50,12 @@ export default function SienaEventsActivitiesPage() {
             {/* Signature Events */}
             <section className="mb-10">
               <div className="flex items-center gap-2 mb-4">
-                <PartyPopper className="h-6 w-6 text-emerald-600" />
-                <h2 className="text-xl font-bold text-slate-900">
+                <PartyPopper className="h-6 w-6 text-siena-teal" />
+                <h2 className="font-siena-heading uppercase tracking-wide text-xl font-bold text-siena-brown">
                   {sienaEventsPage.signatureEvents.heading}
                 </h2>
               </div>
-              <ul className="list-disc list-inside text-slate-700 space-y-1">
+              <ul className="list-disc list-inside text-slate-700 space-y-1 marker:text-siena-teal">
                 {sienaEventsPage.signatureEvents.items.map((item, i) => (
                   <li key={i}>{item}</li>
                 ))}
@@ -64,10 +64,10 @@ export default function SienaEventsActivitiesPage() {
 
             {/* Lifestyle Events */}
             <section className="mb-10">
-              <h2 className="text-xl font-bold text-slate-900 mb-4">
+              <h2 className="font-siena-heading uppercase tracking-wide text-xl font-bold text-siena-brown mb-4">
                 {sienaEventsPage.lifestyleEvents.heading}
               </h2>
-              <ul className="list-disc list-inside text-slate-700 space-y-1">
+              <ul className="list-disc list-inside text-slate-700 space-y-1 marker:text-siena-teal">
                 {sienaEventsPage.lifestyleEvents.items.map((item, i) => (
                   <li key={i}>{item}</li>
                 ))}
@@ -76,10 +76,10 @@ export default function SienaEventsActivitiesPage() {
 
             {/* Other Activities */}
             <section className="mb-10">
-              <h2 className="text-xl font-bold text-slate-900 mb-4">
+              <h2 className="font-siena-heading uppercase tracking-wide text-xl font-bold text-siena-brown mb-4">
                 {sienaEventsPage.otherActivities.heading}
               </h2>
-              <ul className="list-disc list-inside text-slate-700 space-y-1">
+              <ul className="list-disc list-inside text-slate-700 space-y-1 marker:text-siena-teal">
                 {sienaEventsPage.otherActivities.items.map((item, i) => (
                   <li key={i}>{item}</li>
                 ))}
@@ -88,10 +88,10 @@ export default function SienaEventsActivitiesPage() {
 
             {/* Golf & Bistro Events */}
             <section className="mb-10">
-              <h2 className="text-xl font-bold text-slate-900 mb-4">
+              <h2 className="font-siena-heading uppercase tracking-wide text-xl font-bold text-siena-brown mb-4">
                 {sienaEventsPage.golfBistroEvents.heading}
               </h2>
-              <ul className="list-disc list-inside text-slate-700 space-y-1">
+              <ul className="list-disc list-inside text-slate-700 space-y-1 marker:text-siena-teal">
                 {sienaEventsPage.golfBistroEvents.items.map((item, i) => (
                   <li key={i}>{item}</li>
                 ))}
@@ -103,7 +103,7 @@ export default function SienaEventsActivitiesPage() {
                 href={sienaEventsPage.sienalvEvents}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
+                className="text-siena-teal hover:underline"
               >
                 More at sienalv.org →
               </a>
@@ -111,8 +111,8 @@ export default function SienaEventsActivitiesPage() {
 
             <p className="text-slate-600">
               For real estate in Siena, contact{" "}
-              <strong>Dr. Jan Duffy</strong>:{" "}
-              <a href="tel:+17025001942" className="text-blue-600 hover:underline">
+              <strong className="text-siena-brown">Dr. Jan Duffy</strong>:{" "}
+              <a href="tel:+17025001942" className="text-siena-teal hover:underline">
                 (702) 500-1942
               </a>{" "}
               | sienalasvegas.com

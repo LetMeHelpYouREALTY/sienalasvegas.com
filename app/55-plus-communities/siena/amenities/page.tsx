@@ -23,22 +23,22 @@ export default function SienaAmenitiesPage() {
           <div className="max-w-4xl mx-auto">
             {/* Breadcrumb */}
             <nav className="text-sm text-slate-500 mb-8">
-              <Link href="/" className="hover:text-blue-600">
+              <Link href="/" className="hover:text-siena-teal">
                 Home
               </Link>
               {" / "}
-              <Link href="/55-plus-communities" className="hover:text-blue-600">
+              <Link href="/55-plus-communities" className="hover:text-siena-teal">
                 55+ Communities
               </Link>
               {" / "}
-              <Link href="/55-plus-communities/siena" className="hover:text-blue-600">
+              <Link href="/55-plus-communities/siena" className="hover:text-siena-teal">
                 Siena
               </Link>
               {" / "}
               <span className="text-slate-900">Amenities</span>
             </nav>
 
-            <h1 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
+            <h1 className="font-siena-heading uppercase tracking-wide text-3xl md:text-4xl font-bold text-siena-teal mb-6">
               {sienaAmenitiesPage.title}
             </h1>
             <p className="text-xl text-slate-600 max-w-3xl mb-8">
@@ -48,8 +48,8 @@ export default function SienaAmenitiesPage() {
             {/* Community Center */}
             <section className="mb-12">
               <div className="flex items-center gap-3 mb-4">
-                <HomeIcon className="h-8 w-8 text-emerald-600" />
-                <h2 className="text-2xl font-bold text-slate-900">
+                <HomeIcon className="h-8 w-8 text-siena-teal" />
+                <h2 className="font-siena-heading uppercase tracking-wide text-2xl font-bold text-siena-teal">
                   {sienaAmenitiesPage.communityCenter.heading}
                 </h2>
               </div>
@@ -59,10 +59,10 @@ export default function SienaAmenitiesPage() {
               <p className="text-slate-700 mb-4">
                 {sienaAmenitiesPage.communityCenter.heartOfSiena}
               </p>
-              <div className="bg-slate-50 rounded-lg p-4 flex items-start gap-3">
-                <Clock className="h-5 w-5 text-emerald-600 flex-shrink-0 mt-0.5" />
+              <div className="bg-siena-cream border border-siena-brown/30 rounded-lg p-4 flex items-start gap-3">
+                <Clock className="h-5 w-5 text-siena-teal flex-shrink-0 mt-0.5" />
                 <div>
-                  <h3 className="font-semibold text-slate-900 mb-2">
+                  <h3 className="font-siena-heading uppercase tracking-wide font-semibold text-siena-brown mb-2">
                     Community Center Hours
                   </h3>
                   <ul className="text-slate-700 text-sm space-y-1">
@@ -79,8 +79,8 @@ export default function SienaAmenitiesPage() {
             {/* Room Rentals */}
             <section className="mb-12">
               <div className="flex items-center gap-3 mb-4">
-                <Building2 className="h-8 w-8 text-emerald-600" />
-                <h2 className="text-2xl font-bold text-slate-900">
+                <Building2 className="h-8 w-8 text-siena-teal" />
+                <h2 className="font-siena-heading uppercase tracking-wide text-2xl font-bold text-siena-teal">
                   {sienaAmenitiesPage.roomRentals.heading}
                 </h2>
               </div>
@@ -90,7 +90,7 @@ export default function SienaAmenitiesPage() {
                   href={sienaAmenitiesPage.sienalvRoomRental}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-600 hover:underline"
+                  className="text-siena-teal hover:underline"
                 >
                   Learn more at sienalv.org →
                 </a>
@@ -100,8 +100,8 @@ export default function SienaAmenitiesPage() {
             {/* Fitness Center */}
             <section className="mb-12">
               <div className="flex items-center gap-3 mb-4">
-                <Dumbbell className="h-8 w-8 text-emerald-600" />
-                <h2 className="text-2xl font-bold text-slate-900">
+                <Dumbbell className="h-8 w-8 text-siena-teal" />
+                <h2 className="font-siena-heading uppercase tracking-wide text-2xl font-bold text-siena-teal">
                   {sienaAmenitiesPage.fitnessCenter.heading}
                 </h2>
               </div>
@@ -111,7 +111,7 @@ export default function SienaAmenitiesPage() {
                   href={sienaAmenitiesPage.sienalvFitness}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-600 hover:underline"
+                  className="text-siena-teal hover:underline"
                 >
                   Learn more at sienalv.org →
                 </a>
@@ -121,8 +121,8 @@ export default function SienaAmenitiesPage() {
             {/* Salon & Spa */}
             <section className="mb-12">
               <div className="flex items-center gap-3 mb-4">
-                <Sparkles className="h-8 w-8 text-emerald-600" />
-                <h2 className="text-2xl font-bold text-slate-900">
+                <Sparkles className="h-8 w-8 text-siena-teal" />
+                <h2 className="font-siena-heading uppercase tracking-wide text-2xl font-bold text-siena-teal">
                   {sienaAmenitiesPage.salonSpa.heading}
                 </h2>
               </div>
@@ -132,7 +132,7 @@ export default function SienaAmenitiesPage() {
                   href={sienaAmenitiesPage.sienalvSalon}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-600 hover:underline"
+                  className="text-siena-teal hover:underline"
                 >
                   Learn more at sienalv.org →
                 </a>
@@ -141,8 +141,8 @@ export default function SienaAmenitiesPage() {
 
             <p className="text-slate-600">
               For real estate in Siena, contact{" "}
-              <strong>Dr. Jan Duffy</strong>:{" "}
-              <a href="tel:+17025001942" className="text-blue-600 hover:underline">
+              <strong className="text-siena-brown">Dr. Jan Duffy</strong>:{" "}
+              <a href="tel:+17025001942" className="text-siena-teal hover:underline">
                 (702) 500-1942
               </a>{" "}
               | sienalasvegas.com
