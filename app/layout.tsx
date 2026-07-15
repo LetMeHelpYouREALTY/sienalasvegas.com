@@ -24,6 +24,7 @@ import {
   combineSchemas,
 } from "@/lib/schema";
 import { siteConfig } from "@/lib/site-config";
+import { DEFAULT_OG_IMAGE } from "@/lib/metadata";
 
 const title = "Siena Las Vegas Real Estate | 55+ Communities | Dr. Jan Duffy, REALTOR®";
 const description =
@@ -56,9 +57,11 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
     type: "website",
     locale: "en_US",
+    images: [DEFAULT_OG_IMAGE],
   },
   twitter: {
     card: "summary_large_image",
+    images: [DEFAULT_OG_IMAGE.url],
     title,
     description,
   },
