@@ -217,7 +217,7 @@ export function generateLocalBusinessSchema() {
     "@type": "RealEstateAgent",
     "@id": `${siteConfig.url}/#organization`,
     name: businessInfo.name,
-    image: `${siteConfig.url}/images/dr-jan-duffy.jpg`,
+    image: agentInfo.photo,
     url: businessInfo.url,
     telephone: businessInfo.phone.tel,
     email: businessInfo.email,

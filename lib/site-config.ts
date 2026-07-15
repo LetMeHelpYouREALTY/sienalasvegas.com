@@ -1,6 +1,8 @@
 // Site Configuration - sienalasvegas.com
 // Siena Las Vegas real estate — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
 
+import { cloudflareImageUrl } from "./cloudflare-images";
+
 export const siteConfig = {
   name: "Siena Las Vegas",
   fullName: "Berkshire Hathaway HomeServices Nevada Properties",
@@ -23,6 +25,10 @@ export const agentInfo = {
   phoneTel: "tel:+17025001942",
   email: "homes@sienalasvegas.com",
   brokerage: "Berkshire Hathaway HomeServices Nevada Properties",
+  // Served via Cloudflare Images — see lib/cloudflare-images.ts
+  photo: cloudflareImageUrl("a26f3a93-fb9c-4f24-3881-dba74660c300", "w=800"),
+  photoAlt:
+    "Dr. Jan Duffy, REALTOR® with Berkshire Hathaway HomeServices Nevada Properties, smiling on a phone call",
 };
 
 export const officeInfo = {

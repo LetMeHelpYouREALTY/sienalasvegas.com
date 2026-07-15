@@ -18,6 +18,7 @@ import {
 } from "lucide-react";
 import type { Metadata } from "next";
 import { buildPageMetadata } from "@/lib/metadata";
+import Image from "next/image";
 import { agentInfo, siteConfig } from "@/lib/site-config";
 import SchemaScript from "@/components/SchemaScript";
 import { generateWebPageSchema, combineSchemas } from "@/lib/schema";
@@ -45,6 +46,7 @@ const personSchema = {
   jobTitle: "REALTOR®",
   description:
     "Licensed real estate agent with Berkshire Hathaway HomeServices Nevada Properties, serving Las Vegas, Henderson, and Summerlin since 2008.",
+  image: agentInfo.photo,
   telephone: agentInfo.phoneTel.replace("tel:", ""),
   email: agentInfo.email,
   url: `${siteConfig.url}/about`,
@@ -246,13 +248,19 @@ export default function AboutPage() {
 
               {/* Stats & Credentials */}
               <div className="space-y-6">
-                {/* Agent Photo Placeholder */}
-                <div className="bg-gradient-to-br from-blue-100 to-slate-100 rounded-lg p-8 aspect-square flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="text-6xl mb-4">👩‍💼</div>
-                    <p className="text-slate-600 font-semibold">Dr. Jan Duffy</p>
-                    <p className="text-sm text-slate-500">BHHS Nevada Properties</p>
+                {/* Agent Photo */}
+                <div className="bg-gradient-to-br from-blue-100 to-slate-100 rounded-lg p-8 aspect-square flex flex-col items-center justify-center">
+                  <div className="relative w-48 h-48 md:w-56 md:h-56">
+                    <Image
+                      src={agentInfo.photo}
+                      alt={agentInfo.photoAlt}
+                      fill
+                      sizes="224px"
+                      className="object-contain"
+                    />
                   </div>
+                  <p className="text-slate-600 font-semibold mt-2">Dr. Jan Duffy</p>
+                  <p className="text-sm text-slate-500">BHHS Nevada Properties</p>
                 </div>
 
                 {/* Stats Grid */}
