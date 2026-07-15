@@ -20,7 +20,8 @@ export default function Navbar() {
 
   const mainNavLinks = [
     { href: "/", label: "Home", external: false },
-    { href: "http://drjanduffy.realscout.com/", label: "Properties", external: true },
+    { href: "/listings", label: "Properties", external: false },
+    { href: "/55-plus-communities/siena", label: "Siena", external: false },
     { href: "/neighborhoods", label: "Neighborhoods", external: false },
     { href: "/about", label: "About", external: false },
     { href: "/contact", label: "Contact", external: false },
@@ -29,9 +30,12 @@ export default function Navbar() {
   const serviceLinks = [
     { href: "/buyers", label: "Home Buying" },
     { href: "/sellers", label: "Home Selling" },
+    { href: "/home-valuation", label: "Free Home Valuation" },
     { href: "/luxury-homes", label: "Luxury Homes" },
     { href: "/55-plus-communities", label: "55+ Communities" },
     { href: "/new-construction", label: "New Construction" },
+    { href: "/investment-properties", label: "Investment Properties" },
+    { href: "/relocation", label: "Relocation Services" },
     { href: "/market-report", label: "Market Report" },
     { href: "/market-insights", label: "Market Insights" },
   ];

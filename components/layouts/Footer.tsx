@@ -50,14 +50,20 @@ export default function Footer() {
             <h3 className="font-bold text-lg mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <a
-                  href="http://drjanduffy.realscout.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link
+                  href="/listings"
                   className="text-slate-300 hover:text-white transition-colors text-sm"
                 >
                   All Properties
-                </a>
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/55-plus-communities/siena"
+                  className="text-slate-300 hover:text-white transition-colors text-sm"
+                >
+                  Siena Community
+                </Link>
               </li>
               <li>
                 <Link
@@ -85,10 +91,26 @@ export default function Footer() {
               </li>
               <li>
                 <Link
+                  href="/market-update"
+                  className="text-slate-300 hover:text-white transition-colors text-sm"
+                >
+                  Market Update
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/about"
                   className="text-slate-300 hover:text-white transition-colors text-sm"
                 >
                   About Dr. Jan
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/google-business"
+                  className="text-slate-300 hover:text-white transition-colors text-sm"
+                >
+                  Reviews &amp; Ratings
                 </Link>
               </li>
               <li>
@@ -124,6 +146,14 @@ export default function Footer() {
               </li>
               <li>
                 <Link
+                  href="/relocation"
+                  className="text-slate-300 hover:text-white transition-colors text-sm"
+                >
+                  Relocation Services
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/sellers"
                   className="text-slate-300 hover:text-white transition-colors text-sm"
                 >
@@ -132,10 +162,26 @@ export default function Footer() {
               </li>
               <li>
                 <Link
+                  href="/home-valuation"
+                  className="text-slate-300 hover:text-white transition-colors text-sm"
+                >
+                  Free Home Valuation
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/luxury-homes"
                   className="text-slate-300 hover:text-white transition-colors text-sm"
                 >
                   Luxury Homes
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/investment-properties"
+                  className="text-slate-300 hover:text-white transition-colors text-sm"
+                >
+                  Investment Properties
                 </Link>
               </li>
               <li>
@@ -209,6 +255,9 @@ export default function Footer() {
             <div className="flex flex-wrap justify-center gap-4 text-sm">
               <Link href="/faq" className="text-slate-400 hover:text-white transition-colors">
                 FAQ
+              </Link>
+              <Link href="/security-policy" className="text-slate-400 hover:text-white transition-colors">
+                Security Policy
               </Link>
               <Link href="/sitemap.xml" className="text-slate-400 hover:text-white transition-colors">
                 Sitemap
