@@ -110,6 +110,7 @@ export function ReviewSchema({
     rating: number;
     text: string;
     date?: string;
+    image?: string;
   }>;
   aggregateRating?: {
     ratingValue: number;
@@ -139,6 +140,11 @@ export function ReviewSchema({
       author: {
         "@type": "Person",
         name: review.author,
+        ...(review.image && {
+          image: review.image.startsWith("http")
+            ? review.image
+            : `${siteConfig.url}${review.image}`,
+        }),
       },
       reviewRating: {
         "@type": "Rating",

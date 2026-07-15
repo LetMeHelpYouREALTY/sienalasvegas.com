@@ -11,6 +11,7 @@ interface Property {
   location: string;
   price: string;
   image: string;
+  imageAlt: string;
   bedrooms: number;
   bathrooms: number;
   squareFeet: number;
@@ -21,7 +22,7 @@ const PropertyCard = ({ property }: { property: Property }) => (
     <div className="relative h-48 md:h-64">
       <Image
         src={property.image}
-        alt={property.name}
+        alt={property.imageAlt}
         fill
         className="object-cover"
       />
@@ -61,7 +62,9 @@ const properties: Property[] = [
     name: "Modern Luxury Home",
     location: "Summerlin, Las Vegas, NV",
     price: "$850,000",
-    image: "/Image/hero_bg_1.jpg",
+    image: "/Image/summerlin-las-vegas-luxury-desert-home-sunset.jpg",
+    imageAlt:
+      "Modern luxury desert home for sale in Summerlin, Las Vegas NV — 4 bed, 3 bath, 3,200 sq ft, $850,000",
     bedrooms: 4,
     bathrooms: 3,
     squareFeet: 3200,
@@ -71,7 +74,9 @@ const properties: Property[] = [
     name: "Spacious Family Home",
     location: "Henderson, NV",
     price: "$625,000",
-    image: "/Image/hero_bg_2.jpg",
+    image: "/Image/henderson-nevada-southwestern-family-home.jpg",
+    imageAlt:
+      "Spacious Southwestern-style family home for sale in Henderson, NV — 3 bed, 2 bath, 2,400 sq ft, $625,000",
     bedrooms: 3,
     bathrooms: 2,
     squareFeet: 2400,
@@ -81,7 +86,9 @@ const properties: Property[] = [
     name: "Elegant Estate",
     location: "Green Valley, Henderson, NV",
     price: "$1,200,000",
-    image: "/Image/hero_bg_3.jpg",
+    image: "/Image/green-valley-henderson-luxury-estate-pool-twilight.jpg",
+    imageAlt:
+      "Elegant luxury estate with pool for sale in Green Valley, Henderson NV — 5 bed, 4 bath, 4,500 sq ft, $1,200,000",
     bedrooms: 5,
     bathrooms: 4,
     squareFeet: 4500,

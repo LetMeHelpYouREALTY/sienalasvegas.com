@@ -10,9 +10,18 @@ export default function HeroSection() {
   const prefersReducedMotion = useReducedMotion();
   
   const images = [
-    "/Image/hero_bg_1.jpg",
-    "/Image/hero_bg_2.jpg",
-    "/Image/hero_bg_3.jpg",
+    {
+      src: "/Image/summerlin-las-vegas-luxury-desert-home-sunset.jpg",
+      alt: "Luxury desert home for sale in Summerlin, Las Vegas NV with palm trees and mountain views at sunset — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties",
+    },
+    {
+      src: "/Image/henderson-nevada-southwestern-family-home.jpg",
+      alt: "Southwestern-style family home for sale in Henderson, NV with desert landscaping under a clear blue sky — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties",
+    },
+    {
+      src: "/Image/green-valley-henderson-luxury-estate-pool-twilight.jpg",
+      alt: "Luxury estate with swimming pool in Green Valley, Henderson NV at twilight — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties",
+    },
   ];
 
   useEffect(() => {
@@ -29,9 +38,9 @@ export default function HeroSection() {
     <div className="relative w-full h-screen overflow-hidden">
       {/* Background Images */}
       <div className="absolute inset-0">
-        {images.map((src, index) => (
+        {images.map((image, index) => (
           <div
-            key={index}
+            key={image.src}
             className={`absolute inset-0 ${
               prefersReducedMotion 
                 ? '' 
@@ -42,8 +51,8 @@ export default function HeroSection() {
           >
             {/* quality=60 tuned for LCP (hero is the LCP element) */}
             <Image
-              src={src}
-              alt={`Hero image ${index + 1}`}
+              src={image.src}
+              alt={image.alt}
               fill
               className="object-cover"
               priority={index === 0}

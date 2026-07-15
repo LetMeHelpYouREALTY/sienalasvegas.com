@@ -5,6 +5,8 @@ import { Bed, Bath, Square, MapPin, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import type { Metadata } from "next";
 import { buildPageMetadata } from "@/lib/metadata";
+import SchemaScript from "@/components/SchemaScript";
+import { generateRealEstateListingSchema } from "@/lib/schema";
 
 // This would typically fetch from RealScout API
 async function getProperty(id: string) {
@@ -14,7 +16,9 @@ async function getProperty(id: string) {
     name: "Modern Luxury Home",
     location: "Summerlin, Las Vegas, NV",
     price: "$850,000",
-    image: "/Image/hero_bg_1.jpg",
+    image: "/Image/summerlin-las-vegas-luxury-desert-home-sunset.jpg",
+    imageAlt:
+      "Modern luxury desert home for sale in Summerlin, Las Vegas NV with palm trees and mountain views at sunset — 4 bed, 3 bath, 3,200 sq ft, $850,000",
     bedrooms: 4,
     bathrooms: 3,
     squareFeet: 3200,
@@ -46,9 +50,37 @@ export async function generateMetadata({
 export default async function PropertyPage({ params }: PropertyPageProps) {
   const { id } = await params;
   const property = await getProperty(id);
+  const priceNumeric = Number(property.price.replace(/[^0-9.]/g, ""));
+
+  const listingSchema = generateRealEstateListingSchema({
+    name: property.name,
+    description: property.description,
+    price: priceNumeric,
+    address: {
+      street: "",
+      city: "Las Vegas",
+      state: "NV",
+      zip: "",
+    },
+    bedrooms: property.bedrooms,
+    bathrooms: property.bathrooms,
+    sqft: property.squareFeet,
+    images: [
+      {
+        url: property.image,
+        caption: property.imageAlt,
+        description: property.description,
+        width: 1536,
+        height: 1024,
+        representativeOfPage: true,
+      },
+    ],
+    url: `/listings/${id}`,
+  });
 
   return (
     <>
+      <SchemaScript schema={listingSchema} id="listing-schema" />
       <Navbar />
       <main className="pt-24 pb-16">
         <div className="container mx-auto px-4">
@@ -87,7 +119,7 @@ export default async function PropertyPage({ params }: PropertyPageProps) {
           <div className="relative h-64 md:h-96 rounded-lg overflow-hidden mb-8">
             <Image
               src={property.image}
-              alt={property.name}
+              alt={property.imageAlt}
               fill
               className="object-cover"
               priority

@@ -3,6 +3,7 @@ import HeroSection from "@/components/sections/HeroSection";
 import RealScoutListings from "@/components/realscout/RealScoutListingsDynamic";
 import WhyChooseUs from "@/components/sections/WhyChooseUs";
 import ReviewsSection from "@/components/sections/ReviewsSection";
+import { defaultReviews, aggregateRating, getReviewSchemaData } from "@/lib/reviews-data";
 import FAQSection from "@/components/sections/FAQSection";
 import CTASection from "@/components/sections/CTASection";
 import Footer from "@/components/layouts/Footer";
@@ -11,6 +12,8 @@ import type { Metadata } from "next";
 import { Home as HomeIcon, TrendingUp, Shield, Users, Phone } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
 import { buildPageMetadata } from "@/lib/metadata";
+import { generateImageGallerySchema } from "@/lib/schema";
+import { ReviewSchema } from "@/components/SchemaScript";
 
 export const metadata: Metadata = buildPageMetadata({
   title: `${siteConfig.name} Real Estate | 55+ Community | Dr. Jan Duffy, REALTOR®`,
@@ -40,12 +43,51 @@ const organizationSchema = {
     addressRegion: "NV",
     postalCode: "89135",
   },
+  image: [
+    `${siteConfig.url}/Image/summerlin-las-vegas-luxury-desert-home-sunset.jpg`,
+    `${siteConfig.url}/Image/henderson-nevada-southwestern-family-home.jpg`,
+    `${siteConfig.url}/Image/green-valley-henderson-luxury-estate-pool-twilight.jpg`,
+  ],
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "4.9",
     reviewCount: "200",
   },
 };
+
+// ImageGallery Schema for the homepage hero carousel (GEO/AEO: gives answer
+// engines a structured, captioned description of each hero image)
+const heroImageGallerySchema = generateImageGallerySchema({
+  name: "Las Vegas & Henderson Real Estate — Featured Home Photography",
+  url: "/",
+  images: [
+    {
+      url: "/Image/summerlin-las-vegas-luxury-desert-home-sunset.jpg",
+      caption: "Luxury desert home for sale in Summerlin, Las Vegas, NV",
+      description:
+        "Modern luxury desert-style home with palm trees, xeriscape landscaping, and mountain views at sunset in Summerlin, Las Vegas, Nevada.",
+      width: 1536,
+      height: 1024,
+      representativeOfPage: true,
+    },
+    {
+      url: "/Image/henderson-nevada-southwestern-family-home.jpg",
+      caption: "Southwestern-style family home for sale in Henderson, NV",
+      description:
+        "Spacious single-story Southwestern desert home with tile roof and mountain backdrop in Henderson, Nevada.",
+      width: 1536,
+      height: 1024,
+    },
+    {
+      url: "/Image/green-valley-henderson-luxury-estate-pool-twilight.jpg",
+      caption: "Luxury estate with pool for sale in Green Valley, Henderson, NV",
+      description:
+        "Elegant two-story desert estate with backyard swimming pool, spa, and palm trees at twilight in Green Valley, Henderson, Nevada.",
+      width: 1536,
+      height: 1024,
+    },
+  ],
+});
 
 // FAQ Schema for SEO
 const faqSchema = {
@@ -105,6 +147,17 @@ export default function Home() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(heroImageGallerySchema) }}
+      />
+      <ReviewSchema
+        reviews={getReviewSchemaData(defaultReviews)}
+        aggregateRating={{
+          ratingValue: aggregateRating.ratingValue,
+          reviewCount: aggregateRating.reviewCount,
+        }}
       />
       <Navbar />
       <main>

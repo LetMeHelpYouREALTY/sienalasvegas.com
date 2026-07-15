@@ -2,55 +2,10 @@
 
 import { Star, Quote } from "lucide-react";
 import Image from "next/image";
+import { type Review, defaultReviews, aggregateRating } from "@/lib/reviews-data";
 
-export interface Review {
-  id: number;
-  name: string;
-  location: string;
-  rating: number;
-  text: string;
-  image?: string;
-  date?: string;
-}
-
-// Default reviews
-export const defaultReviews: Review[] = [
-  {
-    id: 1,
-    name: "Tom Sanders",
-    location: "Las Vegas, NV",
-    rating: 5,
-    text: "Dr. Duffy made our home buying experience seamless. Her knowledge of the Las Vegas market is unmatched, and she guided us through every step with professionalism and care.",
-    image: "/Image/person1.jpeg",
-    date: "2025-11-15",
-  },
-  {
-    id: 2,
-    name: "Vitor Palmer",
-    location: "Henderson, NV",
-    rating: 5,
-    text: "We couldn't be happier with our new home! The entire process was smooth, and Dr. Duffy's attention to detail and negotiation skills saved us thousands. Highly recommend!",
-    image: "/Image/person_2-min.jpg",
-    date: "2025-10-22",
-  },
-  {
-    id: 3,
-    name: "Emily Rodriguez",
-    location: "Summerlin, NV",
-    rating: 5,
-    text: "As first-time homebuyers, we were nervous about the process. Dr. Duffy patiently explained everything and helped us find the perfect home in our budget. Thank you!",
-    image: "/Image/person_4-min.jpg",
-    date: "2025-09-08",
-  },
-];
-
-// Aggregate rating stats
-export const aggregateRating = {
-  ratingValue: 4.9,
-  reviewCount: 500,
-  bestRating: 5,
-  worstRating: 1,
-};
+export type { Review };
+export { defaultReviews, aggregateRating };
 
 interface ReviewsSectionProps {
   /** Custom reviews to display */
@@ -116,7 +71,7 @@ export default function ReviewsSection({
                   {review.image ? (
                     <Image
                       src={review.image}
-                      alt={review.name}
+                      alt={review.imageAlt || review.name}
                       fill
                       className="object-cover"
                     />
@@ -174,15 +129,4 @@ export default function ReviewsSection({
   );
 }
 
-/**
- * Helper to convert reviews to schema format for ReviewSchema component
- * Use with: <ReviewSchema reviews={getReviewSchemaData(reviews)} aggregateRating={aggregateRating} />
- */
-export function getReviewSchemaData(reviews: Review[]) {
-  return reviews.map((review) => ({
-    author: review.name,
-    rating: review.rating,
-    text: review.text,
-    date: review.date,
-  }));
-}
+export { getReviewSchemaData } from "@/lib/reviews-data";

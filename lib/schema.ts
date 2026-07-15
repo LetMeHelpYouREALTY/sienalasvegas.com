@@ -27,6 +27,20 @@ export interface ReviewItem {
   rating: number;
   reviewBody: string;
   datePublished?: string;
+  authorImage?: string;
+}
+
+export interface ImageObjectData {
+  /** Path (e.g. /Image/foo.jpg) or absolute URL */
+  url: string;
+  /** Short, descriptive, keyword-rich caption (SEO + AEO/GEO citability) */
+  caption: string;
+  /** Longer description for answer engines / AI overviews */
+  description?: string;
+  width?: number;
+  height?: number;
+  /** Marks this image as the primary representative image of the page (Google Search) */
+  representativeOfPage?: boolean;
 }
 
 export interface NeighborhoodData {
@@ -349,6 +363,11 @@ export function generateReviewSchema(reviews: ReviewItem[]) {
       author: {
         "@type": "Person",
         name: review.author,
+        ...(review.authorImage && {
+          image: review.authorImage.startsWith("http")
+            ? review.authorImage
+            : `${BASE_URL}${review.authorImage}`,
+        }),
       },
       reviewRating: {
         "@type": "Rating",
@@ -359,6 +378,53 @@ export function generateReviewSchema(reviews: ReviewItem[]) {
       reviewBody: review.reviewBody,
       datePublished: review.datePublished || new Date().toISOString().split("T")[0],
     })),
+  };
+}
+
+// ============================================================================
+// Image Schema Generators (SEO / GEO / AEO)
+// ============================================================================
+
+/**
+ * Generate a single schema.org ImageObject.
+ *
+ * Attaching ImageObject markup (with a descriptive caption/description) to
+ * every meaningful image lets Google Images and AI answer/generative engines
+ * (GEO/AEO) understand and cite what the image actually depicts, rather than
+ * inferring it from surrounding text alone.
+ */
+export function generateImageObjectSchema(image: ImageObjectData) {
+  const url = image.url.startsWith("http") ? image.url : `${BASE_URL}${image.url}`;
+  return {
+    "@type": "ImageObject",
+    contentUrl: url,
+    url,
+    caption: image.caption,
+    ...(image.description && { description: image.description }),
+    ...(image.width && { width: image.width }),
+    ...(image.height && { height: image.height }),
+    ...(image.representativeOfPage !== undefined && {
+      representativeOfPage: image.representativeOfPage,
+    }),
+  };
+}
+
+/**
+ * Generate an ImageGallery schema wrapping multiple ImageObjects.
+ * Useful for hero carousels / featured-property grids where several images
+ * represent one page (GEO/AEO: gives answer engines a structured image set).
+ */
+export function generateImageGallerySchema(params: {
+  name: string;
+  url: string;
+  images: ImageObjectData[];
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ImageGallery",
+    name: params.name,
+    url: params.url.startsWith("http") ? params.url : `${BASE_URL}${params.url}`,
+    image: params.images.map((img) => generateImageObjectSchema(img)),
   };
 }
 
@@ -488,7 +554,7 @@ export function generateRealEstateListingSchema(listing: {
   bedrooms?: number;
   bathrooms?: number;
   sqft?: number;
-  images?: string[];
+  images?: (string | ImageObjectData)[];
   url: string;
 }) {
   return {
@@ -522,7 +588,11 @@ export function generateRealEstateListingSchema(listing: {
     ...(listing.images &&
       listing.images.length > 0 && {
         image: listing.images.map((img) =>
-          img.startsWith("http") ? img : `${BASE_URL}${img}`
+          typeof img === "string"
+            ? img.startsWith("http")
+              ? img
+              : `${BASE_URL}${img}`
+            : generateImageObjectSchema(img)
         ),
       }),
   };
