@@ -294,7 +294,7 @@ export function generateWebSiteSchema() {
  */
 export interface FeaturedPlaceItem {
   name: string;
-  address: string;
+  address?: string;
   schemaType: string;
 }
 
@@ -315,11 +315,15 @@ export function generateFeaturedPlacesItemListSchema(
       item: {
         "@type": place.schemaType,
         name: place.name,
-        address: {
-          "@type": "PostalAddress",
-          streetAddress: place.address,
-          addressCountry: "US",
-        },
+        ...(place.address
+          ? {
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: place.address,
+                addressCountry: "US",
+              },
+            }
+          : {}),
       },
     })),
   };

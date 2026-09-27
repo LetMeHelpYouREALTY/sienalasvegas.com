@@ -34,8 +34,7 @@ const AmenityMap = dynamic(() => import("@/components/maps/AmenityMap"), {
 
 export const metadata: Metadata = buildPageMetadata({
   title: "Nearby Amenities in Siena, Las Vegas | Map & Local Guide | Dr. Jan Duffy",
-  description:
-    "Interactive map of healthcare, golf, parks, grocery, and shopping near Siena 55+ community in Summerlin South. Drive times to the Strip, airport, and Downtown Summerlin. Dr. Jan Duffy, BHHS — (702) 500-1942.",
+  description: `Interactive map of healthcare, golf, parks, grocery, and shopping near Siena 55+ community in Summerlin South. Drive times to the Strip, airport, and Downtown Summerlin. Dr. Jan Duffy, BHHS — ${agentInfo.phone}.`,
   path: nearbyAmenitiesPagePath,
   keywords: [
     "Siena nearby amenities",
@@ -139,7 +138,8 @@ export default function NearbyAmenitiesPage() {
             <ul>
               {healthcare.map((p) => (
                 <li key={p.name}>
-                  <strong>{p.name}</strong> — {p.address}
+                  <strong>{p.name}</strong>
+                  {p.address ? ` — ${p.address}` : ""}
                 </li>
               ))}
             </ul>
@@ -153,7 +153,8 @@ export default function NearbyAmenitiesPage() {
             <ul>
               {golf.map((p) => (
                 <li key={p.name}>
-                  <strong>{p.name}</strong> — {p.address}
+                  <strong>{p.name}</strong>
+                  {p.address ? ` — ${p.address}` : ""}
                   {p.note ? ` (${p.note})` : ""}
                 </li>
               ))}
@@ -168,7 +169,8 @@ export default function NearbyAmenitiesPage() {
             <ul>
               {parks.map((p) => (
                 <li key={p.name}>
-                  <strong>{p.name}</strong> — {p.address}
+                  <strong>{p.name}</strong>
+                  {p.address ? ` — ${p.address}` : ""}
                 </li>
               ))}
             </ul>
@@ -182,7 +184,8 @@ export default function NearbyAmenitiesPage() {
             <ul>
               {grocery.map((p) => (
                 <li key={p.name}>
-                  <strong>{p.name}</strong> — {p.address}
+                  <strong>{p.name}</strong>
+                  {p.address ? ` — ${p.address}` : ""}
                 </li>
               ))}
             </ul>
@@ -196,7 +199,8 @@ export default function NearbyAmenitiesPage() {
             <ul>
               {shopping.map((p) => (
                 <li key={p.name}>
-                  <strong>{p.name}</strong> — {p.address}
+                  <strong>{p.name}</strong>
+                  {p.address ? ` — ${p.address}` : ""}
                   {p.note ? ` — ${p.note}` : ""}
                 </li>
               ))}
@@ -211,7 +215,8 @@ export default function NearbyAmenitiesPage() {
             <ul>
               {community.map((p) => (
                 <li key={p.name}>
-                  <strong>{p.name}</strong> — {p.address}. {p.note}
+                  <strong>{p.name}</strong>
+                  {p.address ? ` — ${p.address}.` : "."} {p.note}
                 </li>
               ))}
             </ul>
