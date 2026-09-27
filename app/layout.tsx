@@ -8,6 +8,7 @@ import { GeistSans } from "geist/font/sans";
 import { Analytics } from "@vercel/analytics/react";
 import { cn } from "lib/utils";
 import SchemaScript from "@/components/SchemaScript";
+import PathBreadcrumbSchema from "@/components/PathBreadcrumbSchema";
 
 const AIChatWidget = dynamic(
   () => import("@/components/chat/AIChatWidget"),
@@ -102,6 +103,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         {/* Site-wide JSON-LD Schema: RealEstateAgent + WebSite */}
         <SchemaScript schema={siteWideSchemas} id="site-schema" />
+        <PathBreadcrumbSchema />
         {/* Google Analytics - lazyOnload to reduce main-thread work during LCP */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-WB5DLLZ4C6"

@@ -13,7 +13,7 @@ export const siteConfig = {
   shortName: "BHHS",
   url: "https://www.sienalasvegas.com",
   description:
-    "Homes for sale in Siena, Las Vegas's premier 55+ community. Golf course living, guard-gated security, Community Center & clubs. Dr. Jan Duffy, BHHS Nevada Properties. 10525 Siena Monte Avenue. Call (702) 500-1942.",
+    "Homes for sale in Siena, Las Vegas's premier 55+ golf community. Guard-gated living, Community Center, and clubs. Dr. Jan Duffy, BHHS. Call (702) 500-1942.",
 };
 
 export const agentInfo = {

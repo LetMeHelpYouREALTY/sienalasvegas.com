@@ -17,7 +17,6 @@ import type { Metadata } from "next";
 import { buildPageMetadata } from "@/lib/metadata";
 import SchemaScript from "@/components/SchemaScript";
 import {
-  generateBreadcrumbSchema,
   generateFAQSchema,
   generateWebPageSchema,
   combineSchemas,
@@ -36,12 +35,6 @@ export const metadata: Metadata = buildPageMetadata({
     "Berkshire Hathaway HomeServices divorce",
   ],
 });
-
-const breadcrumbs = [
-  { name: "Home", url: "/" },
-  { name: "Sellers", url: "/sellers" },
-  { name: "Divorce & Probate", url: "/sellers/divorce-probate" },
-];
 
 const faqs = [
   {
@@ -71,7 +64,6 @@ const faqs = [
 ];
 
 const pageSchemas = combineSchemas(
-  generateBreadcrumbSchema(breadcrumbs),
   generateWebPageSchema({
     name: "Divorce & Probate Home Sales Las Vegas | Berkshire Hathaway HomeServices",
     description:
