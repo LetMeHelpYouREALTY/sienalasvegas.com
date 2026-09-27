@@ -41,8 +41,9 @@ export const officeInfo = {
     full: "10525 Siena Monte Avenue, Las Vegas, NV 89135",
   },
   coordinates: {
-    lat: 36.1893,
-    lng: -115.2821,
+    // Siena Community Association office — Summerlin South (see lib/nearby-amenities.ts)
+    lat: 36.1042,
+    lng: -115.3195,
   },
   phone: "(702) 500-1942",
   phoneTel: "tel:+17025001942",

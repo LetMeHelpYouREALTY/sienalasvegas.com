@@ -67,6 +67,14 @@ export default function Footer() {
               </li>
               <li>
                 <Link
+                  href="/nearby-amenities"
+                  className="text-slate-300 hover:text-white transition-colors text-sm"
+                >
+                  Nearby Amenities Map
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/neighborhoods"
                   className="text-slate-300 hover:text-white transition-colors text-sm"
                 >

@@ -19,6 +19,7 @@ import {
 } from "lucide-react";
 import type { Metadata } from "next";
 import { buildPageMetadata } from "@/lib/metadata";
+import NearbyAmenitiesSection from "@/components/sections/NearbyAmenitiesSection";
 
 export const metadata: Metadata = buildPageMetadata({
   title: "Las Vegas Homes for Sale | MLS Property Search | Berkshire Hathaway HomeServices",
@@ -436,6 +437,12 @@ export default function ListingsPage() {
               </div>
             </div>
           </section>
+
+          <NearbyAmenitiesSection
+            communityName="Siena"
+            title="Shopping & services near Siena listings"
+            className="!bg-transparent !py-8 max-w-6xl mx-auto"
+          />
 
           {/* CTA */}
           <section className="text-center bg-blue-600 text-white rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
