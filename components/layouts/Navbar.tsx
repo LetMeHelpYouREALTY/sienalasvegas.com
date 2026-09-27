@@ -22,6 +22,7 @@ export default function Navbar() {
     { href: "/", label: "Home", external: false },
     { href: "/listings", label: "Properties", external: false },
     { href: "/55-plus-communities/siena", label: "Siena", external: false },
+    { href: "/nearby-amenities", label: "Nearby", external: false },
     { href: "/neighborhoods", label: "Neighborhoods", external: false },
     { href: "/about", label: "About", external: false },
     { href: "/contact", label: "Contact", external: false },

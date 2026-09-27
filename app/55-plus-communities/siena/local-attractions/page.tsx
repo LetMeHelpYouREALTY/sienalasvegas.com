@@ -5,6 +5,7 @@ import { Landmark, Utensils, ShoppingBag, Music, Trophy, TreePine } from "lucide
 import type { Metadata } from "next";
 import { buildPageMetadata } from "@/lib/metadata";
 import { sienaLocalAttractionsPage } from "@/lib/siena-pages";
+import NearbyAmenitiesSection from "@/components/sections/NearbyAmenitiesSection";
 
 export const metadata: Metadata = buildPageMetadata({
   title: "Local Attractions Near Siena | Museums, Shopping, Sports, Parks | Dr. Jan Duffy",
@@ -46,7 +47,7 @@ export default function SienaLocalAttractionsPage() {
             </div>
 
             <p className="text-slate-700 mb-4">{data.intro}</p>
-            <p className="text-slate-600 text-sm mb-10">
+            <p className="text-slate-600 text-sm mb-6">
               <a
                 href={data.lasVegasWeekly}
                 target="_blank"
@@ -57,7 +58,20 @@ export default function SienaLocalAttractionsPage() {
               </a>{" "}
               — for the latest on what&apos;s new in Las Vegas.
             </p>
-
+            <p className="mb-8">
+              <Link href="/nearby-amenities" className="text-siena-teal font-semibold hover:underline">
+                Open the interactive nearby amenities map &amp; FAQ guide →
+              </Link>
+            </p>
+          </div>
+        </div>
+        <NearbyAmenitiesSection
+          variant="siena"
+          title="Map: amenities near Siena"
+          className="!py-10 mb-8"
+        />
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
             {/* Attractions & Museums */}
             <section className="mb-10">
               <h2 className="font-siena-heading uppercase tracking-wide text-xl font-bold text-siena-brown mb-4 flex items-center gap-2">

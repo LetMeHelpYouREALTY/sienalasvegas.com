@@ -6,6 +6,7 @@ import ReviewsSection from "@/components/sections/ReviewsSection";
 import { defaultReviews, aggregateRating, getReviewSchemaData } from "@/lib/reviews-data";
 import FAQSection from "@/components/sections/FAQSection";
 import CTASection from "@/components/sections/CTASection";
+import NearbyAmenitiesSection from "@/components/sections/NearbyAmenitiesSection";
 import Footer from "@/components/layouts/Footer";
 import Link from "next/link";
 import type { Metadata } from "next";
@@ -337,6 +338,7 @@ export default function Home() {
           </div>
         </section>
 
+        <NearbyAmenitiesSection communityName="Siena" />
         <WhyChooseUs />
         <ReviewsSection />
         <FAQSection />

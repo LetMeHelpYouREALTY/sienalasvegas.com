@@ -18,6 +18,7 @@ import type { Metadata } from "next";
 import { buildPageMetadata } from "@/lib/metadata";
 import { sienaCommunity } from "@/lib/site-config";
 import SchemaScript from "@/components/SchemaScript";
+import NearbyAmenitiesSection from "@/components/sections/NearbyAmenitiesSection";
 import { generateWebPageSchema, combineSchemas } from "@/lib/schema";
 
 export const metadata: Metadata = buildPageMetadata({
@@ -149,7 +150,7 @@ export default function SienaPage() {
             <h2 className="font-siena-heading uppercase tracking-wide text-2xl font-bold text-siena-teal mb-6 text-center">
               Explore Siena
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               <Link
                 href="/55-plus-communities/siena/community"
                 className="flex items-center gap-3 p-4 rounded-xl border border-siena-brown/30 bg-white hover:border-siena-teal hover:shadow-md transition-all"
@@ -177,6 +178,13 @@ export default function SienaPage() {
               >
                 <Users className="h-8 w-8 text-siena-teal flex-shrink-0" />
                 <span className="font-semibold text-slate-900">Clubs & Groups</span>
+              </Link>
+              <Link
+                href="/nearby-amenities"
+                className="flex items-center gap-3 p-4 rounded-xl border border-siena-brown/30 bg-white hover:border-siena-teal hover:shadow-md transition-all"
+              >
+                <MapPin className="h-8 w-8 text-siena-teal flex-shrink-0" />
+                <span className="font-semibold text-slate-900">Nearby Amenities</span>
               </Link>
               <Link
                 href="/55-plus-communities/siena/local-attractions"
@@ -287,6 +295,12 @@ export default function SienaPage() {
             </div>
           </section>
 
+          <NearbyAmenitiesSection
+            variant="siena"
+            title="What's Nearby Siena"
+            className="mb-16 !py-12"
+          />
+
           {/* Local Attractions */}
           <section className="mb-16 max-w-5xl mx-auto">
             <h2 className="font-siena-heading uppercase tracking-wide text-3xl font-bold text-siena-teal mb-6 text-center">
@@ -297,10 +311,17 @@ export default function SienaPage() {
             </p>
             <p className="text-center">
               <Link
+                href="/nearby-amenities"
+                className="text-siena-teal font-semibold hover:underline"
+              >
+                Interactive nearby amenities map & guide →
+              </Link>
+              {" · "}
+              <Link
                 href="/55-plus-communities/siena/local-attractions"
                 className="text-siena-teal font-semibold hover:underline"
               >
-                Explore attractions, restaurants, shopping, shows & parks →
+                Attractions list →
               </Link>
             </p>
           </section>

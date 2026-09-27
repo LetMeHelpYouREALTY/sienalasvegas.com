@@ -65,7 +65,7 @@ export function BreadcrumbSchema({
       name: item.name,
       item: item.url.startsWith("http")
         ? item.url
-        : `https://heyberkshire.com${item.url}`,
+        : `${siteConfig.url}${item.url}`,
     })),
   };
 

@@ -148,6 +148,18 @@ export function generateRealEstateAgentSchema() {
         "@type": "Place",
         name: "Green Valley",
       },
+      {
+        "@type": "Place",
+        name: "Siena",
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: "10525 Siena Monte Avenue",
+          addressLocality: "Las Vegas",
+          addressRegion: "NV",
+          postalCode: "89135",
+          addressCountry: "US",
+        },
+      },
     ],
     openingHoursSpecification: [
       {
@@ -280,6 +292,39 @@ export function generateWebSiteSchema() {
 /**
  * Generate FAQPage schema from FAQ items
  */
+export interface FeaturedPlaceItem {
+  name: string;
+  address: string;
+  schemaType: string;
+}
+
+/**
+ * ItemList of verified nearby places for amenities / GEO pages
+ */
+export function generateFeaturedPlacesItemListSchema(
+  places: FeaturedPlaceItem[],
+  listName: string
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: listName,
+    itemListElement: places.map((place, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      item: {
+        "@type": place.schemaType,
+        name: place.name,
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: place.address,
+          addressCountry: "US",
+        },
+      },
+    })),
+  };
+}
+
 export function generateFAQSchema(faqs: FAQItem[]) {
   return {
     "@context": "https://schema.org",
