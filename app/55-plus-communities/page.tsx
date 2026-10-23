@@ -211,7 +211,7 @@ const communities = [
     ageRequirement: "55+ (at least one resident)",
     hoaFees: "$175-$220/month",
     priceRange: "$400,000 - $750,000",
-    homes: "1,100+ homes",
+    homes: "421 homes",
     amenities: ["Clubhouse", "Pool & spa", "Fitness", "Social clubs"],
     highlights: [
       "Premium Summerlin location",
