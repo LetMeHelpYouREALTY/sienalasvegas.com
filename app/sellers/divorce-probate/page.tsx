@@ -23,7 +23,7 @@ import {
 } from "@/lib/schema";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Divorce & Probate Home Sales Las Vegas | Berkshire Hathaway HomeServices",
+  title: "Divorce & Probate Home Sales Las Vegas | Dr. Jan Duffy, REALTOR®",
   description:
     "Sensitive real estate situations handled with discretion. Dr. Jan Duffy helps with divorce sales, probate, estate liquidation, and court-ordered sales. Call (702) 500-1942.",
   path: "/sellers/divorce-probate",
@@ -65,7 +65,7 @@ const faqs = [
 
 const pageSchemas = combineSchemas(
   generateWebPageSchema({
-    name: "Divorce & Probate Home Sales Las Vegas | Berkshire Hathaway HomeServices",
+    name: "Divorce & Probate Home Sales Las Vegas | Dr. Jan Duffy, REALTOR®",
     description:
       "Sensitive real estate situations handled with discretion. Dr. Jan Duffy helps with divorce sales, probate, estate liquidation, and court-ordered sales.",
     url: "/sellers/divorce-probate",
@@ -102,7 +102,7 @@ export default function DivorceProbatePage() {
               Difficult Situations,<br />Expert Guidance
             </h1>
             <p className="text-xl text-slate-600 mb-8 max-w-3xl mx-auto">
-              Divorce and probate home sales in Las Vegas require discretion, accurate valuations, and clear timelines. Dr. Jan Duffy at Berkshire Hathaway HomeServices handles sensitive transactions with compassion and expertise—from court-ordered sales to estate liquidations. Confidential consultations. Call (702) 500-1942.
+              Divorce and probate home sales in Las Vegas require discretion, accurate valuations, and clear timelines. Dr. Jan Duffy handles sensitive transactions with compassion and expertise—from court-ordered sales to estate liquidations. Confidential consultations. Call (702) 500-1942.
             </p>
             <a
               href="tel:+17025001942"
@@ -472,15 +472,14 @@ export default function DivorceProbatePage() {
           {/* Why BHHS Matters */}
           <section className="mb-16 max-w-5xl mx-auto">
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
-              Why Berkshire Hathaway HomeServices for Sensitive Sales
+              Why Dr. Jan Duffy for Sensitive Sales
             </h2>
             <div className="grid md:grid-cols-3 gap-6">
               <div className="bg-white border border-slate-200 rounded-xl p-6 text-center">
                 <Shield className="h-10 w-10 text-blue-600 mx-auto mb-4" />
                 <h3 className="font-bold text-slate-900 mb-2">Credibility & Trust</h3>
                 <p className="text-slate-600 text-sm">
-                  The Berkshire Hathaway name carries weight with attorneys, judges, and opposing
-                  parties. Our valuations and processes are respected because of the brand's
+                  Dr. Jan Duffy's experience carries weight with attorneys, judges, and opposing parties. Her valuations and processes are respected because of her
                   reputation for integrity.
                 </p>
               </div>
@@ -488,7 +487,7 @@ export default function DivorceProbatePage() {
                 <Scale className="h-10 w-10 text-blue-600 mx-auto mb-4" />
                 <h3 className="font-bold text-slate-900 mb-2">Professional Standards</h3>
                 <p className="text-slate-600 text-sm">
-                  BHHS agents follow strict ethical guidelines and documentation standards. This
+                  REALTORS® follow strict ethical guidelines and documentation standards. This
                   protects all parties and provides a defensible paper trail for legal proceedings.
                 </p>
               </div>
@@ -511,12 +510,12 @@ export default function DivorceProbatePage() {
                 "When you're going through a divorce or handling a loved one's estate, the last
                 thing you need is real estate stress. I've handled hundreds of sensitive transactions,
                 and I understand these situations require more than market expertise—they require
-                discretion, patience, and genuine care. <strong>Berkshire Hathaway HomeServices</strong>
+                discretion, patience, and genuine care. <strong>Dr. Jan Duffy</strong>
                 gives me the resources and credibility these situations demand. Your privacy and
                 peace of mind come first."
               </blockquote>
               <cite className="text-slate-300 font-semibold">
-                — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
+                — Dr. Jan Duffy, REALTOR®
               </cite>
             </div>
           </section>

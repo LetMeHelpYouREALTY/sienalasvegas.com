@@ -7,9 +7,9 @@ import type { Metadata } from "next";
 import { buildPageMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Las Vegas Investment Properties | Berkshire Hathaway HomeServices",
+  title: "Las Vegas Investment Properties | Dr. Jan Duffy, REALTOR®",
   description:
-    "Invest in Las Vegas real estate with Dr. Jan Duffy at Berkshire Hathaway HomeServices Nevada Properties. Rental properties, ROI analysis, 1031 exchanges. No state income tax. Call (702) 500-1942.",
+    "Invest in Las Vegas real estate with Dr. Jan Duffy. Rental properties, ROI analysis, 1031 exchanges. No state income tax. Call (702) 500-1942.",
   path: "/investment-properties",
   keywords: [
     "Las Vegas investment property",
@@ -75,13 +75,13 @@ export default function InvestmentPropertiesPage() {
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Dr. Jan Duffy, REALTOR® | In Real Estate Since 1983
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Las Vegas Investment Properties
             </h1>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Las Vegas investment properties offer no state income tax, strong appreciation, and solid rental yields. Dr. Jan Duffy at Berkshire Hathaway HomeServices helps investors buy and manage rental homes in North Las Vegas, Henderson, and Summerlin. Free market analysis and buyer representation. Call (702) 500-1942.
+              Las Vegas investment properties offer no state income tax, strong appreciation, and solid rental yields. Dr. Jan Duffy helps investors buy and manage rental homes in North Las Vegas, Henderson, and Summerlin. Free market analysis and buyer representation. Call (702) 500-1942.
             </p>
           </div>
 
@@ -172,7 +172,7 @@ export default function InvestmentPropertiesPage() {
                 combination of cash flow and appreciation potential."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, BHHS Nevada Properties
+                — Dr. Jan Duffy, REALTOR®
               </cite>
             </div>
           </section>
@@ -391,7 +391,7 @@ export default function InvestmentPropertiesPage() {
               </div>
               <p className="text-slate-600 text-sm">
                 Dr. Jan works with qualified intermediaries and can help identify replacement properties
-                within the 45-day window. Berkshire Hathaway's nationwide network is invaluable for
+                within the 45-day window. Her nationwide referral network is invaluable for
                 clients exchanging into or out of Las Vegas.
               </p>
             </div>
@@ -414,7 +414,7 @@ export default function InvestmentPropertiesPage() {
                 },
                 {
                   q: "Can you help with 1031 exchanges?",
-                  a: "Absolutely. Dr. Jan works with qualified intermediaries and can help identify replacement properties within the 45-day identification window. Berkshire Hathaway's nationwide network is particularly valuable for exchanging into or out of Las Vegas.",
+                  a: "Absolutely. Dr. Jan works with qualified intermediaries and can help identify replacement properties within the 45-day identification window. Her nationwide referral network is particularly valuable for exchanging into or out of Las Vegas.",
                 },
                 {
                   q: "What's the best area for investment properties?",
@@ -435,8 +435,7 @@ export default function InvestmentPropertiesPage() {
               Ready to Invest in Las Vegas?
             </h2>
             <p className="text-xl text-slate-300 mb-8">
-              Get expert guidance on Las Vegas investment properties from Dr. Jan Duffy and
-              Berkshire Hathaway HomeServices.
+              Get expert guidance on Las Vegas investment properties from Dr. Jan Duffy.
             </p>
             <a
               href="tel:+17025001942"
@@ -446,7 +445,7 @@ export default function InvestmentPropertiesPage() {
               Call (702) 500-1942
             </a>
             <p className="mt-4 text-slate-400 text-sm">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Dr. Jan Duffy, REALTOR® | In Real Estate Since 1983
             </p>
           </section>
         </div>

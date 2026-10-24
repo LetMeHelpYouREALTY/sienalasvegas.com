@@ -11,9 +11,9 @@ import SchemaScript from "@/components/SchemaScript";
 import { generateWebPageSchema, combineSchemas } from "@/lib/schema";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Contact Dr. Jan Duffy | Berkshire Hathaway HomeServices Las Vegas",
+  title: "Contact Dr. Jan Duffy | Dr. Jan Duffy, Las Vegas REALTOR®",
   description:
-    "Contact Dr. Jan Duffy at Berkshire Hathaway HomeServices Nevada Properties. Schedule an appointment, get directions, or call (702) 500-1942. Las Vegas, Henderson, Summerlin real estate expert.",
+    "Contact Dr. Jan Duffy. Schedule an appointment, get directions, or call (702) 500-1942. Las Vegas, Henderson, Summerlin real estate expert.",
   path: "/contact",
   keywords: [
     "contact real estate agent Las Vegas",
@@ -45,9 +45,9 @@ const contactSchema = {
 
 const contactPageSchema = combineSchemas(
   generateWebPageSchema({
-    name: "Contact Dr. Jan Duffy | Berkshire Hathaway HomeServices Las Vegas",
+    name: "Contact Dr. Jan Duffy | Dr. Jan Duffy, Las Vegas REALTOR®",
     description:
-      "Contact Dr. Jan Duffy at Berkshire Hathaway HomeServices Nevada Properties. Schedule an appointment, get directions, or call (702) 500-1942.",
+      "Contact Dr. Jan Duffy. Schedule an appointment, get directions, or call (702) 500-1942.",
     url: "/contact",
     dateModified: "2026-01",
   }),
@@ -64,13 +64,13 @@ export default function ContactPage() {
           {/* Hero */}
           <div className="text-center mb-12">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Dr. Jan Duffy, REALTOR® | In Real Estate Since 1983
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Contact Dr. Jan Duffy
             </h1>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Contact Dr. Jan Duffy at Berkshire Hathaway HomeServices Nevada Properties for Las Vegas, Henderson, and Summerlin real estate. Office: 10525 Siena Monte Avenue, Las Vegas, NV 89135. Call (702) 500-1942, email, or schedule an appointment for buying, selling, or a free home valuation.
+              Contact Dr. Jan Duffy for Las Vegas, Henderson, and Summerlin real estate. Office: 10525 Siena Monte Avenue, Las Vegas, NV 89135. Call (702) 500-1942, email, or schedule an appointment for buying, selling, or a free home valuation.
             </p>
           </div>
 
@@ -84,7 +84,7 @@ export default function ContactPage() {
               <p className="text-slate-700 mb-8">
                 Whether you're buying your first home, selling a luxury property, or exploring
                 investment opportunities, I'm here to provide expert guidance backed by the trusted{" "}
-                <strong>Berkshire Hathaway HomeServices</strong> brand. Serving Las Vegas since 2008 
+                <strong>Dr. Jan Duffy</strong>, in real estate since 1983 
                 with $127M+ in closed transactions.
               </p>
 
@@ -127,8 +127,6 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold text-slate-900 mb-1">Office Address</h3>
                     <address className="not-italic text-slate-700">
-                      Berkshire Hathaway HomeServices<br />
-                      Nevada Properties<br />
                       10525 Siena Monte Avenue<br />
                       Las Vegas, NV 89135
                     </address>
@@ -160,7 +158,7 @@ export default function ContactPage() {
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Berkshire Hathaway HomeServices Nevada Properties - Office Location"
+                  title="Dr. Jan Duffy - Office Location"
                   className="w-full"
                 />
               </div>
@@ -190,8 +188,8 @@ export default function ContactPage() {
               <div className="p-4 bg-blue-50 rounded-lg">
                 <p className="text-sm text-slate-700">
                   <strong>Dr. Jan Duffy, REALTOR®</strong><br />
-                  License S.0197614.LLC<br />
-                  Berkshire Hathaway HomeServices Nevada Properties
+                  In real estate since 1983<br />
+                  Dr. Jan Duffy, REALTOR® | In Real Estate Since 1983
                 </p>
               </div>
             </div>
@@ -212,18 +210,18 @@ export default function ContactPage() {
 
               {/* Why Contact BHHS */}
               <div className="mt-6 bg-slate-900 text-white rounded-xl p-6">
-                <h3 className="font-bold text-lg mb-4">Why Contact Berkshire Hathaway HomeServices?</h3>
+                <h3 className="font-bold text-lg mb-4">Why Contact Dr. Jan Duffy?</h3>
                 <div className="space-y-3">
                   <div className="flex items-start">
                     <Shield className="h-5 w-5 text-blue-400 mr-3 mt-0.5 flex-shrink-0" />
                     <p className="text-slate-300 text-sm">
-                      <strong className="text-white">Trusted Brand:</strong> The only real estate brand backed by Warren Buffett's Berkshire Hathaway Inc.
+                      <strong className="text-white">Trusted Brand:</strong> A REALTOR® in real estate since 1983.
                     </p>
                   </div>
                   <div className="flex items-start">
                     <Star className="h-5 w-5 text-blue-400 mr-3 mt-0.5 flex-shrink-0" />
                     <p className="text-slate-300 text-sm">
-                      <strong className="text-white">Proven Results:</strong> $127M+ in closed transactions serving Las Vegas since 2008.
+                      <strong className="text-white">Proven Results:</strong> $127M+ in closed transactions; in real estate since 1983.
                     </p>
                   </div>
                   <div className="flex items-start">
@@ -245,7 +243,7 @@ export default function ContactPage() {
             <p className="text-slate-600 text-center max-w-3xl mx-auto mb-8">
               Dr. Jan Duffy provides expert real estate services throughout the Las Vegas Valley. 
               Whether you're buying, selling, or investing in any of these communities, contact us 
-              for personalized guidance backed by Berkshire Hathaway HomeServices.
+              for expert guidance from Dr. Jan Duffy.
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {[

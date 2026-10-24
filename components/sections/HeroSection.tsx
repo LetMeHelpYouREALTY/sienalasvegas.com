@@ -12,15 +12,15 @@ export default function HeroSection() {
   const images = [
     {
       src: "/Image/summerlin-las-vegas-luxury-desert-home-sunset.jpg",
-      alt: "Luxury desert home for sale in Summerlin, Las Vegas NV with palm trees and mountain views at sunset — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties",
+      alt: "Luxury desert home for sale in Summerlin, Las Vegas NV with palm trees and mountain views at sunset — Dr. Jan Duffy, REALTOR®",
     },
     {
       src: "/Image/henderson-nevada-southwestern-family-home.jpg",
-      alt: "Southwestern-style family home for sale in Henderson, NV with desert landscaping under a clear blue sky — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties",
+      alt: "Southwestern-style family home for sale in Henderson, NV with desert landscaping under a clear blue sky — Dr. Jan Duffy, REALTOR®",
     },
     {
       src: "/Image/green-valley-henderson-luxury-estate-pool-twilight.jpg",
-      alt: "Luxury estate with swimming pool in Green Valley, Henderson NV at twilight — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties",
+      alt: "Luxury estate with swimming pool in Green Valley, Henderson NV at twilight — Dr. Jan Duffy, REALTOR®",
     },
   ];
 
@@ -73,7 +73,7 @@ export default function HeroSection() {
             <span className="text-blue-400">{siteConfig.name}</span>
           </h1>
           <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl">
-            Siena is Las Vegas's premier 55+ guard-gated community, featuring a Schmidt-Curley golf course, Community Center, and active lifestyle. Dr. Jan Duffy with Berkshire Hathaway HomeServices Nevada Properties has served Siena and the Las Vegas Valley since 2008—$127M+ in closed transactions. Whether you're buying or selling at Siena, Sun City Summerlin, Henderson, or anywhere in Southern Nevada, you get expert representation backed by the most trusted name in real estate. Call (702) 500-1942 for a free consultation or home valuation.
+            Siena is Las Vegas's premier 55+ guard-gated community, featuring a Schmidt-Curley golf course, Community Center, and active lifestyle. Dr. Jan Duffy has been in real estate since 1983—$127M+ in closed transactions. Whether you're buying or selling at Siena, Sun City Summerlin, Henderson, or anywhere in Southern Nevada, you get expert representation from a Top 1% Las Vegas REALTOR®. Call (702) 500-1942 for a free consultation or home valuation.
           </p>
         </div>
 
@@ -93,8 +93,8 @@ export default function HeroSection() {
             <span>Properties Sold</span>
           </div>
           <div className="flex items-center gap-2">
-            <span className="font-semibold">Since 2008</span>
-            <span>Serving Siena & Las Vegas</span>
+            <span className="font-semibold">Since 1983</span>
+            <span>In Real Estate</span>
           </div>
           <div className="flex items-center gap-2">
             <span className="font-semibold">4.9★</span>

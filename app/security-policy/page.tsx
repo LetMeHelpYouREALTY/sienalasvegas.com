@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Footer from '@/components/layouts/Footer'
 import { buildPageMetadata } from '@/lib/metadata'
 
 export const metadata: Metadata = {
@@ -267,16 +268,17 @@ export default function SecurityPolicyPage() {
           </section>
 
           {/* Last Updated */}
-          <footer className="border-t pt-6 mt-12">
+          <div className="border-t pt-6 mt-12">
             <p className="text-sm text-gray-500">
               Last updated: February 14, 2026
             </p>
             <p className="text-sm text-gray-500">
               This policy is reviewed and updated regularly.
             </p>
-          </footer>
+          </div>
         </div>
       </div>
+      <Footer />
     </div>
   )
 }

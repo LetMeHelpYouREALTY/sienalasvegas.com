@@ -10,7 +10,7 @@ export const DEFAULT_OG_IMAGE = {
   url: `${siteConfig.url}/Image/siena-las-vegas-55-plus-golf-community-social-share.jpg`,
   width: 1536,
   height: 1024,
-  alt: "Siena Las Vegas 55+ golf course community — luxury desert home at sunset with mountain views. Dr. Jan Duffy, REALTOR, Berkshire Hathaway HomeServices Nevada Properties. Call (702) 500-1942.",
+  alt: "Siena Las Vegas 55+ golf course community — luxury desert home at sunset with mountain views. Dr. Jan Duffy, REALTOR. Call (702) 500-1942.",
 };
 
 export interface PageMetadataInput {

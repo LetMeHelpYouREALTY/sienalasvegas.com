@@ -51,10 +51,10 @@ export default function Navbar() {
           {/* Brand Logo */}
           <Link href="/" className="flex flex-col">
             <span className="text-lg md:text-xl lg:text-2xl font-bold text-slate-900 hover:text-blue-600 transition-colors leading-tight">
-              Berkshire Hathaway
-              <span className="text-blue-600"> HomeServices</span>
+              Siena Las Vegas
+              <span className="text-blue-600"> Homes</span>
             </span>
-            <span className="text-xs text-slate-500 hidden sm:block">Nevada Properties</span>
+            <span className="text-xs text-slate-500 hidden sm:block">Dr. Jan Duffy, REALTOR®</span>
           </Link>
 
           {/* Desktop Navigation */}

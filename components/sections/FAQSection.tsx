@@ -28,7 +28,7 @@ export const defaultFaqs: FAQ[] = [
   {
     question: "What makes you different from other real estate agents?",
     answer:
-      "Serving Siena and Las Vegas since 2008 with 500+ successful transactions, we combine hyper-local Siena and 55+ community expertise with personalized service. As part of Berkshire Hathaway HomeServices, we have the resources to serve you better.",
+      "In real estate since 1983 with 500+ successful transactions, we combine hyper-local Siena and 55+ community expertise with personalized service. We have the resources to serve you better.",
   },
   {
     question: "Can you help with investment properties?",

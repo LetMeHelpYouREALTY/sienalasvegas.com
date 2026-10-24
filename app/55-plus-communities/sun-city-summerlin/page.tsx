@@ -18,9 +18,9 @@ import type { Metadata } from "next";
 import { buildPageMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Sun City Summerlin Homes for Sale | Berkshire Hathaway HomeServices",
+  title: "Sun City Summerlin Homes for Sale | Dr. Jan Duffy, REALTOR®",
   description:
-    "Nevada's largest 55+ community. Sun City Summerlin homes from $320K-$850K. 3 golf courses, 4 rec centers, 100+ clubs. Dr. Jan Duffy, BHHS specialist. Call (702) 500-1942.",
+    "Nevada's largest 55+ community. Sun City Summerlin homes from $320K-$850K. 3 golf courses, 4 rec centers, 100+ clubs. Dr. Jan Duffy, REALTOR®. Call (702) 500-1942.",
   path: "/55-plus-communities/sun-city-summerlin",
   keywords: [
     "Sun City Summerlin homes for sale",
@@ -80,7 +80,7 @@ export default function SunCitySummerlinPage() {
               Sun City Summerlin
             </h1>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Sun City Summerlin is Las Vegas's largest 55+ community with 7,700+ homes, three golf courses, and four recreation centers. Dr. Jan Duffy at Berkshire Hathaway HomeServices helps buyers and sellers with Sun City Summerlin resales and new construction. Free home search and valuation. Call (702) 500-1942.
+              Sun City Summerlin is Las Vegas's largest 55+ community with 7,700+ homes, three golf courses, and four recreation centers. Dr. Jan Duffy helps buyers and sellers with Sun City Summerlin resales and new construction. Free home search and valuation. Call (702) 500-1942.
             </p>
           </div>
 
@@ -132,7 +132,7 @@ export default function SunCitySummerlinPage() {
                 woodworking, and ballroom dancing.
               </p>
               <p>
-                <strong>Berkshire Hathaway HomeServices Nevada Properties</strong> has helped
+                <strong>Dr. Jan Duffy</strong> has helped
                 hundreds of buyers find their Sun City Summerlin home. Dr. Jan Duffy understands
                 the community's various neighborhoods, floor plans, and which areas offer the best
                 value or views.
@@ -277,12 +277,12 @@ export default function SunCitySummerlinPage() {
               <blockquote className="text-lg text-slate-700 italic mb-4">
                 "Sun City Summerlin offers the best value in Las Vegas 55+ living. Where else can
                 you get three golf courses, four rec centers, and 100+ clubs for under $200/month?
-                As a <strong>Berkshire Hathaway HomeServices</strong> agent, I help buyers navigate
+                As a REALTOR® in real estate since 1983, I help buyers navigate
                 the community's various neighborhoods to find the perfect fit—whether they want
                 golf course views, mountain views, or proximity to their favorite rec center."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
+                — Dr. Jan Duffy, REALTOR®
               </cite>
             </div>
           </section>

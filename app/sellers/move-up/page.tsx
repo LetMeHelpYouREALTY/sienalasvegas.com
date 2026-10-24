@@ -22,7 +22,7 @@ import {
 } from "@/lib/schema";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Move-Up Sellers Las Vegas | Berkshire Hathaway HomeServices",
+  title: "Move-Up Sellers Las Vegas | Dr. Jan Duffy, REALTOR®",
   description:
     "Ready for your next chapter? Dr. Jan Duffy helps Las Vegas homeowners leverage equity into their dream home. Sell and buy seamlessly. Call (702) 500-1942.",
   path: "/sellers/move-up",
@@ -60,7 +60,7 @@ const faqs = [
 
 const pageSchemas = combineSchemas(
   generateWebPageSchema({
-    name: "Move-Up Sellers Las Vegas | Berkshire Hathaway HomeServices",
+    name: "Move-Up Sellers Las Vegas | Dr. Jan Duffy, REALTOR®",
     description:
       "Ready for your next chapter? Dr. Jan Duffy helps Las Vegas homeowners leverage equity into their dream home. Sell and buy seamlessly.",
     url: "/sellers/move-up",
@@ -97,7 +97,7 @@ export default function MoveUpSellerPage() {
               Ready for Your Next Chapter?
             </h1>
             <p className="text-xl text-slate-600 mb-8 max-w-3xl mx-auto">
-              Move-up buyers in Las Vegas use their current home's equity to purchase a larger or upgraded property. Dr. Jan Duffy at Berkshire Hathaway HomeServices coordinates selling and buying—pricing, timing, and contingency strategies—so your upgrade is seamless. Free equity analysis and buyer representation. Call (702) 500-1942.
+              Move-up buyers in Las Vegas use their current home's equity to purchase a larger or upgraded property. Dr. Jan Duffy coordinates selling and buying—pricing, timing, and contingency strategies—so your upgrade is seamless. Free equity analysis and buyer representation. Call (702) 500-1942.
             </p>
             <a
               href="tel:+17025001942"
@@ -261,7 +261,7 @@ export default function MoveUpSellerPage() {
               <p>
                 The biggest concern move-up buyers have is timing. What happens if you sell before
                 finding your next home? What if you find your dream home but can't sell in time?
-                <strong> Berkshire Hathaway HomeServices</strong> agents like Dr. Jan Duffy have
+                <strong>Experienced REALTORS®</strong> like Dr. Jan Duffy have
                 strategies for every scenario, ensuring you never end up homeless or paying two
                 mortgages unnecessarily.
               </p>
@@ -374,12 +374,12 @@ export default function MoveUpSellerPage() {
               <blockquote className="text-lg text-slate-700 italic mb-4">
                 "Move-up transactions are like a chess game—every move matters. I coordinate both
                 sides so you don't end up homeless or paying two mortgages. With{" "}
-                <strong>Berkshire Hathaway HomeServices</strong>, I have the resources to make
+                REALTOR® in real estate since 1983, I have the resources to make
                 complex transactions smooth. That's why clients trust me with their biggest
                 financial moves."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
+                — Dr. Jan Duffy, REALTOR®
               </cite>
             </div>
           </section>

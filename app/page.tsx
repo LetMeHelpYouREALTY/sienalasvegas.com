@@ -71,7 +71,7 @@ const heroImageGallerySchema = generateImageGallerySchema({
   images: [
     {
       url: "/Image/siena-las-vegas-55-plus-golf-community-social-share.jpg",
-      caption: "Siena Las Vegas 55+ golf course community — Dr. Jan Duffy, REALTOR®, Berkshire Hathaway HomeServices",
+      caption: "Siena Las Vegas 55+ golf course community — Dr. Jan Duffy, REALTOR®",
       description:
         "Branded social-share card for Siena Las Vegas, a guard-gated 55+ golf course community, featuring a luxury desert home at sunset with mountain views, Dr. Jan Duffy's name, and (702) 500-1942 contact information.",
       width: 1536,
@@ -112,10 +112,10 @@ const faqSchema = {
   mainEntity: [
     {
       "@type": "Question",
-      name: "Why choose a Berkshire Hathaway HomeServices agent for Siena real estate?",
+      name: "Why choose an experienced REALTOR® for Siena real estate?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Berkshire Hathaway HomeServices is the only real estate brand backed by Warren Buffett's Berkshire Hathaway Inc.—unmatched financial stability, ethical standards, and a global referral network. When you're buying or selling at Siena, that trust matters.",
+        text: "Dr. Jan Duffy has been in real estate since 1983 and brings ethical standards and a global referral network. When you're buying or selling at Siena, that trust matters.",
       },
     },
     {
@@ -139,7 +139,7 @@ const faqSchema = {
       name: "Does Berkshire Hathaway HomeServices help with new construction homes?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes! BHHS agents provide free buyer representation for new construction purchases from builders like Toll Brothers, Lennar, and Century Communities—the builder pays the commission, not you.",
+        text: "Yes! REALTORS® provide free buyer representation for new construction purchases from builders like Toll Brothers, Lennar, and Century Communities—the builder pays the commission, not you.",
       },
     },
     {
@@ -187,12 +187,11 @@ export default function Home() {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center mb-12">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
-                Why Choose Berkshire Hathaway HomeServices?
+                Why Choose Dr. Jan Duffy?
               </h2>
               <p className="text-lg text-slate-700 leading-relaxed">
-                When you work with a <strong>Berkshire Hathaway HomeServices</strong> agent, you're
-                backed by a name synonymous with trust, ethical standards, and financial
-                strength—the same principles that built Warren Buffett's empire.
+                When you work with Dr. Jan Duffy, a REALTOR® in real estate
+                since 1983, you get a name synonymous with trust and ethical standards.
               </p>
             </div>
 
@@ -201,9 +200,9 @@ export default function Home() {
                 <div className="bg-blue-100 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                   <Shield className="h-8 w-8 text-blue-600" />
                 </div>
-                <h3 className="font-bold text-lg mb-2">Trusted Brand</h3>
+                <h3 className="font-bold text-lg mb-2">Trusted Experience</h3>
                 <p className="text-slate-600 text-sm">
-                  Backed by Warren Buffett's Berkshire Hathaway Inc.—unmatched financial stability
+                  In real estate since 1983—trusted, ethical guidance
                 </p>
               </div>
               <div className="text-center p-6">
@@ -221,7 +220,7 @@ export default function Home() {
                 </div>
                 <h3 className="font-bold text-lg mb-2">Market Expertise</h3>
                 <p className="text-slate-600 text-sm">
-                  Serving Las Vegas since 2008, $127M+ in closed transactions
+                  In real estate since 1983, $127M+ in closed transactions
                 </p>
               </div>
               <div className="text-center p-6">
@@ -238,12 +237,12 @@ export default function Home() {
             {/* Expert Quote */}
             <div className="max-w-3xl mx-auto mt-12 bg-slate-50 rounded-lg p-8">
               <blockquote className="text-lg text-slate-700 italic mb-4">
-                "When clients ask why they should choose a Berkshire Hathaway HomeServices agent, I
+                "When clients ask why they should choose an experienced REALTOR®, I
                 tell them: you're not just getting me—you're getting a global network of 50,000
-                agents, world-class marketing, and a brand that's synonymous with trust."
+                agents, world-class marketing, and a name that's synonymous with trust."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, BHHS Nevada Properties
+                — Dr. Jan Duffy, REALTOR®
               </cite>
             </div>
           </div>
@@ -257,7 +256,7 @@ export default function Home() {
                 Las Vegas Real Estate Market | January 2026
               </h2>
               <p className="text-slate-300">
-                Current market data from Berkshire Hathaway HomeServices Nevada Properties
+                Current market data from Dr. Jan Duffy
               </p>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto">
@@ -298,7 +297,7 @@ export default function Home() {
                 Las Vegas Neighborhoods We Serve
               </h2>
               <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-                Berkshire Hathaway HomeServices Nevada Properties covers all of Southern Nevada
+                Dr. Jan Duffy covers all of Southern Nevada
               </p>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 max-w-6xl mx-auto">
@@ -345,7 +344,7 @@ export default function Home() {
         <section className="py-16 md:py-20 bg-blue-600 text-white">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Ready to Work with Berkshire Hathaway HomeServices?
+              Ready to Work with Dr. Jan Duffy?
             </h2>
             <p className="text-xl text-white/95 mb-8 max-w-2xl mx-auto">
               Whether you're buying, selling, or investing in Las Vegas real estate, Dr. Jan Duffy
@@ -367,16 +366,14 @@ export default function Home() {
               </Link>
             </div>
             <p className="mt-6 text-white/90 text-sm">
-              Dr. Jan Duffy | License S.0197614.LLC | Berkshire Hathaway HomeServices Nevada
-              Properties
+              Dr. Jan Duffy | REALTOR® | In real estate since 1983
             </p>
           </div>
         </section>
 
         {/* Last Updated */}
         <div className="bg-slate-100 py-4 text-center text-sm text-slate-700">
-          Last Updated: January 2026 | HeyBerkshire.com - Berkshire Hathaway HomeServices Nevada
-          Properties
+          Last Updated: January 2026 | Siena Las Vegas Real Estate
         </div>
       </main>
       <Footer />

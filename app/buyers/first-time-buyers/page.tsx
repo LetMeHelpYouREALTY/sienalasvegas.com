@@ -20,9 +20,9 @@ import type { Metadata } from "next";
 import { buildPageMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "First-Time Home Buyers Las Vegas | Berkshire Hathaway HomeServices",
+  title: "First-Time Home Buyers Las Vegas | Dr. Jan Duffy, REALTOR®",
   description:
-    "First-time buyer in Las Vegas? Down payment assistance, builder incentives, and expert guidance from Dr. Jan Duffy at Berkshire Hathaway HomeServices. Call (702) 500-1942.",
+    "First-time buyer in Las Vegas? Down payment assistance, builder incentives, and expert guidance from Dr. Jan Duffy. Call (702) 500-1942.",
   path: "/buyers/first-time-buyers",
   keywords: [
     "first time home buyer Las Vegas",
@@ -105,7 +105,7 @@ export default function FirstTimeBuyersPage() {
               <span className="text-blue-600">Starts Here</span>
             </h1>
             <p className="text-xl text-slate-600 mb-8 max-w-3xl mx-auto">
-              First-time home buyers in Las Vegas can access down payment assistance, FHA and conventional loans, and builder incentives. Dr. Jan Duffy at Berkshire Hathaway HomeServices provides free buyer representation, pre-approval guidance, and step-by-step help from search to closing. Serving Las Vegas since 2008. Call (702) 500-1942.
+              First-time home buyers in Las Vegas can access down payment assistance, FHA and conventional loans, and builder incentives. Dr. Jan Duffy provides free buyer representation, pre-approval guidance, and step-by-step help from search to closing. In real estate since 1983. Call (702) 500-1942.
             </p>
             <a
               href="tel:+17025001942"
@@ -464,7 +464,7 @@ export default function FirstTimeBuyersPage() {
                 </h3>
                 <p className="text-slate-600">
                   No! Buyer's agent services are typically free to buyers—the seller pays the commission.
-                  You get full professional representation from Berkshire Hathaway HomeServices at no
+                  You get full professional representation from Dr. Jan Duffy at no
                   cost to you.
                 </p>
               </div>
@@ -489,11 +489,11 @@ export default function FirstTimeBuyersPage() {
                 "Buying your first home is exciting AND overwhelming. My job is to make it less
                 overwhelming. I walk first-time buyers through every step, explain everything in
                 plain English, and make sure you're confident in your decision. As a{" "}
-                <strong>Berkshire Hathaway HomeServices</strong> agent, I have resources and
+                REALTOR® in real estate since 1983, I have resources and
                 connections that independent agents simply don't have."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
+                — Dr. Jan Duffy, REALTOR®
               </cite>
             </div>
           </section>
@@ -523,7 +523,7 @@ export default function FirstTimeBuyersPage() {
               </Link>
             </div>
             <p className="mt-6 text-blue-200 text-sm">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Dr. Jan Duffy, REALTOR® | In Real Estate Since 1983
             </p>
           </section>
         </div>

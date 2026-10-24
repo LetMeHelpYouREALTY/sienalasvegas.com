@@ -64,7 +64,7 @@ const faqSchema = {
       name: "Can I buy in a 55+ community if I'm under 55?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Generally no, but there are exceptions. You may purchase if you'll be 55 by close of escrow, or as an investor who will rent to 55+ tenants. Some communities allow residents 45-54 in limited circumstances. A BHHS agent can explain each community's specific rules.",
+        text: "Generally no, but there are exceptions. You may purchase if you'll be 55 by close of escrow, or as an investor who will rent to 55+ tenants. Some communities allow residents 45-54 in limited circumstances. A REALTORS® can explain each community's specific rules.",
       },
     },
     {
@@ -360,7 +360,7 @@ export default function FiftyFiveCommunitiesPage() {
               Find Your Perfect 55+ Community in Las Vegas
             </h1>
             <p className="text-xl md:text-2xl text-slate-600 mb-8 max-w-3xl mx-auto">
-              55+ communities in Las Vegas include Siena, Sun City Summerlin, Sun City Anthem, Del Webb Lake Las Vegas, Heritage at Stonebridge, and Trilogy. Dr. Jan Duffy at Berkshire Hathaway HomeServices specializes in active adult living and helps you compare amenities, prices, and locations. Call (702) 500-1942.
+              55+ communities in Las Vegas include Siena, Sun City Summerlin, Sun City Anthem, Del Webb Lake Las Vegas, Heritage at Stonebridge, and Trilogy. Dr. Jan Duffy specializes in active adult living and helps you compare amenities, prices, and locations. Call (702) 500-1942.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
@@ -695,14 +695,14 @@ export default function FiftyFiveCommunitiesPage() {
                 typical purchase. You need to understand HOA rules, age
                 verification processes, and how the community fits your
                 lifestyle. As a{" "}
-                <strong>Berkshire Hathaway HomeServices</strong> agent
+                <strong>Dr. Jan Duffy</strong> agent
                 specializing in active adult communities, I guide clients through
                 every step—from touring amenities to reviewing HOA documents. Many
                 clients are relocating from California, and they rely on my local
                 knowledge to make confident decisions."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
+                — Dr. Jan Duffy, REALTOR®
               </cite>
             </div>
           </section>
@@ -808,7 +808,7 @@ export default function FiftyFiveCommunitiesPage() {
                     Relocation Support
                   </h3>
                   <p className="text-slate-600 text-sm">
-                    Many 55+ buyers relocate from out of state. Our national BHHS
+                    Many 55+ buyers relocate from out of state. Our national
                     network provides referrals, and Dr. Jan offers virtual tours
                     and detailed community information.
                   </p>
@@ -821,7 +821,7 @@ export default function FiftyFiveCommunitiesPage() {
                 <div>
                   <h3 className="font-bold text-slate-900 mb-1">Trusted Brand</h3>
                   <p className="text-slate-600 text-sm">
-                    The Berkshire Hathaway name represents trust and
+                    Dr. Jan Duffy's name represents trust and
                     integrity—values that matter when making one of life's biggest
                     decisions.
                   </p>
@@ -877,7 +877,7 @@ export default function FiftyFiveCommunitiesPage() {
               </span>
             </p>
             <p className="mt-4 text-blue-300 text-sm">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Dr. Jan Duffy, REALTOR® | In Real Estate Since 1983
             </p>
           </section>
         </div>

@@ -7,12 +7,12 @@ import type { Metadata } from "next";
 import { buildPageMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Berkshire Hathaway HomeServices Skye Canyon | Northwest Las Vegas",
+  title: "Skye Canyon Real Estate | Northwest Las Vegas",
   description:
-    "Find Skye Canyon homes with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy specializes in this premier northwest community. Median price $550K. Call (702) 500-1942.",
+    "Find Skye Canyon homes with Dr. Jan Duffy, REALTOR®. She specializes in this premier northwest community. Median price $550K. Call (702) 500-1942.",
   path: "/neighborhoods/skye-canyon",
   keywords: [
-    "Berkshire Hathaway HomeServices Skye Canyon",
+    "Skye Canyon real estate",
     "Skye Canyon homes for sale",
     "Skye Canyon Las Vegas",
     "northwest Las Vegas homes",
@@ -50,10 +50,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "Why use Berkshire Hathaway HomeServices for Skye Canyon new construction?",
+      name: "Why use Dr. Jan Duffy for Skye Canyon new construction?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "BHHS provides free buyer representation on new construction purchases—the builder pays our commission. Dr. Jan Duffy can negotiate upgrades, review contracts, and ensure your interests are protected when builder sales agents work for the builder.",
+        text: "Dr. Jan Duffy provides free buyer representation on new construction purchases—the builder pays our commission. Dr. Jan Duffy can negotiate upgrades, review contracts, and ensure your interests are protected when builder sales agents work for the builder.",
       },
     },
   ],
@@ -83,13 +83,13 @@ export default function SkyeCanyonPage() {
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Dr. Jan Duffy, REALTOR® | In Real Estate Since 1983
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Berkshire Hathaway HomeServices Skye Canyon
+              Skye Canyon Real Estate
             </h1>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Skye Canyon is northwest Las Vegas's fast-growing community with trails, parks, and new construction. Dr. Jan Duffy at Berkshire Hathaway HomeServices helps buyers and sellers in Skye Canyon; median price ~$550K. Free buyer representation and home valuation. Call (702) 500-1942.
+              Skye Canyon is northwest Las Vegas's fast-growing community with trails, parks, and new construction. Dr. Jan Duffy helps buyers and sellers in Skye Canyon; median price ~$550K. Free buyer representation and home valuation. Call (702) 500-1942.
             </p>
           </div>
 
@@ -131,7 +131,7 @@ export default function SkyeCanyonPage() {
                 <strong>Skye Canyon</strong> represents the future of Las Vegas master-planned living.
                 This 1,700-acre community in northwest Las Vegas has quickly become one of the valley's
                 most sought-after addresses, consistently ranking among the nation's top-selling
-                master-planned communities. <strong>Berkshire Hathaway HomeServices</strong> is proud
+                master-planned communities. <strong>Dr. Jan Duffy</strong> is proud
                 to help buyers discover what makes Skye Canyon special.
               </p>
               <p>
@@ -143,7 +143,7 @@ export default function SkyeCanyonPage() {
                 community connections that transform neighborhoods into true communities.
               </p>
               <p>
-                <strong>Berkshire Hathaway HomeServices Nevada Properties</strong> offers free buyer
+                <strong>Dr. Jan Duffy</strong> offers free buyer
                 representation on all Skye Canyon new construction purchases. This is crucial because
                 when you walk into a builder's sales center, those agents work for the builder—not you.
                 Dr. Jan Duffy represents your interests, negotiates upgrades, reviews contracts for
@@ -297,7 +297,7 @@ export default function SkyeCanyonPage() {
                 from $450,000 to $800,000.
               </p>
               <p>
-                Choosing <strong>Berkshire Hathaway HomeServices</strong> for your Skye Canyon purchase
+                Choosing Dr. Jan Duffy for your Skye Canyon purchase
                 means working with agents who know which builders offer the best quality, which lots
                 have the best views, and which upgrades deliver the best value. Dr. Jan Duffy has
                 helped dozens of families find their Skye Canyon homes, and that experience translates
@@ -312,12 +312,12 @@ export default function SkyeCanyonPage() {
               <blockquote className="text-lg text-slate-700 italic mb-4">
                 "Skye Canyon is where young families want to be right now. The amenities are incredible,
                 the homes are modern and energy-efficient, and the community vibe is exactly what people
-                are looking for. As a Berkshire Hathaway HomeServices agent, I make sure my clients get
+                are looking for. As a REALTOR® in real estate since 1983, I make sure my clients get
                 the best value—whether that's negotiating builder upgrades or finding a resale with
                 features already included."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
+                — Dr. Jan Duffy, REALTOR®
               </cite>
             </div>
           </section>
@@ -360,10 +360,10 @@ export default function SkyeCanyonPage() {
               </div>
               <div className="bg-white border border-slate-200 rounded-lg p-6">
                 <h3 className="font-bold text-slate-900 mb-2">
-                  Why use Berkshire Hathaway HomeServices for Skye Canyon new construction?
+                  Why use Dr. Jan Duffy for Skye Canyon new construction?
                 </h3>
                 <p className="text-slate-600">
-                  BHHS provides free buyer representation on new construction purchases—the builder pays
+                  Dr. Jan Duffy provides free buyer representation on new construction purchases—the builder pays
                   our commission. Dr. Jan Duffy can negotiate upgrades, review contracts, and ensure
                   your interests are protected when builder sales agents work for the builder.
                 </p>
@@ -377,7 +377,7 @@ export default function SkyeCanyonPage() {
               Discover Skye Canyon Living
             </h2>
             <p className="text-xl text-blue-100 mb-8">
-              Contact Dr. Jan Duffy, your Berkshire Hathaway HomeServices Skye Canyon specialist,
+              Contact Dr. Jan Duffy, your Skye Canyon specialist,
               for expert guidance on new construction and resale homes.
             </p>
             <a
@@ -388,7 +388,7 @@ export default function SkyeCanyonPage() {
               Call (702) 500-1942
             </a>
             <p className="mt-4 text-blue-200 text-sm">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Dr. Jan Duffy, REALTOR® | In Real Estate Since 1983
             </p>
           </section>
         </div>

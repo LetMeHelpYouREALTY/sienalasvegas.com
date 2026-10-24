@@ -19,7 +19,7 @@ import { buildPageMetadata } from "@/lib/metadata";
 export const metadata: Metadata = buildPageMetadata({
   title: "Sun City Aliante Homes for Sale | Most Affordable Sun City | Dr. Jan Duffy",
   description:
-    "Sun City Aliante - the most affordable Sun City in Las Vegas. Homes from $280K-$550K with full amenities. 18-hole golf course, pools, fitness center. Dr. Jan Duffy, BHHS. Call (702) 500-1942.",
+    "Sun City Aliante - the most affordable Sun City in Las Vegas. Homes from $280K-$550K with full amenities. 18-hole golf course, pools, fitness center. Dr. Jan Duffy, REALTOR®. Call (702) 500-1942.",
   path: "/55-plus-communities/sun-city-aliante",
   keywords: [
     "Sun City Aliante homes for sale",
@@ -85,7 +85,7 @@ export default function SunCityAliantePage() {
               Sun City Aliante
             </h1>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Sun City Aliante offers full Sun City amenities in North Las Vegas at the best value—golf, pools, fitness, and 100+ clubs with homes from the $280s. Dr. Jan Duffy at Berkshire Hathaway HomeServices lists and sells Sun City Aliante homes. Free buyer representation. Call (702) 500-1942.
+              Sun City Aliante offers full Sun City amenities in North Las Vegas at the best value—golf, pools, fitness, and 100+ clubs with homes from the $280s. Dr. Jan Duffy lists and sells Sun City Aliante homes. Free buyer representation. Call (702) 500-1942.
             </p>
           </div>
 
@@ -144,7 +144,7 @@ export default function SunCityAliantePage() {
                 community's many clubs and activities.
               </p>
               <p>
-                <strong>Berkshire Hathaway HomeServices Nevada Properties</strong>{" "}
+                Dr. Jan Duffy{" "}
                 helps buyers understand why Sun City Aliante represents
                 exceptional value. Dr. Jan Duffy guides clients through the
                 community's various floor plans and helps identify homes that
@@ -387,12 +387,12 @@ export default function SunCityAliantePage() {
                 full Sun City lifestyle at the best possible price. The amenities
                 are excellent, the community is active and welcoming, and you
                 simply can't beat the value. As a{" "}
-                <strong>Berkshire Hathaway HomeServices</strong> agent, I help
+                REALTOR® in real estate since 1983, I help
                 buyers compare all the Sun City options and understand why Aliante
                 often makes the most financial sense."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
+                — Dr. Jan Duffy, REALTOR®
               </cite>
             </div>
           </section>

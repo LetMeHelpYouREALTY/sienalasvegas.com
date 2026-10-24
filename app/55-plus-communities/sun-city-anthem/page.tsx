@@ -22,7 +22,7 @@ import {
 } from "@/lib/schema";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Sun City Anthem Homes for Sale | Berkshire Hathaway HomeServices",
+  title: "Sun City Anthem Homes for Sale | Dr. Jan Duffy, REALTOR®",
   description:
     "Henderson's premier 55+ community. Sun City Anthem homes from $350K-$1.2M. 2 championship golf courses, stunning mountain views. Dr. Jan Duffy. Call (702) 500-1942.",
   path: "/55-plus-communities/sun-city-anthem",
@@ -120,7 +120,7 @@ export default function SunCityAnthemPage() {
               Sun City Anthem
             </h1>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Sun City Anthem is a 55+ community in Henderson with 7,100+ homes, mountain views, and championship golf. Dr. Jan Duffy at Berkshire Hathaway HomeServices specializes in Sun City Anthem resales and helps buyers compare floor plans and HOA amenities. Call (702) 500-1942.
+              Sun City Anthem is a 55+ community in Henderson with 7,100+ homes, mountain views, and championship golf. Dr. Jan Duffy specializes in Sun City Anthem resales and helps buyers compare floor plans and HOA amenities. Call (702) 500-1942.
             </p>
           </div>
 
@@ -171,7 +171,7 @@ export default function SunCityAnthemPage() {
                 the adjacent Revere Golf Club—provide world-class golf experiences.
               </p>
               <p>
-                <strong>Berkshire Hathaway HomeServices</strong> agents know Sun City Anthem intimately.
+                Experienced local agents know Sun City Anthem intimately.
                 Dr. Jan Duffy helps buyers understand the community's various phases, elevation differences,
                 and which neighborhoods offer the best mountain or Strip views.
               </p>
@@ -299,11 +299,11 @@ export default function SunCityAnthemPage() {
                 "Sun City Anthem combines everything Henderson is known for—safety, quality, and
                 stunning scenery—with the Del Webb lifestyle. The views from the upper sections
                 are spectacular, and the Anthem Center rivals any resort clubhouse I've seen.
-                As a <strong>Berkshire Hathaway HomeServices</strong> agent, I help buyers find
+                As a REALTOR® in real estate since 1983, I help buyers find
                 the right balance of views, price, and proximity to amenities."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
+                — Dr. Jan Duffy, REALTOR®
               </cite>
             </div>
           </section>

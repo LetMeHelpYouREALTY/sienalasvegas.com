@@ -18,7 +18,7 @@ import type { Metadata } from "next";
 import { buildPageMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Las Vegas Real Estate Market Insights 2026 | Berkshire Hathaway HomeServices",
+  title: "Las Vegas Real Estate Market Insights 2026 | Dr. Jan Duffy, REALTOR®",
   description:
     "Technology trends, economic forecasts, and market analysis shaping Las Vegas real estate in 2026. AI, data centers, California migration, and what it means for buyers and sellers. Call (702) 500-1942.",
   path: "/market-insights",
@@ -77,7 +77,7 @@ export default function MarketInsightsPage() {
               Las Vegas Market Insights
             </h1>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Las Vegas market insights cover technology, economics, and demographics shaping local real estate. Dr. Jan Duffy at Berkshire Hathaway HomeServices Nevada Properties shares analysis for buyers and sellers. Stay informed on 2026 trends and opportunities. Call (702) 500-1942.
+              Las Vegas market insights cover technology, economics, and demographics shaping local real estate. Dr. Jan Duffy shares analysis for buyers and sellers. Stay informed on 2026 trends and opportunities. Call (702) 500-1942.
             </p>
           </div>
 
@@ -416,11 +416,11 @@ export default function MarketInsightsPage() {
                 from reactive ones. Las Vegas is no longer just a gaming and tourism economy.
                 Tech investment, California migration, and economic diversification are reshaping
                 which neighborhoods will outperform. As a{" "}
-                <strong>Berkshire Hathaway HomeServices</strong> agent, I help clients position
+                REALTOR® in real estate since 1983, I help clients position
                 themselves for where the market is going, not just where it's been."
               </blockquote>
               <cite className="text-slate-300 font-semibold">
-                — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
+                — Dr. Jan Duffy, REALTOR®
               </cite>
             </div>
           </section>

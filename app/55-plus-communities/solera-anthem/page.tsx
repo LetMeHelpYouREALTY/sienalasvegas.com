@@ -20,7 +20,7 @@ import { buildPageMetadata } from "@/lib/metadata";
 export const metadata: Metadata = buildPageMetadata({
   title: "Solera at Anthem Homes for Sale | Intimate Guard-Gated 55+ Henderson | Dr. Jan Duffy",
   description:
-    "Solera at Anthem - intimate guard-gated 55+ community in Henderson. Homes from $380K-$650K. Lower HOA fees, close-knit atmosphere. Dr. Jan Duffy, BHHS. Call (702) 500-1942.",
+    "Solera at Anthem - intimate guard-gated 55+ community in Henderson. Homes from $380K-$650K. Lower HOA fees, close-knit atmosphere. Dr. Jan Duffy, REALTOR®. Call (702) 500-1942.",
   path: "/55-plus-communities/solera-anthem",
   keywords: [
     "Solera at Anthem homes for sale",
@@ -86,7 +86,7 @@ export default function SoleraAnthemPage() {
               Solera at Anthem
             </h1>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Solera at Anthem is a guard-gated 55+ community in Henderson with a close-knit feel and 100% age-qualified residents. Dr. Jan Duffy at Berkshire Hathaway HomeServices helps buyers and sellers with Solera Anthem homes. Free home search and valuation. Call (702) 500-1942.
+              Solera at Anthem is a guard-gated 55+ community in Henderson with a close-knit feel and 100% age-qualified residents. Dr. Jan Duffy helps buyers and sellers with Solera Anthem homes. Free home search and valuation. Call (702) 500-1942.
             </p>
           </div>
 
@@ -147,7 +147,7 @@ export default function SoleraAnthemPage() {
                 community demographic.
               </p>
               <p>
-                <strong>Berkshire Hathaway HomeServices Nevada Properties</strong>{" "}
+                Dr. Jan Duffy{" "}
                 helps buyers who value community over amenity overload. Dr. Jan
                 Duffy understands why some buyers prefer Solera's intimate scale
                 and all-55+ requirement to larger developments.
@@ -374,12 +374,12 @@ export default function SoleraAnthemPage() {
                 overwhelming. It's intimate, genuinely guard-gated, and everyone
                 is actually 55+. The community feels like a neighborhood, not a
                 small city. As a{" "}
-                <strong>Berkshire Hathaway HomeServices</strong> agent, I often
+                REALTOR® in real estate since 1983, I often
                 recommend Solera to buyers who prioritize community connection
                 over endless amenities."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
+                — Dr. Jan Duffy, REALTOR®
               </cite>
             </div>
           </section>

@@ -42,7 +42,7 @@ export default function SienaAmenitiesPage() {
               {sienaAmenitiesPage.title}
             </h1>
             <p className="text-xl text-slate-600 max-w-3xl mb-8">
-              Siena amenities include a community center, pools, fitness, tennis, and over 50 clubs and groups. Dr. Jan Duffy at Berkshire Hathaway HomeServices is your Siena real estate expert for buying or selling in this Summerlin 55+ community. Call (702) 500-1942.
+              Siena amenities include a community center, pools, fitness, tennis, and over 50 clubs and groups. Dr. Jan Duffy is your Siena real estate expert for buying or selling in this Summerlin 55+ community. Call (702) 500-1942.
             </p>
 
             {/* Community Center */}

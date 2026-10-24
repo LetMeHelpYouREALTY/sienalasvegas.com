@@ -28,9 +28,9 @@ import {
 } from "@/lib/gbp-schema";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Dr. Jan Duffy, REALTOR® Las Vegas | Berkshire Hathaway HomeServices",
+  title: "Dr. Jan Duffy, REALTOR® Las Vegas | Dr. Jan Duffy, REALTOR®",
   description:
-    "Dr. Jan Duffy is a trusted Las Vegas REALTOR® with Berkshire Hathaway HomeServices Nevada Properties. Specializing in Summerlin, Henderson, 55+ communities, California relocation, and luxury homes. Call (702) 500-1942.",
+    "Dr. Jan Duffy is a trusted Las Vegas REALTOR®, in real estate since 1983. Specializing in Summerlin, Henderson, 55+ communities, California relocation, and luxury homes. Call (702) 500-1942.",
   path: "/google-business",
   keywords: [
     "Dr. Jan Duffy realtor",
@@ -67,13 +67,12 @@ export default function GoogleBusinessPage() {
                 <div>
                   <div className="flex items-center gap-2 mb-4">
                     <Award className="h-6 w-6 text-yellow-400" />
-                    <span className="text-yellow-400 font-semibold">Berkshire Hathaway HomeServices</span>
+                    <span className="text-yellow-400 font-semibold">In Real Estate Since 1983</span>
                   </div>
                   <h1 className="text-4xl md:text-5xl font-bold mb-4">
                     Dr. Jan Duffy
                   </h1>
-                  <p className="text-xl text-blue-200 mb-2">REALTOR® | License {businessInfo.license}</p>
-                  <p className="text-slate-300 mb-6">Nevada Properties</p>
+                  <p className="text-xl text-blue-200 mb-2">REALTOR® | In real estate since 1983</p>
                   
                   {/* NAP - Exact match to GBP */}
                   <div className="space-y-3">
@@ -98,7 +97,7 @@ export default function GoogleBusinessPage() {
                     </div>
                   </div>
                   <p className="text-slate-300 mt-6 max-w-xl text-lg">
-                    Dr. Jan Duffy is your Las Vegas and Henderson real estate expert at Berkshire Hathaway HomeServices Nevada Properties—buying, selling, 55+ communities, and free home valuations. Office at Siena Monte; call for a free consultation.
+                    Dr. Jan Duffy is your Las Vegas and Henderson real estate expert—buying, selling, 55+ communities, and free home valuations. Office at Siena Monte; call for a free consultation.
                   </p>
                 </div>
                 

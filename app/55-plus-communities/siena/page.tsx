@@ -23,7 +23,7 @@ import { generateWebPageSchema, combineSchemas } from "@/lib/schema";
 export const metadata: Metadata = buildPageMetadata({
   title: "Siena 55+ Community Las Vegas | Golf, Guard-Gated | Dr. Jan Duffy",
   description:
-    "Siena — premier 55+ community in Las Vegas. Schmidt-Curley golf course, Community Center, guard-gated security, clubs & events. 10525 Siena Monte Avenue. Dr. Jan Duffy, BHHS. Call (702) 500-1942.",
+    "Siena — premier 55+ community in Las Vegas. Schmidt-Curley golf course, Community Center, guard-gated security, clubs & events. 10525 Siena Monte Avenue. Dr. Jan Duffy, REALTOR®. Call (702) 500-1942.",
   path: "/55-plus-communities/siena",
   keywords: [
     "Siena Las Vegas",
@@ -97,7 +97,7 @@ export default function SienaPage() {
               Siena
             </h1>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Siena is a premier 55+ guard-gated community in Summerlin South, Las Vegas, with 2,001 single-family homes and villas on 667 acres. It features a Schmidt-Curley championship golf course, a 16,000 sq ft Community Center with fitness and salon, and over 80 resident-run clubs. The community is served by Dr. Jan Duffy at Berkshire Hathaway HomeServices Nevada Properties (10525 Siena Monte Avenue). For Siena homes for sale or a free valuation, call (702) 500-1942.
+              Siena is a premier 55+ guard-gated community in Summerlin South, Las Vegas, with 2,001 single-family homes and villas on 667 acres. It features a Schmidt-Curley championship golf course, a 16,000 sq ft Community Center with fitness and salon, and over 80 resident-run clubs. The community is served by Dr. Jan Duffy (10525 Siena Monte Avenue). For Siena homes for sale or a free valuation, call (702) 500-1942.
             </p>
             <div className="mt-8 p-6 bg-siena-cream border border-siena-brown/30 rounded-xl max-w-2xl mx-auto text-left">
               <h2 className="font-siena-heading uppercase tracking-wide text-lg font-bold text-siena-teal mb-3">At a glance</h2>
@@ -105,7 +105,7 @@ export default function SienaPage() {
                 <li><strong className="text-siena-brown">What:</strong> 55+ guard-gated community, 667 acres, 2,001 homes (Summerlin South)</li>
                 <li><strong className="text-siena-brown">Amenities:</strong> Schmidt-Curley golf, Community Center, fitness, salon, 80+ clubs</li>
                 <li><strong className="text-siena-brown">Address:</strong> 10525 Siena Monte Avenue, Las Vegas, NV 89135</li>
-                <li><strong className="text-siena-brown">Agent:</strong> Dr. Jan Duffy, BHHS Nevada Properties — (702) 500-1942</li>
+                <li><strong className="text-siena-brown">Agent:</strong> Dr. Jan Duffy, REALTOR® — (702) 500-1942</li>
               </ul>
             </div>
           </div>
@@ -207,7 +207,7 @@ export default function SienaPage() {
                 Surrounded by beautiful lakes, the Schmidt-Curley designed 18-hole championship Siena Golf Course features an ideal blend of doglegs and straightaway holes, a mix of slender and ample fairways, and a balance between benign and rugged green complexes. The Bistro, located in the Siena Golf Club, offers breathtaking views and a dining experience to please not only the palate, but also the heart and soul.
               </p>
               <p>
-                <strong className="text-siena-brown">Dr. Jan Duffy</strong> with Berkshire Hathaway HomeServices Nevada Properties helps buyers and sellers in Siena. For real estate in this premier 55+ community, call (702) 500-1942 or visit sienalasvegas.com.
+                <strong className="text-siena-brown">Dr. Jan Duffy</strong>, in real estate since 1983, helps buyers and sellers in Siena. For real estate in this premier 55+ community, call (702) 500-1942 or visit sienalasvegas.com.
               </p>
             </div>
           </section>

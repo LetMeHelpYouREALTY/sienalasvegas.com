@@ -23,7 +23,7 @@ import {
 } from "@/lib/schema";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Downsizing in Las Vegas | Berkshire Hathaway HomeServices",
+  title: "Downsizing in Las Vegas | Dr. Jan Duffy, REALTOR®",
   description:
     "Ready to simplify? Dr. Jan Duffy helps Las Vegas homeowners extract equity and transition to low-maintenance living. 55+ communities, condos, and more. Call (702) 500-1942.",
   path: "/sellers/downsizing",
@@ -61,7 +61,7 @@ const faqs = [
 
 const pageSchemas = combineSchemas(
   generateWebPageSchema({
-    name: "Downsizing in Las Vegas | Berkshire Hathaway HomeServices",
+    name: "Downsizing in Las Vegas | Dr. Jan Duffy, REALTOR®",
     description:
       "Ready to simplify? Dr. Jan Duffy helps Las Vegas homeowners extract equity and transition to low-maintenance living.",
     url: "/sellers/downsizing",
@@ -98,7 +98,7 @@ export default function DownsizingPage() {
               Simplify. Downsize. Enjoy.
             </h1>
             <p className="text-xl text-slate-600 mb-8 max-w-3xl mx-auto">
-              Downsizing in Las Vegas means selling your current home to unlock equity and move into a smaller or 55+ community. Dr. Jan Duffy at Berkshire Hathaway HomeServices helps you price and market your home, then find low-maintenance options in Siena, Sun City, or condos. Free valuation. Call (702) 500-1942.
+              Downsizing in Las Vegas means selling your current home to unlock equity and move into a smaller or 55+ community. Dr. Jan Duffy helps you price and market your home, then find low-maintenance options in Siena, Sun City, or condos. Free valuation. Call (702) 500-1942.
             </p>
             <a
               href="tel:+17025001942"
@@ -458,11 +458,11 @@ export default function DownsizingPage() {
                 raised families, and now deserve to enjoy life without maintaining a 4,000 square
                 foot house. I help them extract the equity they've earned, find a home that fits
                 their current lifestyle, and often pocket significant cash for travel, grandkids,
-                or just peace of mind. As a <strong>Berkshire Hathaway HomeServices</strong> agent,
+                or just peace of mind. As a REALTOR® in real estate since 1983,
                 I have the experience and compassion this transition requires."
               </blockquote>
               <cite className="text-slate-300 font-semibold">
-                — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
+                — Dr. Jan Duffy, REALTOR®
               </cite>
             </div>
           </section>

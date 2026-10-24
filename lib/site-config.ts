@@ -8,12 +8,12 @@ export const siteConfig = {
   fullName: "Berkshire Hathaway HomeServices Nevada Properties",
   tagline: "Real Estate at Siena — Premier 55+ Community",
   brandLine:
-    "Siena Las Vegas Real Estate | Dr. Jan Duffy | Berkshire Hathaway HomeServices Nevada Properties",
+    "Siena Las Vegas Real Estate | Dr. Jan Duffy",
   brandName: "Berkshire Hathaway HomeServices",
   shortName: "BHHS",
   url: "https://www.sienalasvegas.com",
   description:
-    "Homes for sale in Siena, Las Vegas's premier 55+ golf community. Guard-gated living, Community Center, and clubs. Dr. Jan Duffy, BHHS. Call (702) 500-1942.",
+    "Homes for sale in Siena, Las Vegas's premier 55+ golf community. Guard-gated living, Community Center, and clubs. Dr. Jan Duffy, REALTOR®. Call (702) 500-1942.",
 };
 
 export const agentInfo = {
@@ -28,7 +28,7 @@ export const agentInfo = {
   // Served via Cloudflare Images — see lib/cloudflare-images.ts
   photo: cloudflareImageUrl("a26f3a93-fb9c-4f24-3881-dba74660c300", "w=800"),
   photoAlt:
-    "Dr. Jan Duffy, REALTOR® with Berkshire Hathaway HomeServices Nevada Properties, smiling on a phone call",
+    "Dr. Jan Duffy, REALTOR®, smiling on a phone call",
 };
 
 export const officeInfo = {

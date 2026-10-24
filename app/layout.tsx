@@ -29,7 +29,7 @@ import { DEFAULT_OG_IMAGE } from "@/lib/metadata";
 
 const title = "Siena Las Vegas Real Estate | 55+ Communities | Dr. Jan Duffy, REALTOR®";
 const description =
-  "Siena and Las Vegas 55+ communities. Dr. Jan Duffy with Berkshire Hathaway HomeServices Nevada Properties—Siena golf, guard-gated living, Community Center. Call (702) 500-1942.";
+  "Siena and Las Vegas 55+ communities. Dr. Jan Duffy—Siena golf, guard-gated living, Community Center. Call (702) 500-1942.";
 const url = siteConfig.url;
 
 export const metadata: Metadata = {

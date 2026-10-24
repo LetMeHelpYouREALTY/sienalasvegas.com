@@ -20,7 +20,7 @@ import { buildPageMetadata } from "@/lib/metadata";
 export const metadata: Metadata = buildPageMetadata({
   title: "Trilogy at Summerlin Homes for Sale | Luxury Resort 55+ Living | Dr. Jan Duffy",
   description:
-    "Trilogy at Summerlin - luxury resort-style 55+ community. Homes from $500K-$1.1M. On-site farm-to-table restaurant, spa, contemporary designs. Dr. Jan Duffy, BHHS. Call (702) 500-1942.",
+    "Trilogy at Summerlin - luxury resort-style 55+ community. Homes from $500K-$1.1M. On-site farm-to-table restaurant, spa, contemporary designs. Dr. Jan Duffy, REALTOR®. Call (702) 500-1942.",
   path: "/55-plus-communities/trilogy-summerlin",
   keywords: [
     "Trilogy at Summerlin homes for sale",
@@ -86,7 +86,7 @@ export default function TrilogySummerlinPage() {
               Trilogy at Summerlin
             </h1>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Trilogy at Summerlin is a 55+ community with resort-style amenities including farm-to-table dining and a world-class spa. Dr. Jan Duffy at Berkshire Hathaway HomeServices represents buyers and sellers for Trilogy Summerlin homes in the Summerlin area. Call (702) 500-1942.
+              Trilogy at Summerlin is a 55+ community with resort-style amenities including farm-to-table dining and a world-class spa. Dr. Jan Duffy represents buyers and sellers for Trilogy Summerlin homes in the Summerlin area. Call (702) 500-1942.
             </p>
           </div>
 
@@ -145,7 +145,7 @@ export default function TrilogySummerlinPage() {
                 plans, designer finishes, and modern smart home technology.
               </p>
               <p>
-                <strong>Berkshire Hathaway HomeServices Nevada Properties</strong>{" "}
+                Dr. Jan Duffy{" "}
                 serves discerning buyers seeking luxury 55+ options. Dr. Jan
                 Duffy understands why buyers choose Trilogy's resort experience
                 over traditional active adult communities.
@@ -376,12 +376,12 @@ export default function TrilogySummerlinPage() {
                 community—they want a lifestyle. The on-site restaurant, spa, and
                 contemporary homes create an experience you simply can't find
                 elsewhere. As a{" "}
-                <strong>Berkshire Hathaway HomeServices</strong> agent serving
+                REALTOR® serving
                 luxury 55+ buyers, I recommend Trilogy to those who appreciate
                 quality and won't settle for ordinary."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
+                — Dr. Jan Duffy, REALTOR®
               </cite>
             </div>
           </section>
