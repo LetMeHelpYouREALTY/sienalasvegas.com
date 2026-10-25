@@ -374,7 +374,7 @@ export default function MoveUpSellerPage() {
               <blockquote className="text-lg text-slate-700 italic mb-4">
                 "Move-up transactions are like a chess game—every move matters. I coordinate both
                 sides so you don't end up homeless or paying two mortgages. With{" "}
-                REALTOR® in real estate since 1983, I have the resources to make
+                REALTOR® licensed since 2008 · 35 years in Las Vegas, I have the resources to make
                 complex transactions smooth. That's why clients trust me with their biggest
                 financial moves."
               </blockquote>

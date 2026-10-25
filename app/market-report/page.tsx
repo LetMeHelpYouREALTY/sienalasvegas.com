@@ -314,7 +314,7 @@ export default function MarketReportPage() {
               Call (702) 500-1942
             </a>
             <p className="mt-4 text-blue-200 text-sm">
-              Dr. Jan Duffy, REALTOR® | In Real Estate Since 1983
+              Dr. Jan Duffy, REALTOR® | Licensed Since 2008 · 35 Years in Las Vegas
             </p>
           </section>
         </div>

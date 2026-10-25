@@ -89,7 +89,7 @@ export default function MarketUpdatePage() {
               Weekly Las Vegas market update: listings, pricing, and trends from Dr. Jan Duffy. Get the latest on the Las Vegas Valley real estate market and what it means for buyers and sellers. Call (702) 500-1942.
             </p>
             <div className="flex items-center justify-center mt-6 text-slate-500 text-sm">
-              <span>By Dr. Jan Duffy, REALTOR® | In Real Estate Since 1983</span>
+              <span>By Dr. Jan Duffy, REALTOR® | Licensed Since 2008 · 35 Years in Las Vegas</span>
             </div>
           </div>
 
@@ -230,7 +230,7 @@ export default function MarketUpdatePage() {
                 <div>
                   <div className="font-bold text-slate-900">Dr. Jan Duffy</div>
                   <div className="text-slate-500 text-sm">
-                    REALTOR® | In Real Estate Since 1983
+                    REALTOR® | Licensed Since 2008 · 35 Years in Las Vegas
                   </div>
                 </div>
               </div>
@@ -405,7 +405,7 @@ export default function MarketUpdatePage() {
               </Link>
             </div>
             <p className="mt-6 text-blue-200 text-sm">
-              Dr. Jan Duffy, REALTOR® | In Real Estate Since 1983
+              Dr. Jan Duffy, REALTOR® | Licensed Since 2008 · 35 Years in Las Vegas
             </p>
           </section>
 

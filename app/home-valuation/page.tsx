@@ -87,13 +87,13 @@ export default function HomeValuationPage() {
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Dr. Jan Duffy, REALTOR® | In Real Estate Since 1983
+              Dr. Jan Duffy, REALTOR® | Licensed Since 2008 · 35 Years in Las Vegas
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               What's Your Las Vegas Home Worth?
             </h1>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              A free home valuation is an estimate of your Las Vegas home's market value based on recent comparable sales and current listings. Dr. Jan Duffy provides free, no-obligation valuations using local MLS data and a career in real estate since 1983 ($127M+ in closed transactions). Schedule a call or submit your details below to get your estimate.
+              A free home valuation is an estimate of your Las Vegas home's market value based on recent comparable sales and current listings. Dr. Jan Duffy provides free, no-obligation valuations using local MLS data and a license held since 2008 and 35 years in Las Vegas ($127M+ in Dr. Duffy Group career sales). Schedule a call or submit your details below to get your estimate.
             </p>
           </div>
 
@@ -123,7 +123,7 @@ export default function HomeValuationPage() {
                   Online estimators like Zillow's "Zestimate" can be off by 10% or more—that's
                   $45,000+ on a typical Las Vegas home. Dr. Jan Duffy provides a comprehensive
                   market analysis using current MLS data, recent comparable sales, and her expertise
-                  in real estate since 1983. The result? Accurate pricing that helps you sell
+                  licensed since 2008 · 35 years in Las Vegas. The result? Accurate pricing that helps you sell
                   faster and for more money.
                 </p>
                 <div className="space-y-3">
@@ -483,7 +483,7 @@ export default function HomeValuationPage() {
               </Link>
             </div>
             <p className="mt-4 text-blue-200 text-sm">
-              Dr. Jan Duffy, REALTOR® | In Real Estate Since 1983
+              Dr. Jan Duffy, REALTOR® | Licensed Since 2008 · 35 Years in Las Vegas
             </p>
           </section>
         </div>

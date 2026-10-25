@@ -207,7 +207,7 @@ export default function SienaPage() {
                 Surrounded by beautiful lakes, the Schmidt-Curley designed 18-hole championship Siena Golf Course features an ideal blend of doglegs and straightaway holes, a mix of slender and ample fairways, and a balance between benign and rugged green complexes. The Bistro, located in the Siena Golf Club, offers breathtaking views and a dining experience to please not only the palate, but also the heart and soul.
               </p>
               <p>
-                <strong className="text-siena-brown">Dr. Jan Duffy</strong>, in real estate since 1983, helps buyers and sellers in Siena. For real estate in this premier 55+ community, call (702) 500-1942 or visit sienalasvegas.com.
+                <strong className="text-siena-brown">Dr. Jan Duffy</strong>, licensed since 2008 · 35 years in Las Vegas, helps buyers and sellers in Siena. For real estate in this premier 55+ community, call (702) 500-1942 or visit sienalasvegas.com.
               </p>
             </div>
           </section>
