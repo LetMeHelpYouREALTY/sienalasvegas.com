@@ -253,7 +253,7 @@ export default function DelWebbLakeLasVegasPage() {
                 "Del Webb at Lake Las Vegas offers something no other 55+ community can—lakefront
                 living in the desert. The homes are modern, the setting is spectacular, and the
                 Del Webb programming creates instant community. As a{" "}
-                REALTOR® in real estate since 1983, I help buyers understand
+                REALTOR® licensed since 2008 · 35 years in Las Vegas, I help buyers understand
                 which lots offer the best views and which floor plans work for their lifestyle."
               </blockquote>
               <cite className="text-slate-900 font-semibold">

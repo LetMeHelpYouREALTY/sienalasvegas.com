@@ -65,7 +65,7 @@ const coreServices = [
     title: "Home Selling Services",
     slug: "sellers",
     description:
-      "Maximize your home's value with professional marketing, accurate pricing, and expert negotiation from Dr. Jan Duffy, in real estate since 1983.",
+      "Maximize your home's value with professional marketing, accurate pricing, and expert negotiation from Dr. Jan Duffy, licensed since 2008 · 35 years in Las Vegas.",
     highlights: ["World-class marketing", "Accurate pricing", "Global exposure", "Staging guidance"],
     stats: { label: "Homes Sold", value: "500+" },
   },
@@ -119,7 +119,7 @@ const specializedServices = [
     title: "Home Valuation Services",
     slug: "home-valuation",
     description:
-      "Free, no-obligation home valuations using current MLS data, recent comparable sales, and deep local market knowledge from a career in real estate since 1983.",
+      "Free, no-obligation home valuations using current MLS data, recent comparable sales, and deep local market knowledge from a license held since 2008 and 35 years in Las Vegas.",
     highlights: ["Accurate pricing", "No obligation", "Detailed analysis", "Market trends"],
   },
 ];
@@ -178,26 +178,26 @@ export default function ServicesPage() {
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Dr. Jan Duffy, REALTOR® | In Real Estate Since 1983
+              Dr. Jan Duffy, REALTOR® | Licensed Since 2008 · 35 Years in Las Vegas
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Las Vegas Real Estate Services
             </h1>
             <p className="text-xl text-slate-600 mb-8 max-w-3xl mx-auto">
-              Las Vegas real estate services from Dr. Jan Duffy include buying (free representation), selling (world-class marketing), luxury homes, new construction, 55+ communities, investment properties, and California relocation. In real estate since 1983. Call (702) 500-1942.
+              Las Vegas real estate services from Dr. Jan Duffy include buying (free representation), selling (world-class marketing), luxury homes, new construction, 55+ communities, investment properties, and California relocation. Licensed since 2008 · 35 years in Las Vegas. Call (702) 500-1942.
             </p>
             <div className="flex flex-wrap justify-center gap-6 text-sm">
               <div className="flex items-center">
                 <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
-                <span>In Real Estate Since 1983</span>
+                <span>Licensed Since 2008 · 35 Years in Las Vegas</span>
               </div>
               <div className="flex items-center">
                 <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
-                <span>$127M+ in Transactions</span>
+                <span>$127M+ in Team Career Sales</span>
               </div>
               <div className="flex items-center">
                 <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
-                <span>500+ Satisfied Clients</span>
+                <span>500+ Team Sales</span>
               </div>
             </div>
           </div>
@@ -213,7 +213,7 @@ export default function ServicesPage() {
             <p className="text-slate-600 text-center max-w-3xl mx-auto mb-8">
               These foundational services cover the majority of real estate transactions in Las Vegas. 
               Each service is delivered with the professionalism, resources, and ethical standards 
-              that Dr. Jan Duffy has brought to clients since 1983.
+              that Dr. Jan Duffy has brought to clients since 2008.
             </p>
             <div className="grid md:grid-cols-2 gap-6">
               {coreServices.map((service) => {
@@ -368,7 +368,7 @@ export default function ServicesPage() {
               The Dr. Jan Duffy Difference
             </h2>
             <p className="text-lg text-slate-300 text-center max-w-3xl mx-auto mb-8">
-              When you work with Dr. Jan Duffy, you're working with a REALTOR® in real estate since 1983 who puts your interests first.
+              When you work with Dr. Jan Duffy, you're working with a REALTOR® licensed since 2008 · 35 years in Las Vegas who puts your interests first.
             </p>
             <div className="grid md:grid-cols-4 gap-6 text-center mb-8">
               <div>
@@ -376,7 +376,7 @@ export default function ServicesPage() {
                 <div className="text-slate-300 text-sm">Agents Worldwide</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-blue-400 mb-2">Since 1983</div>
+                <div className="text-3xl font-bold text-blue-400 mb-2">Licensed Since 2008</div>
                 <div className="text-slate-300 text-sm">Serving Las Vegas</div>
               </div>
               <div>
@@ -393,7 +393,7 @@ export default function ServicesPage() {
                 <Shield className="h-10 w-10 text-blue-400 mx-auto mb-3" />
                 <h3 className="font-bold mb-2">Financial Strength</h3>
                 <p className="text-slate-400 text-sm">
-                  A career in real estate since 1983, providing stability and trust
+                  A career licensed since 2008 · 35 years in Las Vegas, providing stability and trust
                 </p>
               </div>
               <div className="text-center">
@@ -499,7 +499,7 @@ export default function ServicesPage() {
               </Link>
             </div>
             <p className="mt-4 text-blue-200 text-sm">
-              Dr. Jan Duffy, REALTOR® | In Real Estate Since 1983
+              Dr. Jan Duffy, REALTOR® | Licensed Since 2008 · 35 Years in Las Vegas
             </p>
           </section>
         </div>

@@ -86,7 +86,7 @@ export default function SummerlinPage() {
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Dr. Jan Duffy, REALTOR® | In Real Estate Since 1983
+              Dr. Jan Duffy, REALTOR® | Licensed Since 2008 · 35 Years in Las Vegas
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Summerlin Real Estate
@@ -132,8 +132,8 @@ export default function SummerlinPage() {
               </h2>
               <p>
                 When homebuyers search for the best neighborhoods in Las Vegas, <strong>Summerlin</strong> consistently
-                ranks at the top. As a REALTOR® in real estate since 1983 specializing in Summerlin
-                real estate, Dr. Jan Duffy has helped hundreds of families find their perfect home in this
+                ranks at the top. As a REALTOR® licensed since 2008 · 35 years in Las Vegas specializing in Summerlin
+                real estate, Dr. Jan Duffy has helped hundreds of clients find their perfect home in this
                 award-winning master-planned community.
               </p>
               <p>
@@ -282,7 +282,7 @@ export default function SummerlinPage() {
               <p>
                 Working with an experienced REALTOR® gives you access to listings
                 before they hit the market, expert negotiation skills, and the backing of a globally trusted brand.
-                Dr. Jan Duffy has been in real estate since 1983, which means you'll have insights that online 
+                Dr. Jan Duffy has been licensed since 2008 (35 years in Las Vegas), which means you'll have insights that online 
                 searches simply can't provide—from which streets have the best mountain views to which builders 
                 offer the best construction quality.
               </p>
@@ -293,8 +293,8 @@ export default function SummerlinPage() {
           <section className="mb-16 max-w-4xl mx-auto">
             <div className="bg-blue-50 border-l-4 border-blue-600 rounded-lg p-8">
               <blockquote className="text-lg text-slate-700 italic mb-4">
-                "Summerlin isn't just a neighborhood—it's a lifestyle. I've been in real estate since
-                1983, and I can tell you exactly which villages suit young families, which offer the
+                "Summerlin isn't just a neighborhood—it's a lifestyle. I've been licensed since 2008
+                (35 years in Las Vegas), and I can tell you exactly which villages suit your lifestyle, which offer the
                 best investment potential, and where you'll find the hidden gems. That local knowledge is
                 what sets Dr. Jan Duffy apart."
               </blockquote>
@@ -371,7 +371,7 @@ export default function SummerlinPage() {
               Call (702) 500-1942
             </a>
             <p className="mt-4 text-blue-200 text-sm">
-              Dr. Jan Duffy, REALTOR® | In Real Estate Since 1983
+              Dr. Jan Duffy, REALTOR® | Licensed Since 2008 · 35 Years in Las Vegas
             </p>
           </section>
         </div>
