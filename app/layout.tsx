@@ -3,22 +3,12 @@ import "./globals.css";
 import React from "react";
 import type { Metadata } from "next";
 import Script from "next/script";
-import dynamic from "next/dynamic";
 import { GeistSans } from "geist/font/sans";
 import { Analytics } from "@vercel/analytics/react";
 import { cn } from "lib/utils";
 import SchemaScript from "@/components/SchemaScript";
 import PathBreadcrumbSchema from "@/components/PathBreadcrumbSchema";
 
-const AIChatWidget = dynamic(
-  () => import("@/components/chat/AIChatWidget"),
-  { ssr: false }
-);
-
-const CalendlyBadge = dynamic(
-  () => import("@/components/calendly/CalendlyBadge"),
-  { ssr: false }
-);
 import {
   generateRealEstateAgentSchema,
   generateWebSiteSchema,
@@ -26,8 +16,11 @@ import {
 } from "@/lib/schema";
 import { siteConfig } from "@/lib/site-config";
 import { DEFAULT_OG_IMAGE } from "@/lib/metadata";
+import AIChatWidget from "./AIChatWidget.client";
+import CalendlyBadge from "./CalendlyBadge.client";
 
-const title = "Siena Las Vegas Real Estate | 55+ Communities | Dr. Jan Duffy, REALTOR®";
+const title =
+  "Siena Las Vegas Real Estate | 55+ Communities | Dr. Jan Duffy, REALTOR®";
 const description =
   "Siena and Las Vegas 55+ communities. Dr. Jan Duffy—Siena golf, guard-gated living, Community Center. Call (702) 500-1942.";
 const url = siteConfig.url;
@@ -83,7 +76,7 @@ export const metadata: Metadata = {
 // Combined site-wide schemas using the schema utility
 const siteWideSchemas = combineSchemas(
   generateRealEstateAgentSchema(),
-  generateWebSiteSchema()
+  generateWebSiteSchema(),
 );
 
 export default function RootLayout({
@@ -92,11 +85,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="scroll-smooth antialiased" style={{ colorScheme: 'light' }}>
+    <html
+      lang="en"
+      className="scroll-smooth antialiased"
+      style={{ colorScheme: "light" }}
+    >
       <head>
         <meta name="color-scheme" content="light" />
         {/* Sitemap for crawlers and Google Search Console */}
-        <link rel="sitemap" type="application/xml" href={`${siteConfig.url}/sitemap.xml`} />
+        <link
+          rel="sitemap"
+          type="application/xml"
+          href={`${siteConfig.url}/sitemap.xml`}
+        />
         {/* Preconnect to key third-party origins to reduce LCP (Lighthouse) */}
         <link rel="preconnect" href="https://assets.calendly.com" />
         <link rel="preconnect" href="https://em.realscout.com" />
