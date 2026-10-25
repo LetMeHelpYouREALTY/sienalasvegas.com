@@ -99,7 +99,7 @@ export default function GreenValleyPage() {
               Green Valley Real Estate
             </h1>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Green Valley is Henderson's original master-planned community, established in 1988. It offers mature landscaping, top-rated schools, and a median home price of $520,000 (January 2026). Dr. Jan Duffy specializes in Green Valley real estate and helps buyers and sellers throughout the Las Vegas Valley. The community includes The District at Green Valley Ranch, parks, and family-friendly neighborhoods. For a free home valuation or to search Green Valley listings, call (702) 500-1942.
+              Green Valley is Henderson's original master-planned community, established in 1988. It offers mature landscaping, top-rated schools, and a median home price of $520,000 (January 2026). Dr. Jan Duffy specializes in Green Valley real estate and helps buyers and sellers throughout the Las Vegas Valley. The community includes The District at Green Valley Ranch, parks, and park-rich neighborhoods. For a free home valuation or to search Green Valley listings, call (702) 500-1942.
             </p>
             <div className="mt-8 p-6 bg-slate-50 rounded-xl max-w-2xl mx-auto text-left">
               <h2 className="text-lg font-bold text-slate-900 mb-3">At a glance</h2>
@@ -296,7 +296,7 @@ export default function GreenValleyPage() {
                 means understanding the subtle differences between Green Valley proper, Green Valley Ranch,
                 and Green Valley South. Each area has distinct characteristics, price points, and lifestyle
                 offerings. Dr. Jan Duffy helps buyers navigate these nuances and find the perfect fit—whether
-                that's a starter home for a young family or a forever home for empty nesters looking to
+                that's a starter home or a single-level home for buyers looking to
                 downsize without leaving the community they love.
               </p>
             </div>
