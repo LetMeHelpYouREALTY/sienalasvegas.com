@@ -71,7 +71,7 @@ const priceRanges = [
 
 const neighborhoods = [
   { name: "Summerlin", slug: "summerlin", description: "Master-planned community with Red Rock views, top schools, and 150+ parks", medianPrice: "$625,000", daysOnMarket: 22 },
-  { name: "Henderson", slug: "henderson", description: "Nevada's second-largest city with family-friendly communities and low crime", medianPrice: "$485,000", daysOnMarket: 24 },
+  { name: "Henderson", slug: "henderson", description: "Nevada's second-largest city with master-planned communities, parks, and trails", medianPrice: "$485,000", daysOnMarket: 24 },
   { name: "Green Valley", slug: "green-valley", description: "Established Henderson community with mature landscaping and golf courses", medianPrice: "$520,000", daysOnMarket: 26 },
   { name: "Southern Highlands", slug: "southern-highlands", description: "Guard-gated luxury community with championship golf and mountain views", medianPrice: "$750,000", daysOnMarket: 32 },
   { name: "North Las Vegas", slug: "north-las-vegas", description: "Affordable new construction and growing infrastructure", medianPrice: "$385,000", daysOnMarket: 18 },
@@ -190,7 +190,7 @@ export default function ListingsPage() {
             </h2>
             <p className="text-slate-600 text-center max-w-3xl mx-auto mb-8">
               Each Las Vegas neighborhood offers a unique lifestyle, from the resort-style living 
-              of Summerlin to the family-friendly communities of Henderson. Understanding these 
+              of Summerlin to the master-planned communities of Henderson. Understanding these 
               differences is crucial to finding a home that fits your needs. As a REALTOR® in real estate since 1983
               Hathaway HomeServices agent in real estate since 1983, Dr. Jan Duffy provides 
               expert guidance on which neighborhoods match your priorities—whether that's schools, 
