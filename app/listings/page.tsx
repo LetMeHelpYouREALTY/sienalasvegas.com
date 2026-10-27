@@ -70,7 +70,7 @@ const priceRanges = [
 ];
 
 const neighborhoods = [
-  { name: "Summerlin", slug: "summerlin", description: "Master-planned community with Red Rock views, top schools, and 150+ parks", medianPrice: "$625,000", daysOnMarket: 22 },
+  { name: "Summerlin", slug: "summerlin", description: "Master-planned community with Red Rock views, 150+ parks, and 150+ miles of trails", medianPrice: "$625,000", daysOnMarket: 22 },
   { name: "Henderson", slug: "henderson", description: "Nevada's second-largest city with master-planned communities, parks, and trails", medianPrice: "$485,000", daysOnMarket: 24 },
   { name: "Green Valley", slug: "green-valley", description: "Established Henderson community with mature landscaping and golf courses", medianPrice: "$520,000", daysOnMarket: 26 },
   { name: "Southern Highlands", slug: "southern-highlands", description: "Guard-gated luxury community with championship golf and mountain views", medianPrice: "$750,000", daysOnMarket: 32 },
@@ -129,7 +129,7 @@ export default function ListingsPage() {
             </h2>
             <p className="text-slate-600 text-center max-w-3xl mx-auto mb-8">
               Las Vegas offers diverse neighborhoods for every lifestyle and budget. Whether you're 
-              seeking luxury estates in guard-gated communities, family homes near top-rated schools, 
+              seeking luxury estates in guard-gated communities, single-family homes with yards, 
               or affordable new construction, our comprehensive search tools help you find exactly 
               what you're looking for. Browse the most popular searches below or use the advanced 
               filters to customize your home search experience.
