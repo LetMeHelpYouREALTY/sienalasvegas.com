@@ -11,7 +11,7 @@ import { generateWebPageSchema, combineSchemas } from "@/lib/schema";
 export const metadata: Metadata = buildPageMetadata({
   title: "Green Valley Real Estate | Henderson Real Estate",
   description:
-    "Find Green Valley homes with Dr. Jan Duffy, REALTOR®. She specializes in Henderson's most established community. Median price $520K. Call (702) 500-1942.",
+    "Find Green Valley homes with Dr. Jan Duffy, REALTOR®. She specializes in one of Henderson's older communities. Median price $520K. Call (702) 500-1942.",
   path: "/neighborhoods/green-valley",
   keywords: [
     "Green Valley real estate",
@@ -55,7 +55,7 @@ const faqSchema = {
       name: "Is Green Valley a good investment?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Green Valley has shown consistent appreciation due to its prime Henderson location, established infrastructure, and ongoing demand from families seeking top schools and safety. REALTORS® can provide detailed market analysis.",
+        text: "Green Valley has shown consistent appreciation due to its prime Henderson location, established infrastructure, and ongoing demand from families seeking nearby public schools and safety. REALTORS® can provide detailed market analysis.",
       },
     },
   ],
@@ -65,7 +65,7 @@ const greenValleyPageSchema = combineSchemas(
   generateWebPageSchema({
     name: "Berkshire Hathaway HomeServices Green Valley | Henderson Real Estate",
     description:
-      "Find Green Valley homes with Dr. Jan Duffy, REALTOR®. She specializes in Henderson's most established community. Median price $520K.",
+      "Find Green Valley homes with Dr. Jan Duffy, REALTOR®. She specializes in one of Henderson's older communities. Median price $520K.",
     url: "/neighborhoods/green-valley",
     dateModified: "2026-01",
   }),
@@ -99,14 +99,14 @@ export default function GreenValleyPage() {
               Green Valley Real Estate
             </h1>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Green Valley is Henderson's original master-planned community, established in 1988. It offers mature landscaping, top-rated schools, and a median home price of $520,000 (January 2026). Dr. Jan Duffy specializes in Green Valley real estate and helps buyers and sellers throughout the Las Vegas Valley. The community includes The District at Green Valley Ranch, parks, and family-friendly neighborhoods. For a free home valuation or to search Green Valley listings, call (702) 500-1942.
+              Green Valley is Henderson's original master-planned community, established in 1988. It offers mature landscaping, nearby schools, and a median home price of $520,000 (January 2026). Dr. Jan Duffy specializes in Green Valley real estate and helps buyers and sellers throughout the Las Vegas Valley. The community includes The District at Green Valley Ranch, parks, and master-planned neighborhoods. For a free home valuation or to search Green Valley listings, call (702) 500-1942.
             </p>
             <div className="mt-8 p-6 bg-slate-50 rounded-xl max-w-2xl mx-auto text-left">
               <h2 className="text-lg font-bold text-slate-900 mb-3">At a glance</h2>
               <ul className="space-y-2 text-slate-700">
                 <li><strong>What:</strong> Henderson's original master-planned community (since 1988)</li>
                 <li><strong>Median price:</strong> $520,000 (Jan 2026) | YoY appreciation +4.8%</li>
-                <li><strong>Highlights:</strong> Mature trees, top schools, The District at Green Valley Ranch</li>
+                <li><strong>Highlights:</strong> Mature trees, nearby public schools, The District at Green Valley Ranch</li>
                 <li><strong>Agent:</strong> Dr. Jan Duffy, REALTOR® — (702) 500-1942</li>
               </ul>
             </div>
@@ -203,7 +203,7 @@ export default function GreenValleyPage() {
               <h3 className="text-2xl font-bold text-slate-900 mt-12 mb-6">Green Valley School Districts</h3>
               <div className="not-prose bg-white border border-slate-200 rounded-xl p-6">
                 <p className="text-slate-700 mb-4">
-                  Green Valley is home to some of Henderson's most sought-after schools with 35+ years
+                  Green Valley is home to some of Henderson's most nearby public schools with 35+ years
                   of proven excellence:
                 </p>
                 <div className="grid md:grid-cols-3 gap-4">
@@ -289,14 +289,14 @@ export default function GreenValleyPage() {
                 averaging <strong>26 days on market</strong>. The median price of <strong>$520,000</strong>
                 reflects the community's desirability and the premium buyers pay for established
                 neighborhoods. Properties range from well-maintained townhomes in the $400,000s to
-                custom homes exceeding $1.2 million in Green Valley's more exclusive enclaves.
+                custom homes exceeding $1.2 million in Green Valley's more luxury enclaves.
               </p>
               <p>
                 Working with an experienced REALTOR® in Green Valley
                 means understanding the subtle differences between Green Valley proper, Green Valley Ranch,
                 and Green Valley South. Each area has distinct characteristics, price points, and lifestyle
                 offerings. Dr. Jan Duffy helps buyers navigate these nuances and find the perfect fit—whether
-                that's a starter home for a young family or a forever home for empty nesters looking to
+                that's a starter home or a single-story home for someone downsizing, looking to
                 downsize without leaving the community they love.
               </p>
             </div>
@@ -358,7 +358,7 @@ export default function GreenValleyPage() {
                 </h3>
                 <p className="text-slate-600">
                   Green Valley has shown consistent appreciation due to its prime Henderson location,
-                  established infrastructure, and ongoing demand from families seeking top schools and
+                  established infrastructure, and ongoing demand from families seeking nearby public schools and
                   safety. REALTORS® can provide detailed market analysis.
                 </p>
               </div>
@@ -372,7 +372,7 @@ export default function GreenValleyPage() {
             </h2>
             <p className="text-xl text-blue-100 mb-8">
               Contact Dr. Jan Duffy, your Green Valley specialist,
-              for expert guidance in Henderson's most established community.
+              for expert guidance in Green Valley, Southern Nevada's first master-planned community (1978).
             </p>
             <a
               href="tel:+17025001942"
