@@ -177,7 +177,7 @@ export default function AboutPage() {
                     world-class resources and local expertise to every client I serve.
                   </p>
                   <p>
-                    I've closed $127 million in transactions and
+                    I've led the Dr. Duffy Group to $127 million in career sales and
                     helped hundreds of families find their perfect home in Las Vegas, Henderson,
                     Summerlin, and throughout Southern Nevada. My expertise spans luxury properties,
                     new construction, investment real estate, 55+ active adult communities, and 
