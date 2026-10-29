@@ -83,7 +83,7 @@ export default function SouthernHighlandsPage() {
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Dr. Jan Duffy, REALTOR® | In Real Estate Since 1983
+              Dr. Jan Duffy, REALTOR® | Licensed Since 2008
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Southern Highlands Real Estate
@@ -143,7 +143,7 @@ export default function SouthernHighlandsPage() {
                 entire community's aesthetic.
               </p>
               <p>
-                <strong>Dr. Jan Duffy</strong> has been in real estate since 1983 and represents buyers
+                <strong>Dr. Jan Duffy</strong> has been licensed since 2008, with 35 years in Las Vegas, and represents buyers
                 and sellers in Southern Highlands. Dr. Jan Duffy understands the
                 community's various sections—from the guard-gated luxury estates surrounding the golf
                 course to the neighborhoods in the community's newer phases. Whether
@@ -312,7 +312,7 @@ export default function SouthernHighlandsPage() {
               <blockquote className="text-lg text-slate-700 italic mb-4">
                 "Southern Highlands delivers luxury living at prices that often surprise buyers—especially
                 those relocating from California. You get championship golf, guard-gated security, mountain
-                views, and nearby public schools, all just 15 minutes from the Strip. As a REALTOR® in real estate since 1983, I help clients see beyond the golf course to the community's full potential."
+                views, and nearby public schools, all just 15 minutes from the Strip. As a REALTOR® licensed since 2008 · 35 years in Las Vegas, I help clients see beyond the golf course to the community's full potential."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
                 — Dr. Jan Duffy, REALTOR®
@@ -386,7 +386,7 @@ export default function SouthernHighlandsPage() {
               Call (702) 500-1942
             </a>
             <p className="mt-4 text-blue-200 text-sm">
-              Dr. Jan Duffy, REALTOR® | In Real Estate Since 1983
+              Dr. Jan Duffy, REALTOR® | Licensed Since 2008
             </p>
           </section>
         </div>

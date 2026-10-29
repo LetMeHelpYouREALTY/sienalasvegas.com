@@ -12,7 +12,7 @@ export default function Footer() {
           <div>
             <h3 className="font-bold text-xl mb-4">Dr. Jan Duffy, REALTOR®</h3>
             <p className="text-slate-300 mb-4 text-sm">
-              Your trusted real estate partner at Siena and Las Vegas 55+ communities. In real estate since 1983.
+              Your trusted real estate partner at Siena and Las Vegas 55+ communities. Licensed since 2008 · 35 years in Las Vegas.
             </p>
             <div className="flex space-x-4">
               <a

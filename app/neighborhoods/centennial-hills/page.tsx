@@ -83,7 +83,7 @@ export default function CentennialHillsPage() {
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Dr. Jan Duffy, REALTOR® | In Real Estate Since 1983
+              Dr. Jan Duffy, REALTOR® | Licensed Since 2008
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Centennial Hills Real Estate
@@ -312,7 +312,7 @@ export default function CentennialHillsPage() {
               <blockquote className="text-lg text-slate-700 italic mb-4">
                 "Centennial Hills offers something newer communities are still building: a genuine
                 sense of community. The schools have track records, the neighbors have history, and
-                the landscaping is mature. As a REALTOR® in real estate since 1983, I help families
+                the landscaping is mature. As a REALTOR® licensed since 2008 · 35 years in Las Vegas, I help families
                 see beyond the shiny new construction to communities that have proven their value
                 over time."
               </blockquote>
@@ -388,7 +388,7 @@ export default function CentennialHillsPage() {
               Call (702) 500-1942
             </a>
             <p className="mt-4 text-blue-200 text-sm">
-              Dr. Jan Duffy, REALTOR® | In Real Estate Since 1983
+              Dr. Jan Duffy, REALTOR® | Licensed Since 2008
             </p>
           </section>
         </div>

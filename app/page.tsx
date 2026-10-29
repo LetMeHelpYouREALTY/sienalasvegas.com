@@ -115,7 +115,7 @@ const faqSchema = {
       name: "Why choose an experienced REALTOR® for Siena real estate?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Dr. Jan Duffy has been in real estate since 1983 and brings ethical standards and a global referral network. When you're buying or selling at Siena, that trust matters.",
+        text: "Dr. Jan Duffy has been licensed since 2008, with 35 years in Las Vegas, and brings ethical standards and a global referral network. When you're buying or selling at Siena, that trust matters.",
       },
     },
     {
@@ -190,8 +190,7 @@ export default function Home() {
                 Why Choose Dr. Jan Duffy?
               </h2>
               <p className="text-lg text-slate-700 leading-relaxed">
-                When you work with Dr. Jan Duffy, a REALTOR® in real estate
-                since 1983, you get a name synonymous with trust and ethical standards.
+                When you work with Dr. Jan Duffy, a REALTOR® licensed since 2008 · 35 years in Las Vegas, you get a name synonymous with trust and ethical standards.
               </p>
             </div>
 
@@ -202,7 +201,7 @@ export default function Home() {
                 </div>
                 <h3 className="font-bold text-lg mb-2">Trusted Experience</h3>
                 <p className="text-slate-600 text-sm">
-                  In real estate since 1983—trusted, ethical guidance
+                  Licensed since 2008 · 35 years in Las Vegas—trusted, ethical guidance
                 </p>
               </div>
               <div className="text-center p-6">
@@ -220,7 +219,7 @@ export default function Home() {
                 </div>
                 <h3 className="font-bold text-lg mb-2">Market Expertise</h3>
                 <p className="text-slate-600 text-sm">
-                  In real estate since 1983, $127M+ in closed transactions
+                  Licensed since 2008 · 35 years in Las Vegas, $127M+ in closed transactions
                 </p>
               </div>
               <div className="text-center p-6">
@@ -366,7 +365,7 @@ export default function Home() {
               </Link>
             </div>
             <p className="mt-6 text-white/90 text-sm">
-              Dr. Jan Duffy | REALTOR® | In real estate since 1983
+              Dr. Jan Duffy | REALTOR® | Licensed since 2008 · 35 years in Las Vegas
             </p>
           </div>
         </section>

@@ -66,7 +66,7 @@ const sellingBenefits = [
     icon: BarChart,
     title: "Expert Pricing Strategy",
     description:
-      "Dr. Jan has been in real estate since 1983, which means accurate pricing that attracts buyers without leaving money on the table. Overpriced homes sit and lose value; well-priced homes generate competition and sell for more.",
+      "Dr. Jan has been licensed since 2008 · 35 years in Las Vegas, which means accurate pricing that attracts buyers without leaving money on the table. Overpriced homes sit and lose value; well-priced homes generate competition and sell for more.",
   },
   {
     icon: DollarSign,
@@ -137,13 +137,13 @@ export default function SellersPage() {
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Dr. Jan Duffy, REALTOR® | In Real Estate Since 1983
+              Dr. Jan Duffy, REALTOR® | Licensed Since 2008
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Sell Your Las Vegas Home for Top Dollar
             </h1>
             <p className="text-xl text-slate-600 mb-8 max-w-3xl mx-auto">
-              Selling your Las Vegas or Henderson home with Dr. Jan Duffy means world-class marketing, accurate pricing from current MLS data, and expert negotiation. Dr. Jan Duffy has been in real estate since 1983 with $127M+ in closed sales. Get a free home valuation and listing plan. Call (702) 500-1942.
+              Selling your Las Vegas or Henderson home with Dr. Jan Duffy means world-class marketing, accurate pricing from current MLS data, and expert negotiation. Dr. Jan Duffy has been licensed since 2008 · 35 years in Las Vegas with $127M+ in closed sales. Get a free home valuation and listing plan. Call (702) 500-1942.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm text-slate-500">
               <span className="flex items-center"><CheckCircle className="h-4 w-4 text-green-500 mr-1" /> Free Home Valuation</span>
@@ -318,11 +318,11 @@ export default function SellersPage() {
                 "Pricing your home correctly from day one is the single most important factor in
                 getting top dollar. Overpriced homes sit on the market, and every day on market costs 
                 you money—both in carrying costs and buyer perception. That's why I use comprehensive 
-                market analysis and my experience in real estate since 1983 to price homes right 
+                market analysis and my experience licensed since 2008 · 35 years in Las Vegas to price homes right 
                 the first time. The result? My listings typically sell within 2% of asking price."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, REALTOR® | In Real Estate Since 1983
+                — Dr. Jan Duffy, REALTOR® | Licensed Since 2008
               </cite>
             </div>
           </section>
@@ -354,7 +354,7 @@ export default function SellersPage() {
                 <h2 className="text-3xl font-bold mb-4">What's Your Home Worth?</h2>
                 <p className="text-blue-100 mb-6">
                   Get a free, no-obligation home valuation from Dr. Jan Duffy. Using current MLS
-                  data and expertise in real estate since 1983, you'll know exactly what your 
+                  data and expertise as a REALTOR® licensed since 2008 · 35 years in Las Vegas, you'll know exactly what your 
                   home could sell for in today's market. No algorithms—just real analysis from 
                   a local expert.
                 </p>
@@ -442,7 +442,7 @@ export default function SellersPage() {
               </Link>
             </div>
             <p className="mt-4 text-slate-400 text-sm">
-              Dr. Jan Duffy, REALTOR® | In Real Estate Since 1983
+              Dr. Jan Duffy, REALTOR® | Licensed Since 2008
             </p>
           </section>
         </div>

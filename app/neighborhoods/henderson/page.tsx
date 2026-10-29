@@ -65,7 +65,7 @@ const faqSchema = {
       name: "Why choose Dr. Jan Duffy for Henderson real estate?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Dr. Jan Duffy, in real estate since 1983, serves Henderson and knows every community, school district, and HOA. Her experience provides trust and resources that benefit both buyers and sellers.",
+        text: "Dr. Jan Duffy, licensed since 2008 · 35 years in Las Vegas, serves Henderson and knows every community, school district, and HOA. Her experience provides trust and resources that benefit both buyers and sellers.",
       },
     },
   ],
@@ -99,7 +99,7 @@ export default function HendersonPage() {
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Dr. Jan Duffy, REALTOR® | In Real Estate Since 1983
+              Dr. Jan Duffy, REALTOR® | Licensed Since 2008
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Henderson Real Estate
@@ -146,7 +146,7 @@ export default function HendersonPage() {
               <p>
                 <strong>Henderson</strong> has quietly become one of the most desirable cities in the American
                 Southwest. As Nevada's second-largest city with over 320,000 residents, Henderson offers the
-                perfect balance of suburban tranquility and urban convenience. <strong>Dr. Jan Duffy</strong> has been helping families find their Henderson dream homes as a REALTOR® in real estate since 1983,
+                perfect balance of suburban tranquility and urban convenience. <strong>Dr. Jan Duffy</strong> has been helping families find their Henderson dream homes as a REALTOR® licensed since 2008 · 35 years in Las Vegas,
                 and Dr. Jan Duffy brings unmatched expertise to every transaction.
               </p>
               <p>
@@ -324,7 +324,7 @@ export default function HendersonPage() {
             <div className="bg-blue-50 border-l-4 border-blue-600 rounded-lg p-8">
               <blockquote className="text-lg text-slate-700 italic mb-4">
                 "Henderson offers something for everyone—condos, single-story homes, and 4+ bedroom floor plans.
-                As a REALTOR® in real estate since 1983, I help clients cut through the options and find
+                As a REALTOR® licensed since 2008 · 35 years in Las Vegas, I help clients cut through the options and find
                 the community that fits their lifestyle. There's a reason Henderson keeps winning 'Best Places
                 to Live' awards."
               </blockquote>
@@ -375,7 +375,7 @@ export default function HendersonPage() {
                   Why choose Dr. Jan Duffy for Henderson real estate?
                 </h3>
                 <p className="text-slate-600">
-                  Dr. Jan Duffy, in real estate since 1983, serves Henderson and
+                  Dr. Jan Duffy, licensed since 2008 · 35 years in Las Vegas, serves Henderson and
                   know every community, school district, and HOA. Her experience provides trust and resources that benefit both buyers and sellers.
                 </p>
               </div>
@@ -399,7 +399,7 @@ export default function HendersonPage() {
               Call (702) 500-1942
             </a>
             <p className="mt-4 text-blue-200 text-sm">
-              Dr. Jan Duffy, REALTOR® | In Real Estate Since 1983
+              Dr. Jan Duffy, REALTOR® | Licensed Since 2008
             </p>
           </section>
         </div>
