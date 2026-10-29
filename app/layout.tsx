@@ -20,6 +20,7 @@ import {
 } from "@/lib/schema";
 import { siteConfig } from "@/lib/site-config";
 import { DEFAULT_OG_IMAGE } from "@/lib/metadata";
+import WidgetTracker from './widget-tracker'
 
 const title =
   "Siena Las Vegas Real Estate | 55+ Communities | Dr. Jan Duffy, REALTOR®";
@@ -142,6 +143,7 @@ export default function RootLayout({
         <AIChatWidget />
         <CalendlyBadge />
         <Analytics />
+        <WidgetTracker />
       </body>
     </html>
   );
