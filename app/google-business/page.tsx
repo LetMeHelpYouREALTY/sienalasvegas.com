@@ -30,7 +30,7 @@ import {
 export const metadata: Metadata = buildPageMetadata({
   title: "Dr. Jan Duffy, REALTOR® Las Vegas | Dr. Jan Duffy, REALTOR®",
   description:
-    "Dr. Jan Duffy is a trusted Las Vegas REALTOR®, in real estate since 1983. Specializing in Summerlin, Henderson, 55+ communities, California relocation, and luxury homes. Call (702) 500-1942.",
+    "Dr. Jan Duffy is a trusted Las Vegas REALTOR®, licensed since 2008 · 35 years in Las Vegas. Specializing in Summerlin, Henderson, 55+ communities, California relocation, and luxury homes. Call (702) 500-1942.",
   path: "/google-business",
   keywords: [
     "Dr. Jan Duffy realtor",
@@ -67,12 +67,12 @@ export default function GoogleBusinessPage() {
                 <div>
                   <div className="flex items-center gap-2 mb-4">
                     <Award className="h-6 w-6 text-yellow-400" />
-                    <span className="text-yellow-400 font-semibold">In Real Estate Since 1983</span>
+                    <span className="text-yellow-400 font-semibold">Licensed Since 2008</span>
                   </div>
                   <h1 className="text-4xl md:text-5xl font-bold mb-4">
                     Dr. Jan Duffy
                   </h1>
-                  <p className="text-xl text-blue-200 mb-2">REALTOR® | In real estate since 1983</p>
+                  <p className="text-xl text-blue-200 mb-2">REALTOR® | Licensed since 2008 · 35 years in Las Vegas</p>
                   
                   {/* NAP - Exact match to GBP */}
                   <div className="space-y-3">

@@ -416,7 +416,7 @@ export default function MarketInsightsPage() {
                 from reactive ones. Las Vegas is no longer just a gaming and tourism economy.
                 Tech investment, California migration, and economic diversification are reshaping
                 which neighborhoods will outperform. As a{" "}
-                REALTOR® in real estate since 1983, I help clients position
+                REALTOR® licensed since 2008 · 35 years in Las Vegas, I help clients position
                 themselves for where the market is going, not just where it's been."
               </blockquote>
               <cite className="text-slate-300 font-semibold">

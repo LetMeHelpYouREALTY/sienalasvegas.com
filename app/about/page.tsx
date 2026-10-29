@@ -26,7 +26,7 @@ import { generateWebPageSchema, combineSchemas } from "@/lib/schema";
 export const metadata: Metadata = buildPageMetadata({
   title: "About Dr. Jan Duffy | Dr. Jan Duffy, Las Vegas REALTOR®",
   description:
-    "Meet Dr. Jan Duffy, your trusted REALTOR®. In real estate since 1983, $127M+ in transactions, Henderson & Summerlin specialist. Call (702) 500-1942.",
+    "Meet Dr. Jan Duffy, your trusted REALTOR®. Licensed since 2008 · 35 years in Las Vegas, $127M+ in Dr. Duffy Group career sales, Henderson & Summerlin specialist. Call (702) 500-1942.",
   path: "/about",
   keywords: [
     "Dr. Jan Duffy",
@@ -45,7 +45,7 @@ const personSchema = {
   name: "Dr. Jan Duffy",
   jobTitle: "REALTOR®",
   description:
-    "Licensed real estate agent serving Las Vegas, Henderson, and Summerlin; in real estate since 1983.",
+    "Licensed real estate agent serving Las Vegas, Henderson, and Summerlin; licensed since 2008 · 35 years in Las Vegas.",
   image: agentInfo.photo,
   telephone: agentInfo.phoneTel.replace("tel:", ""),
   email: agentInfo.email,
@@ -81,7 +81,7 @@ const aboutPageSchema = combineSchemas(
   generateWebPageSchema({
     name: "About Dr. Jan Duffy | Dr. Jan Duffy, Las Vegas REALTOR®",
     description:
-      "Meet Dr. Jan Duffy, your trusted REALTOR®. In real estate since 1983, $127M+ in transactions, Henderson & Summerlin specialist.",
+      "Meet Dr. Jan Duffy, your trusted REALTOR®. Licensed since 2008 · 35 years in Las Vegas, $127M+ in Dr. Duffy Group career sales, Henderson & Summerlin specialist.",
     url: "/about",
     dateModified: "2026-01",
   }),
@@ -140,18 +140,18 @@ export default function AboutPage() {
           {/* Hero Section */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Dr. Jan Duffy, REALTOR® | In Real Estate Since 1983
+              Dr. Jan Duffy, REALTOR® | Licensed Since 2008
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Meet Dr. Jan Duffy, Top 1% Las Vegas REALTOR®
+              Meet Dr. Jan Duffy, Las Vegas REALTOR®
             </h1>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Dr. Jan Duffy is a REALTOR® serving Las Vegas, Henderson, and Summerlin, in real estate since 1983. With over $127 million in closed transactions, she specializes in luxury homes, 55+ communities (including Siena), new construction, investment properties, and California-to-Nevada relocations. She offers world-class marketing for sellers and free buyer representation. Office: 10525 Siena Monte Avenue, Las Vegas, NV. Call (702) 500-1942 for a free consultation.
+              Dr. Jan Duffy is a REALTOR® serving Las Vegas, Henderson, and Summerlin, licensed since 2008 · 35 years in Las Vegas. With over $127 million in closed transactions, she specializes in luxury homes, 55+ communities (including Siena), new construction, investment properties, and California-to-Nevada relocations. She offers world-class marketing for sellers and free buyer representation. Office: 10525 Siena Monte Avenue, Las Vegas, NV. Call (702) 500-1942 for a free consultation.
             </p>
             <div className="mt-8 p-6 bg-slate-50 rounded-xl max-w-2xl mx-auto text-left">
               <h2 className="text-lg font-bold text-slate-900 mb-3">At a glance</h2>
               <ul className="space-y-2 text-slate-700">
-                <li><strong>Who:</strong> Dr. Jan Duffy, REALTOR®, in real estate since 1983</li>
+                <li><strong>Who:</strong> Dr. Jan Duffy, REALTOR®, licensed since 2008 · 35 years in Las Vegas</li>
                 <li><strong>Where:</strong> Las Vegas, Henderson, Summerlin, Siena, Southern Nevada</li>
                 <li><strong>Services:</strong> Buy, sell, luxury, 55+ communities, new construction, investment, relocation</li>
                 <li><strong>Contact:</strong> (702) 500-1942 | 10525 Siena Monte Avenue, Las Vegas, NV 89135</li>
@@ -168,23 +168,23 @@ export default function AboutPage() {
               <div>
                 <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Dr. Jan Duffy</h2>
                 <p className="text-lg text-blue-600 mb-6">
-                  REALTOR® | In real estate since 1983
+                  REALTOR® | Licensed since 2008 · 35 years in Las Vegas
                 </p>
 
                 <div className="prose prose-lg text-slate-700 mb-8 space-y-4">
                   <p>
-                    When you choose to work with me, you're choosing a legacy of trust, integrity, and excellence. In real estate since 1983, I bring 
+                    When you choose to work with me, you're choosing a legacy of trust, integrity, and excellence. Licensed since 2008 · 35 years in Las Vegas, I bring 
                     world-class resources and local expertise to every client I serve.
                   </p>
                   <p>
-                    I've closed $127 million in transactions and
+                    I've led the Dr. Duffy Group to $127 million in career sales and
                     helped hundreds of families find their perfect home in Las Vegas, Henderson,
                     Summerlin, and throughout Southern Nevada. My expertise spans luxury properties,
                     new construction, investment real estate, 55+ active adult communities, and 
                     relocations—particularly for California families seeking Nevada's tax advantages.
                   </p>
                   <p>
-                    What sets me apart? A career in real estate since 1983 and a commitment to ethical standards. When you're making the biggest
+                    What sets me apart? A career licensed since 2008 · 35 years in Las Vegas and a commitment to ethical standards. When you're making the biggest
                     financial decision of your life, that trust matters. You deserve an agent who 
                     puts your interests first, provides honest advice, and has the resources to 
                     deliver exceptional results.
@@ -256,22 +256,22 @@ export default function AboutPage() {
                     />
                   </div>
                   <p className="text-slate-600 font-semibold mt-2">Dr. Jan Duffy</p>
-                  <p className="text-sm text-slate-500">In real estate since 1983</p>
+                  <p className="text-sm text-slate-500">Licensed since 2008 · 35 years in Las Vegas</p>
                 </div>
 
                 {/* Stats Grid */}
                 <div className="grid grid-cols-2 gap-4">
                   <div className="bg-blue-50 rounded-lg p-6 text-center">
-                    <div className="text-3xl font-bold text-blue-600 mb-1">Since 1983</div>
+                    <div className="text-3xl font-bold text-blue-600 mb-1">Since 2008</div>
                     <div className="text-sm text-slate-600">Serving Las Vegas</div>
                   </div>
                   <div className="bg-blue-50 rounded-lg p-6 text-center">
                     <div className="text-3xl font-bold text-blue-600 mb-1">$127M+</div>
-                    <div className="text-sm text-slate-600">Volume Closed</div>
+                    <div className="text-sm text-slate-600">Team Career Sales</div>
                   </div>
                   <div className="bg-blue-50 rounded-lg p-6 text-center">
                     <div className="text-3xl font-bold text-blue-600 mb-1">500+</div>
-                    <div className="text-sm text-slate-600">Transactions</div>
+                    <div className="text-sm text-slate-600">Team Sales</div>
                   </div>
                   <div className="bg-blue-50 rounded-lg p-6 text-center">
                     <div className="text-3xl font-bold text-blue-600 mb-1">4.9★</div>
@@ -473,7 +473,7 @@ export default function AboutPage() {
               </Link>
             </div>
             <p className="mt-4 text-blue-200 text-sm">
-              Dr. Jan Duffy, REALTOR® | In Real Estate Since 1983
+              Dr. Jan Duffy, REALTOR® | Licensed Since 2008
             </p>
           </section>
         </div>

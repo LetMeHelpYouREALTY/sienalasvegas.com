@@ -387,7 +387,7 @@ export default function SunCityAliantePage() {
                 full Sun City lifestyle at the best possible price. The amenities
                 are excellent, the community is active and welcoming, and you
                 simply can't beat the value. As a{" "}
-                REALTOR® in real estate since 1983, I help
+                REALTOR® licensed since 2008 · 35 years in Las Vegas, I help
                 buyers compare all the Sun City options and understand why Aliante
                 often makes the most financial sense."
               </blockquote>

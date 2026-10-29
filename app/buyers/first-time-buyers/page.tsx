@@ -105,7 +105,7 @@ export default function FirstTimeBuyersPage() {
               <span className="text-blue-600">Starts Here</span>
             </h1>
             <p className="text-xl text-slate-600 mb-8 max-w-3xl mx-auto">
-              First-time home buyers in Las Vegas can access down payment assistance, FHA and conventional loans, and builder incentives. Dr. Jan Duffy provides free buyer representation, pre-approval guidance, and step-by-step help from search to closing. In real estate since 1983. Call (702) 500-1942.
+              First-time home buyers in Las Vegas can access down payment assistance, FHA and conventional loans, and builder incentives. Dr. Jan Duffy provides free buyer representation, pre-approval guidance, and step-by-step help from search to closing. Licensed since 2008 · 35 years in Las Vegas. Call (702) 500-1942.
             </p>
             <a
               href="tel:+17025001942"
@@ -489,7 +489,7 @@ export default function FirstTimeBuyersPage() {
                 "Buying your first home is exciting AND overwhelming. My job is to make it less
                 overwhelming. I walk first-time buyers through every step, explain everything in
                 plain English, and make sure you're confident in your decision. As a{" "}
-                REALTOR® in real estate since 1983, I have resources and
+                REALTOR® licensed since 2008 · 35 years in Las Vegas, I have resources and
                 connections that independent agents simply don't have."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
@@ -523,7 +523,7 @@ export default function FirstTimeBuyersPage() {
               </Link>
             </div>
             <p className="mt-6 text-blue-200 text-sm">
-              Dr. Jan Duffy, REALTOR® | In Real Estate Since 1983
+              Dr. Jan Duffy, REALTOR® | Licensed Since 2008
             </p>
           </section>
         </div>

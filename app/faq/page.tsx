@@ -32,7 +32,7 @@ const faqCategories = [
     faqs: [
       {
         q: "Why should I choose an experienced REALTOR®?",
-        a: "Dr. Jan Duffy, a Top 1% Las Vegas REALTOR® in real estate since 1983, offers ethical standards, deep local knowledge, and a global referral network of 50,000+ agents. When you're making the biggest purchase of your life, that trust matters.",
+        a: "Dr. Jan Duffy, a Las Vegas REALTOR® licensed since 2008 · 35 years in Las Vegas, offers ethical standards, deep local knowledge, and a global referral network of 50,000+ agents. When you're making the biggest purchase of your life, that trust matters.",
       },
       {
         q: "Where can I find brokerage details?",
@@ -78,7 +78,7 @@ const faqCategories = [
     faqs: [
       {
         q: "What is my home worth in today's market?",
-        a: "Home values depend on location, condition, size, and recent comparable sales. Dr. Jan provides free, comprehensive home valuations using current MLS data and her expertise from a career in real estate since 1983.",
+        a: "Home values depend on location, condition, size, and recent comparable sales. Dr. Jan provides free, comprehensive home valuations using current MLS data and her expertise from a career licensed since 2008 · 35 years in Las Vegas.",
       },
       {
         q: "How long will it take to sell my home?",
@@ -137,7 +137,7 @@ const faqCategories = [
     faqs: [
       {
         q: "What is Dr. Jan Duffy's experience?",
-        a: "Dr. Jan has been in real estate since 1983, with $127M+ in closed transactions and 500+ satisfied clients. She specializes in residential, luxury, investment, and relocation services throughout Southern Nevada.",
+        a: "Dr. Jan has been licensed since 2008 · 35 years in Las Vegas, backed by $127M+ in Dr. Duffy Group career sales and 500+ satisfied clients. She specializes in residential, luxury, investment, and relocation services throughout Southern Nevada.",
       },
       {
         q: "How do I contact Dr. Jan Duffy?",
@@ -182,13 +182,13 @@ export default function FAQPage() {
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Dr. Jan Duffy, REALTOR® | In Real Estate Since 1983
+              Dr. Jan Duffy, REALTOR® | Licensed Since 2008
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Frequently Asked Questions
             </h1>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Dr. Jan Duffy serves Las Vegas, Henderson, Summerlin, and Southern Nevada and has been in real estate since 1983. Below are common questions about buying, selling, and working with Dr. Jan Duffy in Las Vegas.
+              Dr. Jan Duffy serves Las Vegas, Henderson, Summerlin, and Southern Nevada and has been licensed since 2008 · 35 years in Las Vegas. Below are common questions about buying, selling, and working with Dr. Jan Duffy in Las Vegas.
             </p>
           </div>
 
@@ -229,7 +229,7 @@ export default function FAQPage() {
               Call (702) 500-1942
             </a>
             <p className="mt-4 text-blue-200 text-sm">
-              Dr. Jan Duffy, REALTOR® | In Real Estate Since 1983
+              Dr. Jan Duffy, REALTOR® | Licensed Since 2008
             </p>
           </section>
         </div>

@@ -128,7 +128,7 @@ export default function LuxuryHomesPage() {
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Dr. Jan Duffy, REALTOR® | In Real Estate Since 1983
+              Dr. Jan Duffy, REALTOR® | Licensed Since 2008
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Las Vegas Luxury Real Estate
@@ -191,7 +191,7 @@ export default function LuxuryHomesPage() {
                 {
                   icon: Shield,
                   title: "Trusted Brand",
-                  desc: "A career in real estate since 1983 attracts serious, qualified buyers to your property",
+                  desc: "A career licensed since 2008 · 35 years in Las Vegas attracts serious, qualified buyers to your property",
                 },
                 {
                   icon: Globe,
@@ -237,7 +237,7 @@ export default function LuxuryHomesPage() {
                 and the complete resources of a global referral network."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, REALTOR® | In Real Estate Since 1983
+                — Dr. Jan Duffy, REALTOR® | Licensed Since 2008
               </cite>
             </div>
           </section>
@@ -440,7 +440,7 @@ export default function LuxuryHomesPage() {
               </Link>
             </div>
             <p className="mt-4 text-slate-400 text-sm">
-              Dr. Jan Duffy, REALTOR® | In Real Estate Since 1983
+              Dr. Jan Duffy, REALTOR® | Licensed Since 2008
             </p>
           </section>
         </div>
