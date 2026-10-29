@@ -11,7 +11,7 @@ const nextConfig = {
     minimumCacheTTL: 31536000, // 1 year
     dangerouslyAllowSVG: true,
     contentDispositionType: 'attachment',
-    contentSecurityPolicy: "default-src 'self'; script-src https://widgetbe.com https://*.widgetbe.com 'none'; sandbox;",
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
     // Allow next/image to optimize images served from Cloudflare Images
     // (e.g. Dr. Jan Duffy's agent photo) — account hash is public by design,
     // it only identifies which account's images to deliver from.
