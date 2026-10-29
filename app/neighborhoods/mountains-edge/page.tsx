@@ -89,7 +89,7 @@ export default function MountainsEdgePage() {
               Mountains Edge Real Estate
             </h1>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Mountains Edge is a southwest Las Vegas community with parks, trails, and family-friendly homes at accessible price points. Dr. Jan Duffy lists and sells Mountains Edge properties; median price ~$475K. Free buyer representation. Call (702) 500-1942.
+              Mountains Edge is a southwest Las Vegas community with parks, trails, and homes at accessible price points. Dr. Jan Duffy lists and sells Mountains Edge properties; median price ~$475K. Free buyer representation. Call (702) 500-1942.
             </p>
           </div>
 

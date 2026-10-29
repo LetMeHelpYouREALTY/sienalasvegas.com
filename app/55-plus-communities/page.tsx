@@ -160,7 +160,7 @@ const communities = [
       "Henderson's premier 55+ community",
       "2 championship golf courses",
       "Stunning mountain views",
-      "America's safest large city location",
+      "Henderson location with public crime data online",
     ],
     description:
       "Henderson's premier 55+ community with stunning mountain views and championship golf.",
