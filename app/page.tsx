@@ -3,7 +3,6 @@ import HeroSection from "@/components/sections/HeroSection";
 import RealScoutListings from "@/components/realscout/RealScoutListingsDynamic";
 import WhyChooseUs from "@/components/sections/WhyChooseUs";
 import ReviewsSection from "@/components/sections/ReviewsSection";
-import { defaultReviews, aggregateRating, getReviewSchemaData } from "@/lib/reviews-data";
 import FAQSection from "@/components/sections/FAQSection";
 import CTASection from "@/components/sections/CTASection";
 import Footer from "@/components/layouts/Footer";
@@ -13,7 +12,6 @@ import { Home as HomeIcon, TrendingUp, Shield, Users, Phone } from "lucide-react
 import { siteConfig } from "@/lib/site-config";
 import { buildPageMetadata } from "@/lib/metadata";
 import { generateImageGallerySchema } from "@/lib/schema";
-import { ReviewSchema } from "@/components/SchemaScript";
 
 export const metadata: Metadata = buildPageMetadata({
   title: `${siteConfig.name} Real Estate | 55+ Community | Dr. Jan Duffy, REALTOR®`,
@@ -31,12 +29,9 @@ export const metadata: Metadata = buildPageMetadata({
 
 // Organization Schema (Siena NAP per GBP)
 // Shares "@id" with the site-wide RealEstateAgent schema in app/layout.tsx
-// (and the ReviewSchema below) so Google's structured-data parser merges
-// all three into one entity instead of three ambiguous duplicate agents.
-// aggregateRating is intentionally omitted here — it's declared once on the
-// site-wide schema (lib/schema.ts) and once on ReviewSchema below, both now
-// sourced from the same agentStats value, so this block only adds fields
-// (the hero image gallery) that aren't already covered elsewhere.
+// so Google's structured-data parser merges both into one entity instead of
+// ambiguous duplicate agents. No Review markup on this page: Google doesn't
+// show review stars for a business's reviews of itself on its own site.
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "RealEstateAgent",
@@ -167,13 +162,6 @@ export default function Home() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(heroImageGallerySchema) }}
-      />
-      <ReviewSchema
-        reviews={getReviewSchemaData(defaultReviews)}
-        aggregateRating={{
-          ratingValue: aggregateRating.ratingValue,
-          reviewCount: aggregateRating.reviewCount,
-        }}
       />
       <Navbar />
       <main>
