@@ -20,6 +20,7 @@ import {
 } from "@/lib/schema";
 import { siteConfig } from "@/lib/site-config";
 import { DEFAULT_OG_IMAGE } from "@/lib/metadata";
+import { SpeedInsights as VercelSpeedInsights } from "@vercel/speed-insights/next";
 
 const title =
   "Siena Las Vegas Real Estate | 55+ Communities | Dr. Jan Duffy, REALTOR®";
@@ -153,6 +154,7 @@ e.parentNode.insertBefore(t,e);})
 window.widgetTracker("create", "WT-XQHVYQWW");
 window.widgetTracker("send", "pageview");}
         `}</Script>
+  <VercelSpeedInsights />
 </body>
     </html>
   );
