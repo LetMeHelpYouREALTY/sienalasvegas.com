@@ -60,7 +60,7 @@ If you use Cloudflare (or another DNS host), add the TXT record GSC provides. No
 
 - **URL:** `https://www.sienalasvegas.com/robots.txt`
 - **Served file:** Generated dynamically by **`app/robots.ts`** (Next.js `MetadataRoute.Robots`). A dynamic `app/robots.ts` and a static `public/robots.txt` cannot coexist — the app route always wins — so `app/robots.ts` is the single source of truth. (An earlier, more detailed `public/robots.txt` existed but was silently ignored; it has been removed and its rules merged into `app/robots.ts`.)
-- **Current rules:** `Allow: /`, `Disallow: /api/`, `/admin/`, `/_next/`, `/monitoring/`; crawl-delay for AhrefsBot/SemrushBot/Bingbot; blocks GPTBot/CCBot/anthropic-ai/Claude-Web; explicitly allows Google-Extended (AI Overviews), Googlebot-Image, and social preview bots (Facebook/Twitter/LinkedIn/Pinterest).
+- **Current rules:** `Allow: /`, `Disallow: /api/`, `/admin/`, `/monitoring/` (`/_next/` is intentionally crawlable so Google can render CSS/JS); crawl-delay for AhrefsBot/SemrushBot/Bingbot; blocks GPTBot/CCBot/anthropic-ai/Claude-Web; explicitly allows Google-Extended (AI Overviews), Googlebot-Image, and social preview bots (Facebook/Twitter/LinkedIn/Pinterest).
 - Sitemap URL is derived from `siteConfig.url`, so it always matches the live domain.
 
 ---

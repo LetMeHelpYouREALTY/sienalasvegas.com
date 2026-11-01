@@ -11,7 +11,7 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/api/", "/admin/", "/_next/", "/monitoring/"],
+        disallow: ["/api/", "/admin/", "/monitoring/"],
       },
       // Throttle aggressive SEO-tool crawlers rather than blocking them
       { userAgent: "AhrefsBot", crawlDelay: 10 },
