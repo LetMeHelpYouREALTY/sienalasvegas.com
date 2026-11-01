@@ -63,8 +63,6 @@ export default function ReviewsSection({
             <div
               key={review.id}
               className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow"
-              itemScope
-              itemType="https://schema.org/Review"
             >
               <div className="flex items-center mb-4">
                 <div className="relative w-16 h-16 rounded-full overflow-hidden mr-4 flex-shrink-0">
@@ -81,17 +79,15 @@ export default function ReviewsSection({
                     </div>
                   )}
                 </div>
-                <div itemProp="author" itemScope itemType="https://schema.org/Person">
-                  <h3 className="font-bold text-slate-900" itemProp="name">
+                <div>
+                  <h3 className="font-bold text-slate-900">
                     {review.name}
                   </h3>
                   <p className="text-sm text-slate-600">{review.location}</p>
                 </div>
               </div>
 
-              <div className="flex items-center mb-4" itemProp="reviewRating" itemScope itemType="https://schema.org/Rating">
-                <meta itemProp="ratingValue" content={review.rating.toString()} />
-                <meta itemProp="bestRating" content="5" />
+              <div className="flex items-center mb-4">
                 {[...Array(5)].map((_, i) => (
                   <Star
                     key={i}
@@ -104,7 +100,7 @@ export default function ReviewsSection({
 
               <div className="relative">
                 <Quote className="absolute -top-2 -left-2 h-8 w-8 text-blue-100" />
-                <p className="text-slate-700 relative z-10 pl-4" itemProp="reviewBody">
+                <p className="text-slate-700 relative z-10 pl-4">
                   {review.text}
                 </p>
               </div>
